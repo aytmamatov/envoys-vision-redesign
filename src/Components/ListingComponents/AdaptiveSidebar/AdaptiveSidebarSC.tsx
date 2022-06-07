@@ -5,14 +5,18 @@ type Props = {
 }
 
 export const ASSC = styled.div<Props>`
-    position: absolute;
-    width: 100%;
+    position: fixed;
     height: 100%;
+    width: 100%;
     top: 0;
     left: ${props => props.show?'0':'100%'};
+    visibility: ${props => props.show?'visible':'hidden'};
+    opacity: ${props => props.show?'1':'0'};
+    
+    padding: ${props => props.show?'10px':'0'};
+    
 
     background: #fff;
-    padding: 10px;
     transition: .3s linear;
     
     display: flex;

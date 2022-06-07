@@ -22,7 +22,7 @@ const DisclosureSideBarAdaptive:React.FC = () => {
                         >Участники</HeaderDDAdaptiveLink>
                         
                         <HeaderDDAdaptiveLink 
-                            to='/disclosure?param=rools'
+                            to='/disclosure?param=rules'
                             onClick={(() => setShow(false))} 
                         >Правила</HeaderDDAdaptiveLink>
 

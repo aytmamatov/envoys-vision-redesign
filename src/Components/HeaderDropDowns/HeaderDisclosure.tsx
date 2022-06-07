@@ -18,10 +18,10 @@ const HeaderDisclosure:React.FC = () => {
         <img src={DD} alt="" />
 
         <HeaderDD show={show}>
-            <HeaderLinkDD to='/disclosure'>Участники</HeaderLinkDD>
-            <HeaderLinkDD to='/disclosure'>Правила</HeaderLinkDD>
-            <HeaderLinkDD to='/disclosure'>Законодательство КР</HeaderLinkDD>
-            <HeaderLinkDD to='/disclosure'>Раскрытия информации</HeaderLinkDD>
+            <HeaderLinkDD to='/disclosure?param=members'>Участники</HeaderLinkDD>
+            <HeaderLinkDD to='/disclosure?param=rules'>Правила</HeaderLinkDD>
+            <HeaderLinkDD to='/disclosure?param=legislationKR'>Законодательство КР</HeaderLinkDD>
+            <HeaderLinkDD to='/disclosure?param=disclosure'>Раскрытия информации</HeaderLinkDD>
         </HeaderDD>
     </HeaderNavLink>
   )

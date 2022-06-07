@@ -3,12 +3,14 @@ import styled from "styled-components";
 
 export const SidebarSC = styled.div`
     max-width: 300px;
+    height: 100%;
     padding: 20px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
     @media(max-width: 1020px){
         display: none;
     }

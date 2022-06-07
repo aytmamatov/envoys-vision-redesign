@@ -20,7 +20,7 @@ const Disclosure:React.FC = () => {
         let path = searchParams.get('param')
         if(path){
             if(path==='members') setActivePath('Участники')
-            if(path==='rools') setActivePath('Правила')
+            if(path==='rules') setActivePath('Правила')
             if(path==='legislationKR') setActivePath('Законодательство КР')
             if(path==='disclosure') setActivePath('Раскрытия информации')
         }

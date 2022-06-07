@@ -22,7 +22,7 @@ const DisclosureSideBar:React.FC<SidebarProps> = (props) => {
           Участники
         </SidebarLink>
         <SidebarLink 
-          to='/disclosure?param=rools'
+          to='/disclosure?param=rules'
           className={props.active==='Правила'?'active':''}
           >
           Правила
