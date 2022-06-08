@@ -36,6 +36,10 @@ export const SearchComponentWrap = styled.div<SCProps>`
             line-height: 17px;
             color: #7A7A7A;
         }
+
+        &.calendar{
+            margin: 0 0 0 auto;
+        }
     }
 
     button{

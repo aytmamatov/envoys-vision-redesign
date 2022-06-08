@@ -3,6 +3,8 @@ import { SearchComponentWrap } from './SearchComponentSC'
 
 type SearchProps = {
   width: string;
+  placeholder: string;
+  className?: string;
 }
 
 const SearchComponent:React.FC<SearchProps> = (props) => {
@@ -12,8 +14,9 @@ const SearchComponent:React.FC<SearchProps> = (props) => {
     <SearchComponentWrap width={props.width}>
       <input 
         type="text" 
-        placeholder='Поиск (По коду или названию компании)' 
+        placeholder={props.placeholder}
         onChange={((e) => setInputValue(e.target.value))}
+        className={props.className}
       />
       <button>
         <img src={require('../../Assets/Images/search/search.svg')['default']} alt="" />

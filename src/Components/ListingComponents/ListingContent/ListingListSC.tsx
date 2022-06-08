@@ -60,5 +60,11 @@ export const LLBurger = styled.img`
     @media(max-width: 600px){
         margin: 0 0 35px auto;
     }
+
+    &.analitics{
+        @media(max-width: 1220px){
+            display: block !important;
+        }
+    }
 `
 

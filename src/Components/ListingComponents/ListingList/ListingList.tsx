@@ -45,7 +45,7 @@ function ListingList() {
     <LLSC>
       <LLHeaderWrap>
         <LLInputWrap>
-          <SearchComponent width='460px'/>
+          <SearchComponent width='460px' placeholder='Поиск (По коду или названию компании)'/>
         </LLInputWrap>
 
         <AdaptiveSidebar/>

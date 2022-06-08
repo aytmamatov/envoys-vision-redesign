@@ -20,7 +20,7 @@ const HeaderListing:React.FC = () => {
             <HeaderLinkDD to='/listing?param=CompanyListing'>Список компаний</HeaderLinkDD>
             <HeaderLinkDD to='/listing?param=Bonds'>Облигации</HeaderLinkDD>
             <HeaderLinkDD to='/listing?param=CompanyDisclosures'>Раскрытие информации компаниями</HeaderLinkDD>
-            <HeaderLinkDD to='/listing'>Правила листинга</HeaderLinkDD>
+            <HeaderLinkDD to='/disclosure?param=rules&header=listing'>Правила листинга</HeaderLinkDD>
         </HeaderDD>
     </HeaderNavLink>
   )

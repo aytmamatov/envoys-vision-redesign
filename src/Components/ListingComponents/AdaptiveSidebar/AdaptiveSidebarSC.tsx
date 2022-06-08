@@ -8,6 +8,7 @@ export const ASSC = styled.div<Props>`
     position: fixed;
     height: 100%;
     width: 100%;
+    z-index: 2;
     top: 0;
     left: ${props => props.show?'0':'100%'};
     visibility: ${props => props.show?'visible':'hidden'};

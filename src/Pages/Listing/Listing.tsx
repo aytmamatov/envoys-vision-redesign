@@ -6,10 +6,6 @@ import ListingSideBar from '../../Components/ListingComponents/ListingSideBar/Li
 import Path from '../../Components/Path/Path'
 import { Container, Flex } from '../../uikit/uikit'
 
-interface Props {
-    children: any
-}
-
 const ListingWrap = styled.div`
     background: #FCFCFC;
 `

@@ -17,9 +17,9 @@ const HeaderAnalitics:React.FC = () => {
         <img src={DD} alt="" />
 
         <HeaderDD show={show}>
-            <HeaderLinkDD to='/analitics' style={{width: '160px'}}>Дивидендный календарь</HeaderLinkDD>
-            <HeaderLinkDD to='/analitics'>Календарь заработка</HeaderLinkDD>
-            <HeaderLinkDD to='/analitics'>Торговый календарь</HeaderLinkDD>
+            <HeaderLinkDD to='/analitics?param=dividendC' style={{width: '160px'}}>Дивидендный календарь</HeaderLinkDD>
+            <HeaderLinkDD to='/analitics?param=earningC'>Календарь заработка</HeaderLinkDD>
+            <HeaderLinkDD to='/analitics?param=marketC'>Торговый календарь</HeaderLinkDD>
         </HeaderDD>
     </HeaderNavLink>
   )

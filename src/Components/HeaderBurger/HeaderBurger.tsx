@@ -5,7 +5,7 @@ import HeaderLang from '../HeaderDropDowns/HeaderLang';
 
 const HeaderBurger:React.FC = () => {
     const [show, setShow] = useState(false)
-    const [show1, setShow1] = useState(true)
+    const [showLang, setShowLang] = useState(true)
 
     const Burger = require('../../Assets/Images/Header/burger.svg')['default']
     const BurgerClose = require('../../Assets/Images/Header/burgerClose.svg')['default']
@@ -15,7 +15,7 @@ const HeaderBurger:React.FC = () => {
     <HeaderAdaptive 
         onClick={(e) => { 
             e.stopPropagation()
-            setShow1(false)
+            setShowLang(false)
         }}
     >
         <HeaderBurgerImage src={show?BurgerClose:Burger} onClick={() => setShow(el => !el)}/>
@@ -23,16 +23,16 @@ const HeaderBurger:React.FC = () => {
         <HeaderDDAdaptive show={show}>
             <Flex align='flex-start' justify='space-between' width='100%'>
                 <HeaderDDAdaptiveLinks>
-                    <HeaderDDAdaptiveLink to='/market'>Рынки</HeaderDDAdaptiveLink>
-                    <HeaderDDAdaptiveLink to='/news'>Новости</HeaderDDAdaptiveLink>
-                    <HeaderDDAdaptiveLink to='/analitics'>Аналитика</HeaderDDAdaptiveLink>
-                    <HeaderDDAdaptiveLink to='/listing'>Листинг</HeaderDDAdaptiveLink>
-                    <HeaderDDAdaptiveLink to='/disclosure'>Раскрытие Информации</HeaderDDAdaptiveLink>
-                    <HeaderDDAdaptiveLink to='/aboutUs'>О нас</HeaderDDAdaptiveLink>
+                    <HeaderDDAdaptiveLink onClick={() => setShow(false)} to='/market'>Рынки</HeaderDDAdaptiveLink>
+                    <HeaderDDAdaptiveLink onClick={() => setShow(false)} to='/news'>Новости</HeaderDDAdaptiveLink>
+                    <HeaderDDAdaptiveLink onClick={() => setShow(false)} to='/analitics'>Аналитика</HeaderDDAdaptiveLink>
+                    <HeaderDDAdaptiveLink onClick={() => setShow(false)} to='/listing'>Листинг</HeaderDDAdaptiveLink>
+                    <HeaderDDAdaptiveLink onClick={() => setShow(false)} to='/disclosure'>Раскрытие Информации</HeaderDDAdaptiveLink>
+                    <HeaderDDAdaptiveLink onClick={() => setShow(false)} to='/aboutUs'>О нас</HeaderDDAdaptiveLink>
                 </HeaderDDAdaptiveLinks>
     
                 <HeaderDDAdaptiveSide>
-                    <HeaderLang burgerShow={show1} burgerSetShow={setShow1} adaptiveShow={true}/>
+                    <HeaderLang burgerShow={showLang} burgerSetShow={setShowLang} adaptiveShow={true}/>
     
                     <a href="#" target='_blank'>
                         <img src={require('../../Assets/Images/footer/facebook.svg')['default']} alt="" />
