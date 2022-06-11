@@ -23,6 +23,12 @@ export const ASSC = styled.div<Props>`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    overflow-y: auto;
+
+    div{
+        height: 100%;
+    }
 `
 
 export const ASWrap = styled.div`

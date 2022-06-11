@@ -239,8 +239,25 @@ export const HeaderDDAdaptiveLinks = styled.nav`
 
     @media(max-width: 400px){
         width: 197px;
+        &.market-wrap{
+            width: auto;
+        }
     }
-`
+    &.market-wrap{
+        margin: 30px 0 0;
+    }
+
+    h3.market-title{
+        font-family: 'Roboto Flex';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #4478BB;
+        margin: 0 0 20px;
+    }
+
+    `
 
 export const HeaderDDAdaptiveLink = styled(Link)`
     font-family: 'Roboto Flex';
@@ -261,6 +278,16 @@ export const HeaderDDAdaptiveLink = styled(Link)`
     @media(max-width: 400px){
         font-size: 32px;
         line-height: 38px;
+        &.market{
+            font-size: 18px;
+        }
+    }
+
+
+    &.market{
+        margin: 0 0 18px;
+        font-size: 14px;
+        line-height: 18px;
     }
 `
 

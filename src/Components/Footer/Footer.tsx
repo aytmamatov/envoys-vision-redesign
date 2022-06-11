@@ -10,21 +10,20 @@ const Footer:React.FC = () => {
 
         <FooterTop>
           <FooterNav>
-            <FooterNavLink to='/markets'>
+            <FooterNavLink to='/market'>
               <p>Рынки</p>
-              <img src={DD} alt="" />
+            </FooterNavLink>
+            <FooterNavLink to='/news'>
+              <p>Новости</p>
+            </FooterNavLink>
+            <FooterNavLink to='/news'>
+              <p>Аналитика</p>
             </FooterNavLink>
             <FooterNavLink to='/listing'>
               <p>Листинг</p>
-              <img src={DD} alt="" />
             </FooterNavLink>
-            <FooterNavLink to='#'>
-              <p>Новости и Аналитика</p>
-              <img src={DD} alt="" />
-            </FooterNavLink>
-            <FooterNavLink to='#'>
+            <FooterNavLink to='/disclosure'>
               <p>Раскрытие информации</p>
-              <img src={DD} alt="" />
             </FooterNavLink>
             <FooterNavLink to='aboutus'>
               <p>О нас</p>

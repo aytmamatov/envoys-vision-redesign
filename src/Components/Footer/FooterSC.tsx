@@ -87,7 +87,7 @@ export const FooterBottom = styled.div`
 export const FooterBottomNav = styled.nav`
     display: flex;
     @media(max-width: 1020px){
-        margin: 0 0 40px;
+        margin: 40px 0 0;
         order: 2;
     }
     @media(max-width: 500px){

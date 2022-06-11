@@ -38,7 +38,7 @@ const AnaliticsSearchHeader:React.FC = () => {
     
   return (
     <ASHWrap>
-        <Flex>
+        <Flex width='100%'>
             <ASHSwiper>
                 <Swiper
                     spaceBetween={0}

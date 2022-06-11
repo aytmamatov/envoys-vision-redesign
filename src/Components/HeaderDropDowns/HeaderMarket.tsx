@@ -9,7 +9,7 @@ const HeaderMarket:React.FC = () => {
 
   return (
     <HeaderNavLink 
-        to='/analitics'
+        to='/market'
         onMouseEnter={() => setShow(true)}
         onMouseLeave={() => setShow(false)}
     >
@@ -20,28 +20,28 @@ const HeaderMarket:React.FC = () => {
             <HeaderDD2>
                 <h3>Фондовый рынок</h3>
 
-                <HeaderLinkDD to='/analitics'>Российский рынок</HeaderLinkDD>
-                <HeaderLinkDD to='/analitics'>Американский рынок</HeaderLinkDD>
-                <HeaderLinkDD to='/analitics'>Кыргызский рынок</HeaderLinkDD>
+                <HeaderLinkDD to='/market?param=RuMarket'>Российский рынок</HeaderLinkDD>
+                <HeaderLinkDD to='/market?param=EnMarket'>Американский рынок</HeaderLinkDD>
+                <HeaderLinkDD to='/market?param=KgMarket'>Кыргызский рынок</HeaderLinkDD>
             </HeaderDD2>
 
             <HeaderDD2>
                 <h3>Сектора</h3>
 
-                <HeaderLinkDD to='/analitics'>Горднодобывающий сектор</HeaderLinkDD>
-                <HeaderLinkDD to='/analitics'>Промышленность</HeaderLinkDD>
-                <HeaderLinkDD to='/analitics'>Финансовый сектор</HeaderLinkDD>
-                <HeaderLinkDD to='/analitics'>Сельское хозяйство</HeaderLinkDD>
+                <HeaderLinkDD to='/market?param=miningSector'>Горднодобывающий сектор</HeaderLinkDD>
+                <HeaderLinkDD to='/market?param=industry'>Промышленность</HeaderLinkDD>
+                <HeaderLinkDD to='/market?param=financialSector'>Финансовый сектор</HeaderLinkDD>
+                <HeaderLinkDD to='/market?param=ariculture'>Сельское хозяйство</HeaderLinkDD>
             </HeaderDD2>
 
             <HeaderDD2>
                 <h3>Рынки</h3>
 
-                <HeaderLinkDD to='/analitics'>Рынок драгоценных металлов</HeaderLinkDD>
-                <HeaderLinkDD to='/analitics'>Валютный рынок</HeaderLinkDD>
-                <HeaderLinkDD to='/analitics'>Криптовалютный рынок</HeaderLinkDD>
-                <HeaderLinkDD to='/analitics'>Товарный сектор</HeaderLinkDD>
-                <HeaderLinkDD to='/analitics'>Рынок недвижимости</HeaderLinkDD>
+                <HeaderLinkDD to='/market?param=preciousMetalsMarket'>Рынок драгоценных металлов</HeaderLinkDD>
+                <HeaderLinkDD to='/market?param=currencyMarket'>Валютный рынок</HeaderLinkDD>
+                <HeaderLinkDD to='/market?param=cryptoMarket'>Криптовалютный рынок</HeaderLinkDD>
+                <HeaderLinkDD to='/market?param=commoditySector'>Товарный сектор</HeaderLinkDD>
+                <HeaderLinkDD to='/market?param=realEstateMarket'>Рынок недвижимости</HeaderLinkDD>
             </HeaderDD2>
         </HeaderDDWrap>
 
