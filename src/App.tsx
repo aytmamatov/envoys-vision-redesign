@@ -7,6 +7,7 @@ import Disclosure from './Pages/Disclosure/Disclosure';
 import Home from './Pages/Home/Home';
 import Listing from './Pages/Listing/Listing';
 import Market from './Pages/Market/Market';
+import News from './Pages/News/News';
 
 
 const App:React.FC = () => {
@@ -19,6 +20,7 @@ const App:React.FC = () => {
         <Route path='/disclosure' element={<Disclosure/>}/>
         <Route path='/analitics' element={<Analitics/>}/>
         <Route path='/market' element={<Market/>}/>
+        <Route path='/news' element={<News/>} />
       </Routes>
     </Layout>
   );

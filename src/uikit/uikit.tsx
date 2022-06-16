@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 type FlexProps = {
   justify?: 'space-between' | 'space-around' | 'center' | 'flex-start' | 'flex-end';
-  align?: 'center' | 'flex-start' | 'flex-end';
+  align?: 'center' | 'flex-start' | 'flex-end' | 'baseline';
   margin?: string | '0';
   flex?: number;
   direction?: 'column' | 'row';
@@ -44,4 +44,17 @@ export const Button = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
+`
+
+export const Ibg = styled.div`
+  position: relative;
+`
+
+export const IbgImg = css`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `
