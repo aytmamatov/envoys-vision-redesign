@@ -45,7 +45,7 @@ export const HomeNewsUl = styled.ul`
 export const HomeNewsItem = styled.li`
     margin: 0 20px 0 0;
     flex: 1;
-    height: 552px;
+    /* height: 552px; */
     display: flex;
     flex-direction: column;
     :last-child{
@@ -73,9 +73,20 @@ export const HomeNewsItem = styled.li`
     }
 `
 
+export const HomeNewsImageWrap = styled.div`
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0px 0px 117% 0px;
+`
+
 export const HomeNewsImage = styled.img`
     width: 100%;
-    border: 8px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 `
 
 

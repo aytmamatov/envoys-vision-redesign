@@ -4,47 +4,49 @@ import AdaptiveSidebar from '../../MarketAdaptiveSideBar/MarketAdaptiveSideBar'
 import { MarketWrap } from '../../MarketContent/MarketContentSC'
 import { MarketTitle } from '../KgMarket/KgMarketSC'
 import { MarketCard, MarketCards, MarketCardsTitle, MarketCardsWrap, MarketPMMItem, MarketPMMList } from './PreciousMetalsMarketSC'
+import {useTranslation} from "react-i18next";
 
 const PreciousMetalsMarket:React.FC = () => {
-  return (
+    const {t} = useTranslation()
+    return (
     <MarketWrap>
       <Flex>
         <AdaptiveSidebar/>
       </Flex>
       <MarketTitle margin='0 0 30px' width='848px'>
-        РЫНОК ЦВЕТНЫХ МЕТАЛЛОВ И АЛМАЗОВ
+        {t("markets.preciousMetalsMarket.title")}
       </MarketTitle>
 
       <MarketPMMList>
         <MarketPMMItem>
-          РЫНОК ЦВЕТНЫХ МЕТАЛЛОВ
+          {t("markets.preciousMetalsMarket.list1.item1")}
         </MarketPMMItem>
         <MarketPMMItem>
-          РЫНОК КРЕДИТОВАНИЯ ДРАГОЦЕННЫХ МЕТАЛЛОВ
+          {t("markets.preciousMetalsMarket.list1.item2")}
         </MarketPMMItem>
         <MarketPMMItem>
-          РЫНОК АЛМАЗА И ДРАГОЦЕННЫХ КАМНЕЙ
+          {t("markets.preciousMetalsMarket.list1.item3")}
         </MarketPMMItem>
       </MarketPMMList>
 
 
       <MarketCardsWrap>
         <MarketCardsTitle>
-          ИНФРАСТРУКТУРНЫЕ ПАРТНЕРЫ, БИРЖИ
+          {t("markets.preciousMetalsMarket.preTitle")}
         </MarketCardsTitle>
 
         <MarketCards>
           <MarketCard>
-            Депозитарий, клиринговый центр
+            {t("markets.preciousMetalsMarket.list2.item1")}
           </MarketCard>
           <MarketCard>
-            Банк
+            {t("markets.preciousMetalsMarket.list2.item2")}
           </MarketCard>
           <MarketCard>
-            Аффинажное предприятие
+            {t("markets.preciousMetalsMarket.list2.item3")}
           </MarketCard>
           <MarketCard>
-            Лаборатория
+            {t("markets.preciousMetalsMarket.list2.item4")}
           </MarketCard>
         </MarketCards>
       </MarketCardsWrap>

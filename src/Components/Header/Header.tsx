@@ -7,6 +7,7 @@ import HeaderLang from "../HeaderDropDowns/HeaderLang";
 import HeaderListing from "../HeaderDropDowns/HeaderListing";
 import HeaderMarket from "../HeaderDropDowns/HeaderMarket";
 import { HeaderLogo, HeaderNav, HeaderNavLink, HeaderSC, HeaderWrap } from "./HeaderSC";
+import {useTranslation} from "react-i18next";
 
 type Props = {
     burgerShow: boolean;
@@ -15,6 +16,7 @@ type Props = {
 
 const Header:React.FC<Props> = ({burgerShow, burgerSetShow}) => {
     const Logo = require('../../Assets/Images/logo.svg')['default']
+    const {t} = useTranslation()
     
     return <HeaderSC>
         <Container>
@@ -26,7 +28,7 @@ const Header:React.FC<Props> = ({burgerShow, burgerSetShow}) => {
                 <HeaderNav>
                     <HeaderMarket/>
                     
-                    <HeaderNavLink to='/news'>Новости</HeaderNavLink>
+                    <HeaderNavLink to='/news'>{t("header.links.link2.title")}</HeaderNavLink>
 
                     <HeaderAnalitics/>
 
@@ -34,7 +36,7 @@ const Header:React.FC<Props> = ({burgerShow, burgerSetShow}) => {
                     
                     <HeaderDisclosure/>
 
-                    <HeaderNavLink to='/aboutus'>О нас</HeaderNavLink>
+                    <HeaderNavLink to='/aboutus'>{t("header.links.link7.title")}</HeaderNavLink>
                 </HeaderNav>
 
                 <HeaderLang burgerShow={burgerShow} burgerSetShow={burgerSetShow} adaptiveShow={false}/>

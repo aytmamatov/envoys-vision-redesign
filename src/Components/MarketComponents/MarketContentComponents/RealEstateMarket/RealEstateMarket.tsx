@@ -3,97 +3,99 @@ import { Flex } from '../../../../uikit/uikit'
 import AdaptiveSidebar from '../../MarketAdaptiveSideBar/MarketAdaptiveSideBar'
 import { MarketWrap } from '../../MarketContent/MarketContentSC'
 import { MarketItem, MarketItemTitle, MarketList, MarketPreTitle, MarketText, MarketTitle } from '../KgMarket/KgMarketSC'
+import {useTranslation} from "react-i18next";
 
 const RealEstateMarket:React.FC = () => {
-  return (
+    const {t} = useTranslation()
+    return (
     <MarketWrap>
       <Flex>
         <AdaptiveSidebar/>
       </Flex>
       <MarketTitle margin='0 0 50px' width=''>
-        СЕКТОР НЕДВИЖИМОСТИ
+        {t("markets.realEstateMarket.title")}
       </MarketTitle>
 
       <MarketPreTitle margin='0 0 50px' width='580px'>
-        АУКЦИОН НА ПОВЫШЕНИЕ АУКЦИОН НА ПОНИЖЕНИЕ
+        {t("markets.realEstateMarket.preTitle1")}
       </MarketPreTitle>
 
       <MarketPreTitle margin='0 0 50px' width='580px'>
-        ИПОТЕЧНЫЕ ЦЕННЫЕ БУМАГИ ЛИКВИДНОСТЬ ДЛЯ БАНКОВ ОРГАНИЗОВАННЫЙ РЫНОК
+        {t("markets.realEstateMarket.preTitle2")}
       </MarketPreTitle>
 
       <MarketText margin='0 0 20px' width='580px'>
-        Минимальный размер Гарантийной суммы установлен в 50 000 (пятьдесят тысяч) сом. Верхний предел для Гарантийной суммы не лимитирован.
+        {t("markets.realEstateMarket.textBlock.text1")}
       </MarketText>
       <MarketText margin='0 0 20px' width='580px'>
-        Аукцион происходит полностью в электронной форме. Участники на экранах своих девайсов видят текущую информацию по Аукциону, с помощью функционала программы им предоставлена возможность участвовать в каждом шаге Аукциона. Участникам автоматически присваиваются номера либо они указывают свое наименование самостоятельно.
+        {t("markets.realEstateMarket.textBlock.text2")}
       </MarketText>
       <MarketText margin='0 0 20px' width='580px'>
-        Аукцион считается состоявшимся при наличии хотя бы одного Покупателя, допущенного к Аукциону, и принявшего участие в нем.
+        {t("markets.realEstateMarket.textBlock.text3")}
       </MarketText>
       <MarketText margin='0 0 100px' width='580px'>
-        Биржа вправе за плату поручить Посреднику (Риэлтору) провести работы по подготовке /экспертизе пакета документов, представленных на Аукцион Организатором с определением результата проделанной работы (экспертизы).
+        {t("markets.realEstateMarket.textBlock.text4")}
       </MarketText>
 
 
       <MarketList>
         <MarketItemTitle>
-          КАКИЕ ПРОБЛЕМЫ РЕШАЕТ
+          {t("markets.realEstateMarket.list1.title")}
         </MarketItemTitle>
 
         <MarketItem>
-          Реализации имущества по оптимальной цене на нужную дату
+          {t("markets.realEstateMarket.list1.item1")}
         </MarketItem>
         <MarketItem>
-          Гарантия исполнения обязательств сторонами
+          {t("markets.realEstateMarket.list1.item2")}
         </MarketItem>
         <MarketItem>
-          Гарантия выплаты комиссии посреднику
+          {t("markets.realEstateMarket.list1.item3")}
         </MarketItem>
         <MarketItem>
-          Возможность участия в торгах из любой точки мира
+          {t("markets.realEstateMarket.list1.item4")}
         </MarketItem>
         <MarketItem>
-          Невыгодная начальная цена
+          {t("markets.realEstateMarket.list1.item5")}
         </MarketItem>
         <MarketItem>
-          Снижение стоимости недвижимости в результате торгов
+          {t("markets.realEstateMarket.list1.item6")}
         </MarketItem>
       </MarketList>
 
       <MarketList style={{margin: '100px 0 50px'}}>
         <MarketItemTitle>
-          УЧАСТНИКИ:
+          {t("markets.realEstateMarket.list2.title")}
         </MarketItemTitle>
 
         <MarketItem>
-          Собственники (продавцы)
+          {t("markets.realEstateMarket.list2.item1")}
         </MarketItem>
         <MarketItem>
-          Застройщики
+          {t("markets.realEstateMarket.list2.item1")}
         </MarketItem>
         <MarketItem>
-          Покупатели
+          {t("markets.realEstateMarket.list2.item1")}
         </MarketItem>
         <MarketItem>
-          Риелторы (в роли посредников)
+          {t("markets.realEstateMarket.list2.item1")}
         </MarketItem>
         <MarketItem>
-          ГРС
+          {t("markets.realEstateMarket.list2.item1")}
         </MarketItem>
         <MarketItem>
-          Организатор торгов
+          {t("markets.realEstateMarket.list2.item1")}
         </MarketItem>
       </MarketList>
 
 
 
       <MarketPreTitle margin='100px 0 20px' width='580px'>
-        ИПОТЕЧНЫЕ ЦЕННЫЕ БУМАГИ
+        {t("markets.realEstateMarket.preTitle2")}
       </MarketPreTitle>
 
       <MarketText margin='0 0 20px' width='580px'>
-        ― разновидность вторичных ценных бумаг, служащих универсальным инструментом рефинансирования инвестиций в жилищное строительство, то есть средством для краткосрочного восстановления финансовых вливаний в жилые объекты, которые приобретаются на рынке посредством ипотеки. При этом ценные бумаги поддерживают стабильность рефинансирования ипотечного строительства за счет того, что возврат денежных средств инвестору осуществляется в сроки меньшие, нежели сроки погашения суммы ипотечного кредита.
+        {t("markets.realEstateMarket.text")}
       </MarketText>
 
     </MarketWrap>

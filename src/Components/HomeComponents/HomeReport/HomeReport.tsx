@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Container, Flex } from '../../../uikit/uikit'
 import { TableSC, TableWrap } from './HomeReportSC'
+import {useTranslation} from "react-i18next";
 
 const HomeReport:React.FC = () => {
     const [tableInfo, setTableInfo] = React.useState([
@@ -18,6 +19,7 @@ const HomeReport:React.FC = () => {
         ]
     ]
     )
+    const {t} = useTranslation()
 
   return (
             <TableSC>
@@ -25,22 +27,22 @@ const HomeReport:React.FC = () => {
                     <TableWrap>
                        <table>
                            <tr>
-                                <th className='first'>Наименование эмитента</th>
-                                <th>Государственный регистрационный номер</th>
-                                <th>Вид ценной бумаги</th>
-                                <th> ASK <br /> (приказы на покупку) </th>
-                                <th> BID <br /> (приказы на продажу) </th>
-                                <th>Листинг/нелистинг</th>
+                                <th className='first'>{t("home.Report.R1")}</th>
+                                <th>{t("home.Report.R2")}</th>
+                                <th>{t("home.Report.R3")}</th>
+                                <th> {t("home.Report.R4.R11")} <br /> {t("home.Report.R4.R12")} </th>
+                                <th> {t("home.Report.R5.R11")} <br /> {t("home.Report.R5.R12")} </th>
+                                <th>{t("home.Report.R6")}</th>
                            </tr>
     
                            <tr className='preHeader'>
-                               <td className='first small'>Тикеры</td>
+                               <td className='first small'>{t("home.Report.R7")}</td>
                                <td></td>
                                <td></td>
-                               <td className='half small-y'>Количество</td>
-                               <td className='half small-y'>Цена</td>
-                               <td className='half small-y'>Количество</td>
-                               <td className='half small-y'>Цена</td>
+                               <td className='half small-y'>{t("home.Report.R8.R11")}</td>
+                               <td className='half small-y'>{t("home.Report.R8.R12")}</td>
+                               <td className='half small-y'>{t("home.Report.R8.R13")}</td>
+                               <td className='half small-y'>{t("home.Report.R8.R14")}</td>
                                <td></td>
                            </tr>
     

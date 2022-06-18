@@ -1,0 +1,382 @@
+
+{
+  "header":{
+    "links": {
+      "link1": {
+        "title": "Markets",
+        "DDLink": {
+          "DD1":{
+            "title": "Stock market",
+            "links": {"DDLink1": "Russian market", "DDLink2":"American market", "DDLink3":"Kyrgyz market"}
+          },
+          "DD2": {
+            "title": "Sectors",
+            "links": {"DDLink1": "Mining", "DDLink2": "Industry", "DDLink3":"Financial", "DDLink4":"Agriculture"}
+          },
+          "DD3": {
+            "title": "Markets",
+            "links": {"DDLink1":"Precious Metals Market", "DDLink2":"Foreign Exchange Market", "DDLink3":"Cryptocurrency Market", "DDLink4":"Commodity Sector", "DDLink5":"Real Estate Market" }
+          }
+        }
+      },
+      "link2": {
+        "title": "News"
+      },
+      "link3": {
+        "title": "Analytics",
+        "links": {"DDLink1":"Dividend calendar", "DDLink2":"Earnings calendar", "DDLink3":"Trading calendar"}
+      },
+      "link4": {
+        "title": "Listing",
+        "links": {"DDLink1":"Company List", "DDLink2":"Bonds", "DDLink3":"Company Disclosure", "DDLink4":"Listing Rules"}
+      },
+      "link5": {
+        "title": "Listing",
+        "links": {"DDLink1":"Company List", "DDLink2":"Bonds", "DDLink3":"Company Disclosure", "DDLink4":"Listing Rules"}
+      },
+      "link6": {
+        "title": "Disclosure",
+        "links": {"DDLink1":"Participants", "DDLink2":"Rules", "DDLink3":"KR Legislation", "DDLink4":"Disclosures"}
+      },
+      "link7":{
+        "title": "About us"
+      }
+    }
+  },
+  "home": {
+    "Banner":{
+      "titles": {
+        "title": "INVESTMENT IN THE MARKET",
+        "title2": "SECURITIES"
+      },
+      "text": "Envoys Vision is accessibility to financial markets, safety of investing in startups, high profitability for liquidity providers",
+      "btn": "Details"
+    },
+    "Report": {
+      "R1": "Name of the issuer",
+      "R2": "State registration number",
+      "R3": "Security type",
+      "R4": {
+        "R11": "ASK",
+        "R12": "(buy orders)"
+      },
+      "R5": {
+        "R11": "BID",
+        "R12": "(orders to sell)"
+      },
+      "R6": "Listing/Unlisting",
+      "R7": "Tickers",
+      "R8": {
+        "R11": "Number",
+        "R12": "Price",
+        "R13": "Number",
+        "R14": "Price"
+      }
+    },
+    "NewsBlock": {
+      "title": "LATEST NEWS",
+      "btn": "More news"
+    },
+    "InfoBlock": {
+      "title": "ENVOYS UNCODES TECHNICAL TRENDS",
+      "text": "Discover financial markets",
+      "btn":"More news",
+      "option1": {
+        "title": "WHAT IS INVESTING IN SECURITIES",
+        "titl2": "Investing in securities means investing in various assets - from real estate and business projects to securities and cryptocurrencies.",
+        "text": "Each security certifies the right of its owner to a part of property assets or confirms the fact of a loan. Securities are issued in standard paper form or in electronic form."
+      },
+      "option2": {
+        "title": "TYPES OF INVESTMENT",
+        "titl2": "The type of security itself can already indicate potential income. Among the most common financial instruments on the market, we can distinguish",
+        "text": "It is also possible to invest in derivative securities (options, futures and swaps). Not all types of financial instruments are available on the stock market. For example, an investor can invest in a promissory note, but such a document is traded outside stock exchanges."
+      }
+    },
+    "OurTeam": {
+      "title": "OUR TEAM"
+    }
+  },
+  "aboutMe": {
+    "admin": {
+      "title": "COMPANY JSC",
+      "title2": "ENVOYS VISION DIGITAL EXCHANGE",
+      "text": "Universal Stock Exchange EVDE is a team of specialists with more than eight years of experience in the securities market.",
+      "imageTitle": "ALMAZBEK SHABDANOV",
+      "imageText": "Chairman of Universal Digital Exchange"
+    },
+    "ach": {
+      "ach1": {
+        "date": "2021",
+        "title": "Obtaining licenses for depository activities and the organizer of trading on the securities market"
+      },
+      "ach2":{
+        "date": "2021",
+        "title": "September 2021 - launch and testing of the exchange platform"
+      },
+      "ach3": {
+        "date": "2021",
+        "title": "State Registration"
+      }
+    },
+    "services": {
+      "title1": "UNIVERSAL STOCK EXCHANGE",
+      "title2": " ENVOYS ",
+      "title3": "THIS IS A RANGE OF SERVICES FOR EVERYONE.",
+      "list": {
+        "item1": "Tokenized Assets",
+        "item2": "Cryptocurrencies",
+        "item3": "Property",
+        "item4": "Foreign exchange market",
+        "item5": "Precious Metal Market",
+        "item6": "Commodity Sector"
+      }
+    },
+    "values": {
+      "title": "OUR VALUES",
+      "list":{
+        "item1": {
+          "title": "GOOD FAIR",
+          "text1": "Showing respect for everyone",
+          "text2": "Open communication",
+          "text3": "Exemplary Integrity and Ethics"
+        },
+        "item2": {
+          "title": "EXPERIENCE EXTENSION",
+          "text1": "BE A TEAM PLAYER",
+          "text2": "BE A TEAM PLAYER",
+          "text3": "Make every effort to succeed"
+        },
+        "item3": {
+          "title": "BE A TEAM PLAYER",
+          "text1": "Trust colleagues",
+          "text2": "Trust colleagues",
+          "text3": "Search for different thoughts and ideas"
+        }
+      }
+    }
+  },
+  "listing": {
+    "sideBar":{
+      "title": "Listing",
+      "path1": "List of companies",
+      "path2": "Bonds",
+      "path3": "Company disclosures"
+    },
+    "placeholder": "Search (By code or company name)",
+    "headerLink": {
+      "link1": "All",
+      "link2": "listing",
+      "link3": "Unlisted",
+      "link4": "Defaulted",
+      "elements": "Total Issuers"
+    },
+    "table": {
+      "header1": "Code",
+      "header2": "Company",
+      "header3": "Capitalization, billion soms"
+    }
+  },
+  "analitics": {
+    "pages": {
+      "p1": "Dividend calendar",
+      "p2": "Earning calendar",
+      "p3": "Trading calendar"
+    },
+    "placeholder": "Search (By code or company name)",
+    "dAnalitics": {
+      "H1": "Ticker",
+      "H2": "Name",
+      "H3": "Payments on previous dividends",
+      "H4": "Date of payment",
+      "H5": "Amount of dividends",
+      "H6": "Specified annual dividend",
+      "H7": "Announcement date"
+    },
+    "eAnalitics": {
+      "H1": "time",
+      "H2": "Symbol",
+      "H3": "Organization name",
+      "H4": "Market cap",
+      "H5": "Fiscal quarter end",
+      "H6": "Consensus forecast per share*",
+      "H7": "#est",
+      "H8": "Last year's report date",
+      "H9": "Last year's earnings per share*"
+    }
+  },
+  "markets": {
+    "stocksM": {
+      "title1": "TOKENIZED ASSETS",
+      "text1": "STO is a faster and cheaper analogue of IPO. Listing costs are reduced due to the absence of the need to involve intermediaries like investment banks. Audit and underwriting procedures for blockchain projects are also simpler. And almost any private investor can participate in STO" ,
+      "preTitle1": "TOKENIZATION IS THE CREATION OF A RECORD CERTIFIING THE VOLUME OF RIGHTS TO THE OBJECT OF THE MATERIAL WORLD (WHERE THE TOKEN IS ISSUED) THE TOKEN IS REGISTERED WITH THE HELP OF DISTRIBUTED REGISTER TECHNOLOGY",
+      "title2": "LOCAL AND FOREIGN CBs",
+      "list1": {
+        "listTite": "SECTORS ON CBR:",
+        "item1": "Promotions",
+        "item2": "Blue chips operating companies",
+        "item3": "Mountain Sector"
+      },
+      "title3": "TOKENIZING FOREIGN SHARES",
+      "blockText1": {
+        "text1": "Tokenized stocks are digital stock tokens that are traded on traditional stock exchanges. The value of tokenized stocks is pegged to the value of their respective underlying stocks. Let's take Apple inc. as an example.",
+        "text2": "If the value of Apple shares rises, then the value of tokenized shares will rise accordingly. If the value of Apple shares falls, the value of tokenized shares will also decrease.",
+        "text3": "The tokens are based on a pledge of shares held by the Custodian. Therefore, each tokenized share represents a stake in the respective listed company.",
+        "text4": "Ownership of tokenized shares does not transfer any shareholder rights to you. You only participate in the economic development of the underlying asset, including the payment of dividends (if any)."
+      },
+
+      "list2": {
+        "item1":{
+          "title": "ISSUER",
+          "text1": "Blockchain acts as a registrar",
+          "text2": "Legal and beneficial ownership is transferred to the blockchain"
+        },
+        "item2":{
+          "title": "CUSTODIAN",
+          "text1": "Smart contracts replace payment agents with the real world",
+          "text2": "Custodian maintains communication between the blockchain"
+        },
+        "item3":{
+          "title": "INVESTORS",
+          "text1": "Recording operations in the distributed ledger",
+          "text2": "Settlement and clearing in the blockchain network"
+        }
+      },
+      "title4": "WE TAKE FOR EXAMPLE THE GOLD MINING COMPANY JSC “MINING”",
+      "list3": {
+        "listTitle": "FOR ISSUING TOKENIZED SHARES AND SUBSEQUENTLY ATTRACTING INVESTORS BY STO:",
+        "item1": "Shareholders of the OJSC make a relevant decision at the AGM;",
+        "item2": "Transfer to the Depository some part of the OJSC shares under a pledge agreement for their subsequent digitization (shares of an additional issue may be transferred, or a part of shares already owned by shareholders).",
+        "item3": "Instead of frozen shares, digital tokens are issued into circulation, which will confirm to its holder the same rights as the share.",
+        "item4": "Issued tokens are placed among investors in the trading system of the digital exchange."
+      }
+    },
+    "preciousMetalsMarket": {
+      "title": "MARKET OF NON-FERROUS METALS AND DIAMONDS",
+      "list1": {
+        "item1": "NON-FERROUS MARKET",
+        "item2": "MARKET LENDING PRECIOUS METALS",
+        "item3": "DIAMOND AND PRECIOUS STONE MARKET"
+      },
+      "preTitle": "INFRASTRUCTURE PARTNERS, EXCHANGE",
+      "list2": {
+        "item1": "Depository, clearing house",
+        "item2": "Bank",
+        "item3": "Refinery",
+        "item4": "Lab"
+      }
+    },
+    "currencyMarket": {
+      "title1": "CURRENCY TRANSACTIONS",
+      "title2": "DERIVATIVES",
+      "title3": "GREAT BENEFITS FOR CORPORATIONS IN FOREX MARKETERS",
+      "list1": {
+        "title": "SPOT TRANSACTIONS",
+        "item1": "Currency - US Dollars",
+        "item2": "Cross rates"
+      },
+      "list2": {
+        "title": "SYNTHETIC EXCHANGE AGREEMENTS (SAFE8)",
+        "item1": "Currency futures 5",
+        "item2": "Currency interest rate swap 5",
+        "item3": "Foreign Options"
+      },
+      "list3": {
+        "title": "PARTICIPANTS",
+        "item1": "EXCHANGE-TRANSPARENCY AND REAL VOLUME",
+        "item2": "LEGAL ENTITIES - BENEFIT AND HEDGING",
+        "item3": "BANS",
+        "item4": "INTERNATIONAL SINGLE GLASSES"
+      },
+      "list4": {
+        "title": "CURRENCY MARKET PARTICIPANTS",
+        "item1": "Foreign exchanges",
+        "item2": "Central banks",
+        "item3": "Financial Institutions",
+        "item4": "Brokers",
+        "item5": "Individuals",
+        "item6": "International monetary and financial institutions"
+      },
+      "list5": {
+        "item1": "MORE FAVORABLE PRICE CONDITIONS BY THE EXCHANGE RATE COMPARED TO THE BANKCORPORATION SEGMENT (BANK MARGIN SAVINGS, THE POSSIBILITY OF GETTING ADDITIONAL DOM SPREAD): FOR TOD, TOM, SPOT CONVERSION TRANSACTIONS",
+        "item2": "FOR CURRENCY SWAPS (SWAP DIFFERENCES) TRANSPARENCY AND MARKET PRICING (NO Slippage)",
+        "item3": "REMOVING CREDIT RISKS ON COUNTERPARTS (BANKS AND OTHER CORPORATES) THROUGH SETTLEMENTS THROUGH A CENTRAL COUNTERPARTY (CC)",
+        "item4": "ABILITY TO BARGAIN",
+        "item5": {
+          "title": "MAXIMUM OPERATIONAL EFFICIENCY AND RELIABILITY:",
+          "item1": "Online trading, one-click trade",
+          "item2": "Convenient electronic document management for settlements",
+          "item3": "Standard processed reports",
+          "item4": "Using multi-currency collateral in settlements, single collateral and netting for all FX market instruments"
+        },
+        "item6": "POSSIBILITY FOR CURRENCY CONVERSIONS DURING NON-WORKING DAYS"
+      }
+
+    },
+    "commoditySector": {
+      "title": "COMMODITY SECTOR",
+      "list1": {
+        "itemTitle": "PARTICIPANTS",
+        "item1": "Procurement and tenders (including Government) for blockchain technology",
+        "item2": "Select supplier by rating",
+        "item3": "Transparent auction rules",
+        "item4": "Free Tender Publication",
+        "item5": "Chat between deal participants",
+        "item6": "Ability for everyone to bid",
+        "item7": "Specialized online platform for the purchase of goods",
+        "item8": "All conducted auctions are recorded in the blockchain",
+        "item9": "Unique parameterized product catalog",
+        "item10": "Real Member Ratings and Reviews"
+      },
+      "list2": {
+        "itemTitle": "BENEFITS",
+        "item1": "Cross",
+        "item2": "Security",
+        "item3": "The platform provides access to trusted suppliers for bulk food purchases around the world.",
+        "item4": "After publishing a proposal for the purchase of goods, the supplier will be able to offer his bid and, if he wins, leave feedback on the transaction.",
+        "item5": "Rating",
+        "item6": "Participants of successfully completed transactions are awarded points that increase your ranking in the system."
+      },
+      "list3": {
+        "itemTitle": "BENEFITS FOR STATE",
+        "item1": "Transparency of commercial transactions in tenders and procurement for blockchain technology",
+        "item2": "Expansion of the market for products for farmers and producers",
+        "item3": "Entering international markets",
+        "item4": "Creating a Competitive Environment",
+        "item5": "Real-time price analytics",
+        "item6": "Development of entrepreneurship in the agricultural sector",
+        "item7": "Control of tax revenues to the budget"
+      }
+    },
+    "realEstateMarket": {
+      "title": "REAL ESTATE SECTOR",
+      "preTitle1": "UP AUCTION DOWN AUCTION",
+      "preTitle2": "MORTGAGE SECURITIES LIQUIDITY FOR BANKS ORGANIZED MARKET",
+      "preTitle3": "MORTGAGE SECURITIES",
+      "list1": {
+        "title": "WHAT PROBLEMS IT SOLVES",
+        "item1": "Sales of property at the best price on the desired date",
+        "item2": "Guarantee of performance of obligations by the parties",
+        "item3": "Guarantee of payment of commission to the intermediary",
+        "item4": "Ability to bid from anywhere in the world",
+        "item5": "Unfavorable starting price",
+        "item6": "Decrease in property value as a result of bidding"
+      },
+      "list2": {
+        "title": "PARTICIPANTS:",
+        "item1": "Owners (sellers)",
+        "item2": "Builders",
+        "item3": "Customers",
+        "item4": "Realtors (as intermediaries)",
+        "item5": "GRS",
+        "item6": "Bid Organizer"
+      },
+      "textBlock": {
+        "text1": "The minimum amount of the Guarantee amount is set at 50,000 (fifty thousand) soms. The upper limit for the Guarantee amount is not limited.",
+        "text2": "The auction takes place entirely in electronic form. Participants see the current information on the Auction on the screens of their devices, using the program functionality they are given the opportunity to participate in each step of the Auction. Participants are automatically assigned numbers or they indicate their name on their own.",
+        "text3": "The Auction is considered completed if there is at least one Buyer admitted to the Auction and taking part in it.",
+        "text4": "The Exchange has the right to instruct the Intermediary (Realtor) for a fee to carry out work on the preparation / examination of a package of documents submitted to the Auction by the Organizer with the determination of the result of the work done (examination)."
+      },
+      "text": "― a type of secondary securities that serve as a universal tool for refinancing investments in housing construction, that is, a means for short-term recovery of financial injections into residential properties that are purchased on the market through mortgages. At the same time, securities maintain the stability of refinancing mortgage construction through the fact that the return of funds to the investor is carried out within a period shorter than the maturity of the mortgage loan amount."
+    }
+  }
+}

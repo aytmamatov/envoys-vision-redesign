@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { HeaderBtn, HeaderDDlang, HeaderLangBtn } from '../Header/HeaderSC';
+import {changeLang} from "../../Translater/i18next";
 
 type Props = {
   burgerShow: boolean;
@@ -9,27 +10,35 @@ type Props = {
 
 
 const HeaderLang:React.FC<Props> = (props) => {
-  const [lang, setLang] = useState('Русский')
+  const [activeLang, setActiveLang] = useState('Russian')
+  
   const DD = require('../../Assets/Images/Header/header.svg')['default']
 
-  function changeLang(e:React.MouseEvent<HTMLButtonElement>){
+  function changeLangShow(e:React.MouseEvent<HTMLButtonElement>){
     e.stopPropagation()
     props.burgerSetShow(val => !val)
+  }
+
+  function changeLangHandler(lang: string){
+    setActiveLang(lang)
+    if(lang==='Russia') changeLang('ru')
+    if(lang==='English') changeLang('en')
+    if(lang==='中国人') changeLang('ch')
   }
 
   return (
     <HeaderBtn 
       className={`${props.adaptiveShow?'show':''}`} 
-      onClick={(e) => changeLang(e)}
+      onClick={(e) => changeLangShow(e)}
       >
-        {lang}
+        {activeLang}
         <img src={DD} alt="dd" />
         
 
         <HeaderDDlang show={props.burgerShow}>
-            <HeaderLangBtn onClick={() => setLang('Русский')}>Русский</HeaderLangBtn>
-            <HeaderLangBtn onClick={() => setLang('English')}>English</HeaderLangBtn>
-            <HeaderLangBtn onClick={() => setLang('中国人')}>中国人</HeaderLangBtn>
+            <HeaderLangBtn onClick={() => changeLangHandler('Russia')}>Русский</HeaderLangBtn>
+            <HeaderLangBtn onClick={() => changeLangHandler('English')}>English</HeaderLangBtn>
+            <HeaderLangBtn onClick={() => changeLangHandler('中国人')}>中国人</HeaderLangBtn>
         </HeaderDDlang>
     </HeaderBtn>
   )

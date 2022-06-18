@@ -5,24 +5,28 @@ import ListingContent from '../../Components/ListingComponents/ListingContent/Li
 import ListingSideBar from '../../Components/ListingComponents/ListingSideBar/ListingSideBar'
 import Path from '../../Components/Path/Path'
 import { Container, Flex } from '../../uikit/uikit'
+import {useTranslation} from "react-i18next";
 
 const ListingWrap = styled.div`
     background: #FCFCFC;
 `
 
 const Listing:React.FC = () => {
-    const [activePath, setActivePath] = useState('Список компаний')
+    const {t} = useTranslation()
+
+    const [activePath, setActivePath] = useState(String(t("listing.sideBar.path1")))
 
     const [searchParams] = useSearchParams()
 
     useEffect(() => {
+        setActivePath(t("listing.sideBar.path1"))
         let path = searchParams.get('param')
         if(path){
-            if(path==='CompanyListing') setActivePath('Список компаний')
-            if(path==='Bonds') setActivePath('Облигации')
-            if(path==='CompanyDisclosures') setActivePath('Раскрытия информации компании')
+            if(path === 'CompanyListing') setActivePath(t("listing.sideBar.path1"))
+            if(path === 'Bonds') setActivePath(t("listing.sideBar.path2"))
+            if(path === 'CompanyDisclosures') setActivePath(t("listing.sideBar.path3"))
         }
-    }, [searchParams])
+    }, [searchParams, t])
     
 
     return (

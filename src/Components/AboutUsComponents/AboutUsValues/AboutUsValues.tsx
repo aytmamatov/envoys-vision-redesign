@@ -1,62 +1,65 @@
 import React from 'react'
 import { Container } from '../../../uikit/uikit'
 import { AUVItem, AUVList, AUVSC, AUVTitle } from './AboutUsValuesSC'
+import {useTranslation} from "react-i18next";
 
 const AboutUsValues:React.FC = () => {
+    const {t} = useTranslation()
+
   return (
     <AUVSC>
         <Container>
             <AUVTitle>
-                Наши ценности
+                {t("aboutMe.values.title")}
             </AUVTitle>
 
             <AUVList>
 
                 <AUVItem>
                     <h1 className="title">
-                        ДОБРОСОВЕСТНОЕ ОТНОШЕНИЕ
+                        {t("aboutMe.values.list.item1.title")}
                     </h1>
 
                     <p className="text">
-                        Проявления уважения ко всем
+                        {t("aboutMe.values.list.item1.text1")}
                     </p>
                     <p className="text">
-                        Открытое общение
+                        {t("aboutMe.values.list.item1.text2")}
                     </p>
                     <p className="text mn-none">
-                        Образцовая честность и этика
+                        {t("aboutMe.values.list.item1.text3")}
                     </p>
                 </AUVItem>
 
                 <AUVItem>
                     <h1 className="title">
-                        РАСШИРЕНИЕ ОПЫТА
+                        {t("aboutMe.values.list.item2.title")}
                     </h1>
 
                     <p className="text">
-                        Быть экспертом своего дела
+                        {t("aboutMe.values.list.item2.text1")}
                     </p>
                     <p className="text">
-                        Проявлять любопытство, задавать вопросы и постоянно учиться
+                        {t("aboutMe.values.list.item2.text2")}
                     </p>
                     <p className="text mn-none">
-                        Прикладывать все усилия для того, чтобы преуспеть
+                        {t("aboutMe.values.list.item2.text3")}
                     </p>
                 </AUVItem>
 
                 <AUVItem>
                     <h1 className="title">
-                        БЫТЬ КОМАНДНЫМ ИГРОКОМ
+                        {t("aboutMe.values.list.item3.title")}
                     </h1>
 
                     <p className="text">
-                        Доверять коллегам
+                        {t("aboutMe.values.list.item3.text1")}
                     </p>
                     <p className="text">
-                        Сотрудничество, невзирая на границы
+                        {t("aboutMe.values.list.item3.text2")}
                     </p>
                     <p className="text mn-none">
-                        Поиск разных мыслей и идей
+                        {t("aboutMe.values.list.item3.text3")}
                     </p>
                 </AUVItem>
             </AUVList>
