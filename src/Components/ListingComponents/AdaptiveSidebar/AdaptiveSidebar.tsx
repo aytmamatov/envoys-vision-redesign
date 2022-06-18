@@ -3,9 +3,11 @@ import { Flex } from '../../../uikit/uikit'
 import { HeaderDDAdaptiveLink, HeaderDDAdaptiveLinks } from '../../Header/HeaderSC'
 import { LLBurger } from '../ListingContent/ListingListSC'
 import { ASSC } from './AdaptiveSidebarSC'
+import {useTranslation} from "react-i18next";
 
 const AdaptiveSidebar:React.FC = () => {
     const [show, setShow] = React.useState(false)
+    const {t} = useTranslation()
 
   return (
     <>
@@ -19,17 +21,17 @@ const AdaptiveSidebar:React.FC = () => {
                         <HeaderDDAdaptiveLink
                             to='/listing?param=CompanyListing'
                             onClick={(() => setShow(false))} 
-                        >Список компаний</HeaderDDAdaptiveLink>
+                        >{t("listing.sideBar.path1")}</HeaderDDAdaptiveLink>
                         
                         <HeaderDDAdaptiveLink 
                             to='/listing?param=Bonds'
                             onClick={(() => setShow(false))} 
-                        >Облигации</HeaderDDAdaptiveLink>
+                        >{t("listing.sideBar.path2")}</HeaderDDAdaptiveLink>
 
                         <HeaderDDAdaptiveLink 
                             to='/listing?param=CompanyDisclosures'
                             onClick={(() => setShow(false))} 
-                        >Раскрытия информации компании</HeaderDDAdaptiveLink>
+                        >{t("listing.sideBar.path3")}</HeaderDDAdaptiveLink>
                     </HeaderDDAdaptiveLinks>
                     
                     <LLBurger

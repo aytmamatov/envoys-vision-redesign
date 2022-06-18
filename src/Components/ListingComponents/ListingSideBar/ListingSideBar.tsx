@@ -1,37 +1,39 @@
 import React from 'react'
 import { Flex } from '../../../uikit/uikit';
 import { SidebarLink, SidebarSC, SidebarTitle } from './ListingSideBarSC';
+import {useTranslation} from "react-i18next";
 
 interface SidebarProps{
   active: string;
 }
 
 const ListingSideBar:React.FC<SidebarProps> = (props) => {
+  const {t} = useTranslation()
   
   return (
     <SidebarSC>
       <Flex width='100%' direction='column' align='flex-start'>
         <SidebarTitle>
-          листинг
+          {t("listing.sideBar.title")}
         </SidebarTitle>
   
         <SidebarLink 
           to='/listing?param=CompanyListing' 
-          className={props.active==='Список компаний'?'active':''}
+          className={props.active===t("listing.sideBar.path1")?'active':''}
           >
-          Список компаний
+          {t("listing.sideBar.path1")}
         </SidebarLink>
         <SidebarLink 
           to='/listing?param=Bonds'
-          className={props.active==='Облигации'?'active':''}
+          className={props.active===t("listing.sideBar.path2")?'active':''}
           >
-          Облигации
+          {t("listing.sideBar.path2")}
         </SidebarLink>
         <SidebarLink 
           to='/listing?param=CompanyDisclosures'
-          className={props.active==='Раскрытия информации компании'?'active':''}
+          className={props.active===t("listing.sideBar.path3")?'active':''}
         >
-          Раскрытия информации компании 
+          {t("listing.sideBar.path3")} 
         </SidebarLink>
       </Flex>
 

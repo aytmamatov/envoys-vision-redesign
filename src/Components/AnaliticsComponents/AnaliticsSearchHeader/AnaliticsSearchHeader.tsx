@@ -9,11 +9,13 @@ import 'swiper/css/navigation';
 import 'swiper/css';
 import AnaliticsAdaptiveSidebar from '../AnaliticsAdaptiveSidebar/AnaliticsAdaptiveSidebar';
 import { Flex } from '../../../uikit/uikit';
+import {useTranslation} from "react-i18next";
 
 const AnaliticsSearchHeader:React.FC = () => {
 
     const [dates, setDates] = React.useState(['Пн, 1 май', 'Вт, 2 май', 'Ср, 3 май', 'Чт, 4 май', 'Пт, 5 май', 'Сб, 6 май', 'Сб, 6 май'])
     const [date, setDate] = React.useState('')
+    const {t} = useTranslation()
 
     // React.useEffect(() => {
     //     let getDateNow = new Date()
@@ -38,7 +40,7 @@ const AnaliticsSearchHeader:React.FC = () => {
     
   return (
     <ASHWrap>
-        <Flex width='100%'>
+        <Flex>
             <ASHSwiper>
                 <Swiper
                     spaceBetween={0}
@@ -87,7 +89,7 @@ const AnaliticsSearchHeader:React.FC = () => {
             <SearchComponent 
                 className='calendar' 
                 width='460px' 
-                placeholder='Поиск (По коду или названию компании)'/>
+                placeholder={t("analitics.placeholder")}/>
 
             <AnaliticsAdaptiveSidebar/>
         </ASHSearcAndSidebar>

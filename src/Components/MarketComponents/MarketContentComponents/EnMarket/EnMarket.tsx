@@ -3,128 +3,123 @@ import { Flex } from '../../../../uikit/uikit'
 import AdaptiveSidebar from '../../MarketAdaptiveSideBar/MarketAdaptiveSideBar'
 import { MarketWrap } from '../../MarketContent/MarketContentSC'
 import { MarketCard, MarketCards, MarketImages, MarketItem, MarketItem2, MarketItemTitle, MarketItemTitle2, MarketList, MarketPreTitle, MarketText, MarketTitle } from '../KgMarket/KgMarketSC'
+import {useTranslation} from "react-i18next";
 
 const EnMarket:React.FC = () => {
+  const {t} = useTranslation()
   return (
     <MarketWrap>
       <Flex>
         <AdaptiveSidebar/>
       </Flex>
-      <MarketTitle margin='0 0 30px' width='700px'>
-        ТОКЕНИЗИРОВАННЫЕ АКТИВЫ
-      </MarketTitle>
+    <MarketTitle margin='0 0 30px' width='700px'>
+      {t("markets.stocksM.title1")}
+    </MarketTitle>
       <MarketText margin='0 0 50px' width='580px'>
-        STO — это более быстрый и дешевый аналог IPO. Расходы 
-        на листинг уменьшаются за счет отсутствия необходимости вовлекать посредников наподобие инвестиционных банков. Процедуры аудита и андеррайтинга для блокчейн-проектов также проще. А участвовать в STO может практически любой частный инвестор
+        {t("markets.stocksM.text1")}
       </MarketText>
       <MarketImages src={require('../../../../Assets/Images/Market/market1.jpg')}/>
       <MarketPreTitle margin='50px 0 0' width='895px'>
-        ТОКЕНИЗАЦИЯ — СОЗДАНИЕ ЗАПИСИ, УДОСТОВЕРЯЮЩЕЙ ОБЪЕМ ПРАВ 
-        НА ОБЪЕКТ МАТЕРИАЛЬНОГО МИРА 
-        (В ПРОЦЕССЕ КОТОРОГО ВЫПУСКАЮТ ТОКЕН) 
-        ТОКЕН РЕГИСТРИРУЮТ 
-        С ПОМОЩЬЮ ТЕХНОЛОГИИ 
-        РАСПРЕДЕЛЕННОГО РЕЕСТРА
+        {t("markets.stocksM.preTitle1")}
       </MarketPreTitle>
 
 
     <MarketTitle margin='100px 0 30px' width='770px'>
-      МЕСТНЫЕ И ИНОСТРАННЫЕ ЦБ
+      {t("markets.stocksM.title2")}
     </MarketTitle>
 
     <MarketList>
       <MarketItemTitle>
-        СЕКТОРЫ НА ЦБ:
+        {t("markets.stocksM.list1.listTite")}
       </MarketItemTitle>
 
       <MarketItem>
-        Акции
+        {t("markets.stocksM.list1.item1")}
       </MarketItem>
       <MarketItem>
-        Блю чипс действующих компаний
+        {t("markets.stocksM.list1.item2")}
       </MarketItem>
       <MarketItem>
-        Горный сектор
+        {t("markets.stocksM.list1.item3")}
       </MarketItem>
     </MarketList>
 
     <MarketImages src={require('../../../../Assets/Images/Market/market2.jpg')}/>
 
     <MarketTitle margin='100px 0 30px' width='770px'>
-      ТОКЕНИЗИРОВАНИЕ ИНОСТРАННЫХ АКЦИЙ
+      {t("markets.stocksM.title3")}
     </MarketTitle>
 
     <MarketText margin='0 0 20px' width='580px'>
-      Токенизированные акции — это цифровые токены акций, которые торгуются на традиционных фондовых биржах. Стоимость токенизированных акций привязана к стоимости соответствующих базовых акций. Возьмем для примера акции Apple inc.
+      {t("markets.stocksM.blockText1.text2")}
     </MarketText>
     <MarketText margin='0 0 20px' width='580px'>
-      Если стоимость акции Apple вырастит, то соответствующим образом вырастет и стоимость токенизированных акций. При падении стоимости акций Apple, стоимость токенизированных акций также будет снижаться.
+      {t("markets.stocksM.blockText1.text2")}
     </MarketText>
     <MarketText margin='0 0 20px' width='580px'>
-      Токены созданны на базе залога акций, хранящегося в Депозитарии. Следовательно, каждая токенизированная акция представляет собой долю в соответствующей компании, прошедшей листинг.
+      {t("markets.stocksM.blockText1.text3")}
     </MarketText>
     <MarketText margin='0 0 100px' width='580px'>
-      Владение токенизированными акциями не передает вам никаких прав акционеров. Вы лишь участвуете в экономическом развитии базового актива, включая выплату дивидендов (если она предусмотрена).
+      {t("markets.stocksM.blockText1.text4")}
     </MarketText>
 
     <MarketCards>
       <MarketCard>
         <h1>
-          Эмитент
+          {t("markets.stocksM.list2.item1.title")}
         </h1>
         <p>
-          Блокчейн выступает в роли регистратора
+          {t("markets.stocksM.list2.item1.text1")}
         </p>
         <p>
-          Юридическое и бенефициарное право собственности переносится в блокчейн
+          {t("markets.stocksM.list2.item1.text2")}
         </p>
       </MarketCard>
 
       <MarketCard>
         <h1>
-          Кастодиан
+          {t("markets.stocksM.list2.item2.title")}
         </h1>
         <p>
-          Смарт контракты заменяют платежных агентов
-          и реальным миром
+          {t("markets.stocksM.list2.item2.text1")}
         </p>
         <p>
-          Кастодиан поддерживает связь между блокчейн 
+          {t("markets.stocksM.list2.item2.text2")}
         </p>
       </MarketCard>
 
       <MarketCard>
         <h1>
-          инвесторы
+          {t("markets.stocksM.list2.item3.title")}
         </h1>
         <p>
-          Запись операций в распределенном реестре
+          {t("markets.stocksM.list2.item3.text1")}
         </p>
         <p>
-          Рассчеты и клиринг в сети блокчейн
+          {t("markets.stocksM.list2.item3.text2")}
         </p>
       </MarketCard>
     </MarketCards>
 
     <MarketTitle margin='100px 0 30px' width='932px'>
-      ВОЗЬМЕМ ДЛЯ ПРИМЕРА ЗОЛОТОДОБЫВАЮЩУЮ КОМПАНИЮ ОАО “МАЙНИНГ”
+      {t("markets.stocksM.title4")}
     </MarketTitle>
 
     <MarketList>
       <MarketItemTitle2>
-        ДЛЯ ВЫПУСКА ТОКЕНИЗИРОВАННЫХ АКЦИЙ, И ПОСЛЕДУЮЩЕГО ПРИВЛЕЧЕНИЯ ИНВЕСТОРОВ ПУТЕМ STO:
+        {t("markets.stocksM.list3.listTitle")}
       </MarketItemTitle2>
       <MarketItem2>
-        Акционеры ОАО принимают соответствующее решение на ГОСА;
+        {t("markets.stocksM.list3.item1")}
       </MarketItem2>
       <MarketItem2>
-        Передают в Депозитарий какую-то часть акций ОАО по договору о залоге для последующей их оцифровки (могут быть переданы акции дополнительной эмиссии, либо часть акций уже принадлежащих акционерам).
+        {t("markets.stocksM.list3.item2")}
       </MarketItem2>
       <MarketItem2>
-        Вместо замороженных акций, в оборот выпускаются цифровые токены, которые будут подтверждать ее держателю те же права, что и акция.
+        {t("markets.stocksM.list3.item3")}
       </MarketItem2> 
       <MarketItem2>
-        Выпущенные токены размещаются среди инвесторов в торговую системе цифровой биржи.
+        {t("markets.stocksM.list3.item4")}
       </MarketItem2> 
     </MarketList>
   </MarketWrap>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { LHLink, LHNav, LHSC, LHTotal } from './ListingHeaderSC'
+import {useTranslation} from "react-i18next";
 
 interface Props{
   total: number;
@@ -7,7 +8,13 @@ interface Props{
 }
 
 const ListingHeader:React.FC<Props> = ({total, active}) => {
+  const {t} = useTranslation()
 
+  React.useEffect(() => {
+    console.log(active);
+    
+  }, [])
+  
 
   return (
     <LHSC>
@@ -16,34 +23,34 @@ const ListingHeader:React.FC<Props> = ({total, active}) => {
           to='/listing?param=CompanyListing&header=all' 
           className={active==='all'?'active':''}
         >
-          Все
+          {t("listing.headerLink.link1")}
         </LHLink>
 
         <LHLink 
           to='/listing?param=CompanyListing&header=listing'
           className={active==='listing'?'active':''}
         >
-          Листиговые
+          {t("listing.headerLink.link2")}
         </LHLink>
         
         <LHLink 
           to='/listing?param=CompanyListing&header=unlisted'
           className={active==='unlisted'?'active':''}
         >
-          Нелиситинговые
+          {t("listing.headerLink.link3")}
         </LHLink>
         
         <LHLink 
           to='/listing?param=CompanyListing&header=default'
           className={active==='default'?'active':''}
         >
-          Допустившие Дефолт
+          {t("listing.headerLink.link4")}
         </LHLink>
       
       </LHNav>
 
       <LHTotal>
-        Всего эмитентов - {total}
+        {t("listing.headerLink.elements")} - {total}
       </LHTotal>
     </LHSC>
   )

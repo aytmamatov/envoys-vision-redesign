@@ -13,6 +13,7 @@ export const AUSTitle = styled.h2`
     text-transform: uppercase;
     color: #2C2C2C;
     margin: 0 0 160px;
+    max-width: 920px;
     span{
         font-family: 'Exo 2';
         font-style: normal;

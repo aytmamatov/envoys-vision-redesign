@@ -1,18 +1,20 @@
 import React from 'react'
 import { CLItem, CLItemName, CLItemNameC, CLItemTitle, CLWrap } from './CompaniesListSC'
+import {useTranslation} from "react-i18next";
 
 interface Props {
     companies: {}[]
 }
 
 const CompaniesList:React.FC<Props> = ({companies}) => {
+  const {t} = useTranslation()
 
   return (
     <CLWrap>
         <CLItem>
-            <CLItemTitle>Код</CLItemTitle>
-            <CLItemTitle>Компания</CLItemTitle>
-            <CLItemTitle>Капитализация, млрд сом</CLItemTitle>
+            <CLItemTitle>{t("listing.table.header1")}</CLItemTitle>
+            <CLItemTitle>{t("listing.table.header2")}</CLItemTitle>
+            <CLItemTitle>{t("listing.table.header3")}</CLItemTitle>
         </CLItem>
 
         {companies.map((el, index) => {

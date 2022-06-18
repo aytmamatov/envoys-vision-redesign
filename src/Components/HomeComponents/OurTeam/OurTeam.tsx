@@ -1,13 +1,16 @@
 import React from 'react'
 import { Container, Flex } from '../../../uikit/uikit'
 import { OurTeamItem, OurTeamItemImage, OurTeamList, OurTeamSC, OurTeamTitle, OutTeamItemLink, OutTeamItemLinkImag, OutTeamItemText, OutTeamItemTitle } from './OurTeamSC'
+import {useTranslation} from "react-i18next";
 
 const OurTeam:React.FC = () => {
+    const {t} = useTranslation()
+
   return (
     <OurTeamSC>
         <Container>
             <OurTeamTitle>
-                Наша команда
+                {t("home.OurTeam.title")}
             </OurTeamTitle>
 
             <OurTeamList>

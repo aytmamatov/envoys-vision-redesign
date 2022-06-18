@@ -3,105 +3,107 @@ import { Flex } from '../../../../uikit/uikit'
 import AdaptiveSidebar from '../../MarketAdaptiveSideBar/MarketAdaptiveSideBar'
 import { MarketWrap } from '../../MarketContent/MarketContentSC'
 import { MarketItem, MarketItemTitle, MarketList, MarketTitle, MICImageItem, MICImageItemTitle, MICImageList, MICL } from '../KgMarket/KgMarketSC'
+import {useTranslation} from "react-i18next";
 
 const CommoditySector:React.FC = () => {
-  return (
+    const {t} = useTranslation()
+    return (
     <MarketWrap>
       <Flex>
         <AdaptiveSidebar/>
       </Flex>
       <MarketTitle margin='0 0 30px' width=''>
-        ТОВАРНЫЙ СЕКТОР
+        {t("markets.commoditySector.title")}
       </MarketTitle>
 
       <MarketList>
         <MarketItemTitle>
-          УЧАСТНИКИ
+          {t("markets.commoditySector.list1.itemTitle")}
         </MarketItemTitle>
 
         <MarketItem>
-          Закупки и тендеры (в том числе Государственные) на блокчейн технологии
+          {t("markets.commoditySector.list1.item1")}
         </MarketItem>
         <MarketItem>
-          Выбор поставщика по рейтингу
+          {t("markets.commoditySector.list1.item2")}
         </MarketItem>
         <MarketItem>
-          Прозрачные правила аукциона
+          {t("markets.commoditySector.list1.item3")}
         </MarketItem>
         <MarketItem>
-          Бесплатная публикация тендера
+          {t("markets.commoditySector.list1.item4")}
         </MarketItem>
         <MarketItem>
-          Чат между участниками сделки
+          {t("markets.commoditySector.list1.item5")}
         </MarketItem>
         <MarketItem>
-          Возможность для всех участвовать в торгах
+          {t("markets.commoditySector.list1.item6")}
         </MarketItem>
         <MarketItem>
-          Специализированная онлайн - площадка для закупок товаров
+          {t("markets.commoditySector.list1.item7")}
         </MarketItem>
         <MarketItem>
-          Все проведенные аукционы записываются в блокчейн
+          {t("markets.commoditySector.list1.item8")}
         </MarketItem>
         <MarketItem>
-          Уникальный параметризированный каталог товаров
+          {t("markets.commoditySector.list1.item9")}
         </MarketItem>
         <MarketItem>
-          Реальные рейтинги и отзывы участников
+          {t("markets.commoditySector.list1.item10")}
         </MarketItem>
       </MarketList>
 
       <MICL>
         <MarketItemTitle>
-          ПРЕИМУЩЕСТВА
+          {t("markets.commoditySector.list2.itemTitle")}
         </MarketItemTitle>
 
         <MarketItem>
-          Кросс
+          {t("markets.commoditySector.list2.item1")}
         </MarketItem>
         <MarketItem>
-          Безопасность
+          {t("markets.commoditySector.list2.item2")}
         </MarketItem>
         <MarketItem>
-          Площадка открывает доступ к проверенным поставщикам для проведения оптовых закупок продуктов питания по всему миру.
+          {t("markets.commoditySector.list2.item3")}
         </MarketItem>
         <MarketItem>
-          После публикации предложения на закупку товара, поставщик сможет предложить свою ставку и в случае победы, оставить отзыв о проведенной сделке.
+          {t("markets.commoditySector.list2.item4")}
         </MarketItem>
         <MarketItem>
-          Рейтинг
+          {t("markets.commoditySector.list2.item5")}
         </MarketItem>
         <MarketItem>
-          Участникам успешно завершенных сделок начисляются баллы, которые повышают ваш рейтинг в системе.
+          {t("markets.commoditySector.list2.item6")}
         </MarketItem>
       </MICL>
 
 
       <MICImageList image={require('../../../../Assets/Images/Market/marketBgС2.jpg')}>
           <MICImageItemTitle>
-            ПРЕИМУЩЕСТВА ДЛЯ ГОСУДАРСВА
+            {t("markets.commoditySector.list3.itemTitle")}
           </MICImageItemTitle>
 
           <MICImageItem>
-            Прозрачность коммерческих операций в тендерах и закупках на блокчейн технологии
+            {t("markets.commoditySector.list3.item1")}
           </MICImageItem>
           <MICImageItem>
-            Расширение рынка сбыта продукции для фермеров и производителе
+            {t("markets.commoditySector.list3.item2")}
           </MICImageItem>
           <MICImageItem>
-            Выход на международные рынки
+            {t("markets.commoditySector.list3.item3")}
           </MICImageItem>
           <MICImageItem>
-            Создание конкурентной среды
+            {t("markets.commoditySector.list3.item4")}
           </MICImageItem>
           <MICImageItem>
-            Аналитика цен в режиме реального времени
+            {t("markets.commoditySector.list3.item5")}
           </MICImageItem>
           <MICImageItem>
-            Развитие предпринимательства в аграрном секторе
+            {t("markets.commoditySector.list3.item6")}
           </MICImageItem>
           <MICImageItem>
-            Контроль налоговых поступлений в бюджет
+            {t("markets.commoditySector.list3.item7")}
           </MICImageItem>
         </MICImageList>
     </MarketWrap>

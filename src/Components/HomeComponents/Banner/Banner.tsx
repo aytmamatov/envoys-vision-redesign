@@ -2,22 +2,25 @@ import axios from 'axios'
 import React from 'react'
 import { Button, Container } from '../../../uikit/uikit'
 import { BannerImage, BannerInfo, BannerSC, BannerText, BannerTitle, BannerWrap } from './BannerSC'
+import {useTranslation} from "react-i18next";
 
 const Banner:React.FC = () => {
+    const {t} = useTranslation()
+
   return (
     <BannerSC>
         <Container>
             <BannerWrap>
                 <BannerInfo>
                     <BannerTitle>
-                        Инвестиции в рынок <br />
-                        <span>ценных бумаг</span>
+                    {t("home.Banner.titles.title")} <br />
+                        <span>{t("home.Banner.titles.title2")}</span>
                     </BannerTitle>
                     <BannerText>
-                        Envoys Vision - это доступность к финансовым рынкам, безопасность инвестирования в стартапы, высокая доходность для поставщиков ликвидности
+                        {t("home.Banner.text")}
                     </BannerText>
                     <Button>
-                        Подробнее
+                        {t("home.Banner.btn")}
                     </Button>
                 </BannerInfo>
 

@@ -1,22 +1,24 @@
 import React from 'react'
 import { Container, Flex } from '../../../uikit/uikit'
 import { AUD, AUDDirectiorTitle, AUDDirector, AUDDirectorIconWrap, AUDDirectorImage, AUDDirectorInfo, AUDDirectorText, AUDInfo, AUDInfoText, AUDInfoTitle, AUDWrap } from './AboutUsDirectiorSC'
+import {useTranslation} from "react-i18next";
 
 const AboutUsDirectior:React.FC = () => {
+    const {t} = useTranslation()
   return (
     <AUD>
         <Container>
             <AUDWrap>
                 <AUDInfo>
                     <AUDInfoTitle>
-                        КОМПАНИЯ ОАО <br />
+                        {t("aboutMe.admin.title")} <br />
                         <span>
-                            Envoys vision digital exchange
+                            {t("aboutMe.admin.title2")}
                         </span>
                     </AUDInfoTitle>
 
                     <AUDInfoText>
-                        Универсальная фондовая биржа ЕВДЭ - это команда специалистов с более чем восьмилетним опытом работы в сфере рынка ценных бумаг. 
+                        {t("aboutMe.admin.text")}
                     </AUDInfoText>
                 </AUDInfo>
 
@@ -24,10 +26,10 @@ const AboutUsDirectior:React.FC = () => {
                     <AUDDirectorInfo>
                         <AUDDirectorImage src={require('../../../Assets/Images/aboutUs/Director.jpg')}/>
                         <AUDDirectiorTitle>
-                            Алмазбек Шабданов
+                            {t("aboutMe.admin.imageTitle")}
                         </AUDDirectiorTitle>
                         <AUDDirectorText>
-                            Председатель правления универсальной цифровой биржи
+                            {t("aboutMe.admin.imageText")}
                         </AUDDirectorText>
                         <Flex>
                             <AUDDirectorIconWrap href='#'>
