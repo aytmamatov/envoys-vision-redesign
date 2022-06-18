@@ -399,5 +399,14 @@
         "link12": "Real Estate Market"
       }
     }
+  },
+  "disclosure": {
+    "sidebar": {
+      "title": "DISCLOSURES",
+      "link1": "Members",
+      "link2": "Rules",
+      "link3": "KR Legislation",
+      "link4": "Disclosures"
+    }
   }
 }

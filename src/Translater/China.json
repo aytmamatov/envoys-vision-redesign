@@ -399,5 +399,14 @@
           "link12": "房地产市场"
         }
       }
-    }    
+    },
+    "disclosure": {
+      "sidebar": {
+        "title": "披露",
+        "link1": "成员",
+        "link2": "规则",
+        "link3": "KR 立法",
+        "link4": "披露"
+      }
+    }  
   }

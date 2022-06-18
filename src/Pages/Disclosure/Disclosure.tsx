@@ -5,6 +5,7 @@ import DisclosureSideBar from '../../Components/DisclosureComponents/DisclosureS
 import DisclosureContentSide from '../../Components/DisclosureComponents/DisclosureContentSide/DisclosureContentSide'
 import Path from '../../Components/Path/Path'
 import { Container, Flex } from '../../uikit/uikit'
+import {useTranslation} from "react-i18next";
 
 const DisclosureWrap = styled.div`
     background: #FCFCFC;
@@ -12,17 +13,19 @@ const DisclosureWrap = styled.div`
 
 
 const Disclosure:React.FC = () => {
-    const [activePath, setActivePath] = useState('Участники')
+    const {t} = useTranslation()
+
+    const [activePath, setActivePath] = useState(String(t("disclosure.sidebar.link1")))
 
     const [searchParams] = useSearchParams()
 
     useEffect(() => {
         let path = searchParams.get('param')
         if(path){
-            if(path==='members') setActivePath('Участники')
-            if(path==='rules') setActivePath('Правила')
-            if(path==='legislationKR') setActivePath('Законодательство КР')
-            if(path==='disclosure') setActivePath('Раскрытия информации')
+            if(path==='members') setActivePath(t("disclosure.sidebar.link1"))
+            if(path==='rules') setActivePath(t("disclosure.sidebar.link2"))
+            if(path==='legislationKR') setActivePath(t("disclosure.sidebar.link3"))
+            if(path==='disclosure') setActivePath(t("disclosure.sidebar.link4"))
         }
     }, [searchParams])
 
