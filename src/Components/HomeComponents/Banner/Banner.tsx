@@ -1,34 +1,37 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button, Container } from '../../../uikit/uikit';
 import {
   BannerImage, BannerInfo, BannerSC, BannerText, BannerTitle, BannerWrap,
 } from './BannerSC';
 
-const Banner:React.FC = () => (
-  <BannerSC>
-    <Container>
-      <BannerWrap>
-        <BannerInfo>
-          <BannerTitle>
-            Инвестиции в рынок
-            {' '}
-            <br />
-            <span>ценных бумаг</span>
-          </BannerTitle>
-          <BannerText>
-            Envoys Vision - это доступность к финансовым рынкам,
-            безопасность инвестирования в стартапы,
-            высокая доходность для поставщиков ликвидности
-          </BannerText>
-          <Button>
-            Подробнее
-          </Button>
-        </BannerInfo>
+const Banner:React.FC = () => {
+  const { t } = useTranslation();
 
-        <BannerImage src={require('../../../assets/Images/home/banner.png').default} />
-      </BannerWrap>
-    </Container>
-  </BannerSC>
-);
+  return (
+    <BannerSC>
+      <Container>
+        <BannerWrap>
+          <BannerInfo>
+            <BannerTitle>
+              {t('home.Banner.titles.title')}
+              {' '}
+              <br />
+              <span>{t('home.Banner.titles.title2')}</span>
+            </BannerTitle>
+            <BannerText>
+              {t('home.Banner.text')}
+            </BannerText>
+            <Button>
+              {t('home.Banner.btn')}
+            </Button>
+          </BannerInfo>
+
+          <BannerImage src={require('../../../assets/Images/home/banner.png').default} />
+        </BannerWrap>
+      </Container>
+    </BannerSC>
+  );
+};
 
 export default Banner;

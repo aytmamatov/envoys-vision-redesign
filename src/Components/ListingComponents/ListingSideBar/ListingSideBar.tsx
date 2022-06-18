@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Flex } from '../../../uikit/uikit';
 import { SidebarLink, SidebarSC, SidebarTitle } from './ListingSideBarSC';
 
@@ -6,34 +7,38 @@ interface SidebarProps{
   active: string;
 }
 
-const ListingSideBar:React.FC<SidebarProps> = ({ active }) => (
-  <SidebarSC>
-    <Flex width="100%" direction="column" align="flex-start">
-      <SidebarTitle>
-        листинг
-      </SidebarTitle>
+const ListingSideBar:React.FC<SidebarProps> = ({ active }) => {
+  const { t } = useTranslation();
 
-      <SidebarLink
-        to="/listing?param=CompanyListing"
-        className={active === 'Список компаний' ? 'active' : ''}
-      >
-        Список компаний
-      </SidebarLink>
-      <SidebarLink
-        to="/listing?param=Bonds"
-        className={active === 'Облигации' ? 'active' : ''}
-      >
-        Облигации
-      </SidebarLink>
-      <SidebarLink
-        to="/listing?param=CompanyDisclosures"
-        className={active === 'Раскрытия информации компании' ? 'active' : ''}
-      >
-        Раскрытия информации компании
-      </SidebarLink>
-    </Flex>
+  return (
+    <SidebarSC>
+      <Flex width="100%" direction="column" align="flex-start">
+        <SidebarTitle>
+          {t('listing.sideBar.title')}
+        </SidebarTitle>
 
-  </SidebarSC>
-);
+        <SidebarLink
+          to="/listing?param=CompanyListing"
+          className={active === t('listing.sideBar.path1') ? 'active' : ''}
+        >
+          {t('listing.sideBar.path1')}
+        </SidebarLink>
+        <SidebarLink
+          to="/listing?param=Bonds"
+          className={active === t('listing.sideBar.path2') ? 'active' : ''}
+        >
+          {t('listing.sideBar.path2')}
+        </SidebarLink>
+        <SidebarLink
+          to="/listing?param=CompanyDisclosures"
+          className={active === t('listing.sideBar.path3') ? 'active' : ''}
+        >
+          {t('listing.sideBar.path3')}
+        </SidebarLink>
+      </Flex>
+
+    </SidebarSC>
+  );
+};
 
 export default ListingSideBar;

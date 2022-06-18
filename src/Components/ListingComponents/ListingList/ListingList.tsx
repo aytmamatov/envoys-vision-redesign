@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import SearchComponent from '../../SearchComponent/SearchComponent';
 import AdaptiveSidebar from '../AdaptiveSidebar/AdaptiveSidebar';
 import CompaniesList from '../CompaniesList/CompaniesList';
@@ -8,8 +9,10 @@ import {
 } from '../ListingContent/ListingListSC';
 import ListingHeader from '../ListingHeader/ListingHeader';
 
-function ListingList() {
-  const [activeHeader, setActiveHeader] = React.useState('all');
+const ListingList:React.FC = () => {
+  const { t } = useTranslation();
+
+  const [activeHeader, setActiveHeader] = React.useState(String(t('listing.headerLink.link1')));
 
   const [searchParams] = useSearchParams();
 
@@ -37,15 +40,16 @@ function ListingList() {
   ]);
 
   React.useEffect(() => {
+    setActiveHeader(t('listing.headerLink.link1'));
     const path = searchParams.get('header');
     if (path) setActiveHeader(path);
-  }, [searchParams]);
+  }, [searchParams, t]);
 
   return (
     <LLSC>
       <LLHeaderWrap>
         <LLInputWrap>
-          <SearchComponent width="460px" placeholder="Поиск (По коду или названию компании)" />
+          <SearchComponent width="460px" placeholder={t('listing.placeholder')} />
         </LLInputWrap>
 
         <AdaptiveSidebar />
@@ -57,6 +61,6 @@ function ListingList() {
       <CompaniesList companies={companiesList1} />
     </LLSC>
   );
-}
+};
 
 export default ListingList;

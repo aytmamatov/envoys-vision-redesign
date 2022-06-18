@@ -1,137 +1,143 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Flex } from '../../../../uikit/uikit';
 import AdaptiveSidebar from '../../MarketAdaptiveSideBar/MarketAdaptiveSideBar';
 import MarketWrap from '../../MarketContent/MarketContentSC';
 import {
-  MarketItem, MarketItemTitle, MarketList, MarketTitle, MICImageItem, MICImageItemTitle, MICImageList, MICItem, MICL, MICList,
+  MarketItem, MarketItemTitle, MarketList, MarketTitle,
+  MICImageItem, MICImageItemTitle, MICImageList,
+  MICItem, MICL, MICList,
 } from '../KgMarket/KgMarketSC';
 
-const CurrencyMarket:React.FC = () => (
-  <MarketWrap>
-    <Flex>
-      <AdaptiveSidebar />
-    </Flex>
-    <MarketTitle margin="0 0 30px" width="">
-      ВАЛЮТНЫЕ СДЕЛКИ
-    </MarketTitle>
+const CurrencyMarket:React.FC = () => {
+  const { t } = useTranslation();
+  return (
+    <MarketWrap>
+      <Flex>
+        <AdaptiveSidebar />
+      </Flex>
+      <MarketTitle margin="0 0 30px" width="">
+        {t('markets.currencyMarket.title1')}
+      </MarketTitle>
 
-    <MarketList>
-      <MarketItemTitle>
-        СДЕЛКИ «СПОТ»
-      </MarketItemTitle>
+      <MarketList>
+        <MarketItemTitle>
+          {t('markets.currencyMarket.list1.title')}
+        </MarketItemTitle>
 
-      <MarketItem>
-        Валюта – Американские доллары
-      </MarketItem>
-      <MarketItem>
-        Кросс-курсы
-      </MarketItem>
-    </MarketList>
+        <MarketItem>
+          {t('markets.currencyMarket.list1.item1')}
+        </MarketItem>
+        <MarketItem>
+          {t('markets.currencyMarket.list1.item2')}
+        </MarketItem>
+      </MarketList>
 
-    <MarketTitle margin="100px 0 30px" width="">
-      ДЕРИВАТИВЫ
-    </MarketTitle>
+      <MarketTitle margin="100px 0 30px" width="">
+        {t('markets.currencyMarket.title2')}
+      </MarketTitle>
 
-    <MarketList>
-      <MarketItemTitle>
-        СИНТЕТИЧЕСКИЕ СОГЛАШЕНИЯ ПО ВАЛЮТНОМУ ОБМЕНУ (SAFE8)
-      </MarketItemTitle>
+      <MarketList>
+        <MarketItemTitle>
+          {t('markets.currencyMarket.list2.title')}
+        </MarketItemTitle>
 
-      <MarketItem>
-        Валютные фьючерс 5
-      </MarketItem>
-      <MarketItem>
-        Валютно-процентные своп 5
-      </MarketItem>
-      <MarketItem>
-        Валютные опционы
-      </MarketItem>
-    </MarketList>
+        <MarketItem>
+          {t('markets.currencyMarket.list2.item1')}
+        </MarketItem>
+        <MarketItem>
+          {t('markets.currencyMarket.list2.item2')}
+        </MarketItem>
+        <MarketItem>
+          {t('markets.currencyMarket.list2.item3')}
+        </MarketItem>
+      </MarketList>
 
-    <MarketList>
-      <MarketItemTitle>
-        УЧАСТНИКИ
-      </MarketItemTitle>
+      <MarketList>
+        <MarketItemTitle>
+          {t('markets.currencyMarket.list3.title')}
+        </MarketItemTitle>
 
-      <MarketItem>
-        ОБМЕНКИ-ПРОЗРАЧНОСТЬ И РЕАЛЬНЫЕ ОБЪЕМ
-      </MarketItem>
-      <MarketItem>
-        ЮРИДИЧЕСКИЕ ЛИЦА - ВЫГОДА И ХЕДЖИРОВАНИЕ
-      </MarketItem>
-      <MarketItem>
-        БАНКИ
-      </MarketItem>
-      <MarketItem>
-        МЕЖДУНАРОДНЫЕ ЕДИНЫЕ СТАКАНЫ
-      </MarketItem>
-    </MarketList>
+        <MarketItem>
+          {t('markets.currencyMarket.list3.item1')}
+        </MarketItem>
+        <MarketItem>
+          {t('markets.currencyMarket.list3.item2')}
+        </MarketItem>
+        <MarketItem>
+          {t('markets.currencyMarket.list3.item3')}
+        </MarketItem>
+        <MarketItem>
+          {t('markets.currencyMarket.list3.item4')}
+        </MarketItem>
+      </MarketList>
 
-    <MICImageList image={require('../../../../assets/Images/Market/marketBgС1.jpg').default}>
-      <MICImageItemTitle>
-        УЧАСТНИКИ ВАЛЮТНОГО РЫНКА
-      </MICImageItemTitle>
+      <MICImageList image={require('../../../../assets/Images/Market/marketBgС1.jpg')}>
+        <MICImageItemTitle>
+          {t('markets.currencyMarket.list4.title')}
+        </MICImageItemTitle>
 
-      <MICImageItem>
-        Валютные биржи
-      </MICImageItem>
-      <MICImageItem>
-        Центральные банки
-      </MICImageItem>
-      <MICImageItem>
-        Финансовые организации
-      </MICImageItem>
-      <MICImageItem>
-        Брокеры
-      </MICImageItem>
-      <MICImageItem>
-        Физические лица
-      </MICImageItem>
-      <MICImageItem>
-        Международные валютно-кредитные и финансовые организации
-      </MICImageItem>
-    </MICImageList>
+        <MICImageItem>
+          {t('markets.currencyMarket.list4.item1')}
+        </MICImageItem>
+        <MICImageItem>
+          {t('markets.currencyMarket.list4.item2')}
+        </MICImageItem>
+        <MICImageItem>
+          {t('markets.currencyMarket.list4.item3')}
+        </MICImageItem>
+        <MICImageItem>
+          {t('markets.currencyMarket.list4.item4')}
+        </MICImageItem>
+        <MICImageItem>
+          {t('markets.currencyMarket.list4.item5')}
+        </MICImageItem>
+        <MICImageItem>
+          {t('markets.currencyMarket.list4.item6')}
+        </MICImageItem>
+      </MICImageList>
 
-    <MarketTitle width="600px" margin="100px 0 30px">
-      УЧАСВЫГОДЫ ДЛЯ КОРПОРАЦИЙ НА ВАЛЮТНОМ РЫНКЕТНИКИ
-    </MarketTitle>
+      <MarketTitle width="600px" margin="100px 0 30px">
+        {t('markets.currencyMarket.title3')}
+      </MarketTitle>
 
-    <MICL>
-      <MarketItem>
-        БОЛЕЕ ВЫГОДНЫЕ ЦЕНОВЫЕ УСЛОВИЯ ПО ВАЛЮТНОМУ КУРСУ ПО СРАВНЕНИЮ С СЕГМЕНТОМ БАНККОРПОРАТ (ЭКОНОМИЯ БАНКОВСКОЙ МАРЖИ, ВОЗМОЖНОСТЬ ПОЛУЧЕНИЯ ДОПОЛНИТЕЛЬНОГО СПРЕДА БИРЖЕВОГО СТАКАНА): ДЛЯ КОНВЕРСИОННЫХ СДЕЛОК ТOD, TOM, SPOT
-      </MarketItem>
-      <MarketItem>
-        ДЛЯ ВАЛЮТНЫХ СВОПОВ (СВОП-РАЗНИЦЫ) ТРАНСПАРЕНТНОСТЬ И РЫНОЧНОСТЬ ЦЕНООБРАЗОВАНИЯ (ОТСУТСТВИЕ ПРОСКАЛЬЗЫВАНИЯ)
-      </MarketItem>
-      <MarketItem>
-        СНЯТИЕ КРЕДИТНЫХ РИСКОВ НА КОНТРАГЕНТОВ (БАНКИ И ДР. КОРПОРАТЫ) ЗА СЧЕТ РАСЧЕТОВ ЧЕРЕЗ ЦЕНТРАЛЬНОГО КОНТРАГЕНТА (ЦК)
-      </MarketItem>
-      <MarketItem>
-        ВОЗМОЖНОСТЬ ЗАКЛЮЧАТЬ СДЕЛКИ
-      </MarketItem>
-      <MarketItem>
-        МАКСИМАЛЬНАЯ ОПЕРАЦИОННАЯ ЭФФЕКТИВНОСТЬ И НАДЕЖНОСТЬ:
-        <MICList>
-          <MICItem>
-            Online торговля, заключение сделки «в один клик»
-          </MICItem>
-          <MICItem>
-            Удобный электронный документооборот при расчетах
-          </MICItem>
-          <MICItem>
-            Стандартно обрабатываемые отчеты
-          </MICItem>
-          <MICItem>
-            Использование мультивалютного обеспечения в расчетах, единое обеспечение и неттинг по всем инструментам валютного рынка
-          </MICItem>
-        </MICList>
-      </MarketItem>
-      <MarketItem>
-        ВОЗМОЖНОСТЬ ПРОВЕДЕНИЯ ВАЛЮТНЫХ КОНВЕРСИЙ В НЕРАБОЧИЕ ДНИ
-      </MarketItem>
-    </MICL>
+      <MICL>
+        <MarketItem>
+          {t('markets.currencyMarket.list5.item1')}
+        </MarketItem>
+        <MarketItem>
+          {t('markets.currencyMarket.list5.item2')}
+        </MarketItem>
+        <MarketItem>
+          {t('markets.currencyMarket.list5.item3')}
+        </MarketItem>
+        <MarketItem>
+          {t('markets.currencyMarket.list5.item4')}
+        </MarketItem>
+        <MarketItem>
+          {t('markets.currencyMarket.list5.item5.title')}
+          <MICList>
+            <MICItem>
+              {t('markets.currencyMarket.list5.item5.item1')}
+            </MICItem>
+            <MICItem>
+              {t('markets.currencyMarket.list5.item5.item2')}
+            </MICItem>
+            <MICItem>
+              {t('markets.currencyMarket.list5.item5.item3')}
+            </MICItem>
+            <MICItem>
+              {t('markets.currencyMarket.list5.item5.item4')}
+            </MICItem>
+          </MICList>
+        </MarketItem>
+        <MarketItem>
+          {t('markets.currencyMarket.list6')}
+        </MarketItem>
+      </MICL>
 
-  </MarketWrap>
-);
+    </MarketWrap>
+  );
+};
 
 export default CurrencyMarket;

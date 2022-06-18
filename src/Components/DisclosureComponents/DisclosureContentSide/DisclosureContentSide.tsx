@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import DisclosureDisclosure from '../DisclosureDisclosure/DisclosureDisclosure';
 import DisclosureLegislation from '../DisclosureLegislation/DisclosureLegislation';
 import DisclosureMembers from '../DisclosureMembers/DisclosureMembers';
@@ -9,9 +10,10 @@ interface ListingContent {
 }
 
 const DisclosureContentSide:React.FC<ListingContent> = ({ active }) => {
-  if (active === 'Участники') return (<DisclosureMembers />);
-  if (active === 'Правила') return (<DisclosureRules />);
-  if (active === 'Законодательство КР') return (<DisclosureLegislation />);
+  const { t } = useTranslation();
+  if (active === t('disclosure.sidebar.link1')) return (<DisclosureMembers />);
+  if (active === t('disclosure.sidebar.link2')) return (<DisclosureRules />);
+  if (active === t('disclosure.sidebar.link3')) return (<DisclosureLegislation />);
   return (<DisclosureDisclosure />);
 };
 

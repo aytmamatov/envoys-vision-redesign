@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Flex } from '../../../../uikit/uikit';
 import AdaptiveSidebar from '../../MarketAdaptiveSideBar/MarketAdaptiveSideBar';
 import MarketWrap from '../../MarketContent/MarketContentSC';
@@ -7,48 +8,51 @@ import {
   MarketCard, MarketCards, MarketCardsTitle, MarketCardsWrap, MarketPMMItem, MarketPMMList,
 } from './PreciousMetalsMarketSC';
 
-const PreciousMetalsMarket:React.FC = () => (
-  <MarketWrap>
-    <Flex>
-      <AdaptiveSidebar />
-    </Flex>
-    <MarketTitle margin="0 0 30px" width="848px">
-      РЫНОК ЦВЕТНЫХ МЕТАЛЛОВ И АЛМАЗОВ
-    </MarketTitle>
+const PreciousMetalsMarket:React.FC = () => {
+  const { t } = useTranslation();
+  return (
+    <MarketWrap>
+      <Flex>
+        <AdaptiveSidebar />
+      </Flex>
+      <MarketTitle margin="0 0 30px" width="848px">
+        {t('markets.preciousMetalsMarket.title')}
+      </MarketTitle>
 
-    <MarketPMMList>
-      <MarketPMMItem>
-        РЫНОК ЦВЕТНЫХ МЕТАЛЛОВ
-      </MarketPMMItem>
-      <MarketPMMItem>
-        РЫНОК КРЕДИТОВАНИЯ ДРАГОЦЕННЫХ МЕТАЛЛОВ
-      </MarketPMMItem>
-      <MarketPMMItem>
-        РЫНОК АЛМАЗА И ДРАГОЦЕННЫХ КАМНЕЙ
-      </MarketPMMItem>
-    </MarketPMMList>
+      <MarketPMMList>
+        <MarketPMMItem>
+          {t('markets.preciousMetalsMarket.list1.item1')}
+        </MarketPMMItem>
+        <MarketPMMItem>
+          {t('markets.preciousMetalsMarket.list1.item2')}
+        </MarketPMMItem>
+        <MarketPMMItem>
+          {t('markets.preciousMetalsMarket.list1.item3')}
+        </MarketPMMItem>
+      </MarketPMMList>
 
-    <MarketCardsWrap>
-      <MarketCardsTitle>
-        ИНФРАСТРУКТУРНЫЕ ПАРТНЕРЫ, БИРЖИ
-      </MarketCardsTitle>
+      <MarketCardsWrap>
+        <MarketCardsTitle>
+          {t('markets.preciousMetalsMarket.preTitle')}
+        </MarketCardsTitle>
 
-      <MarketCards>
-        <MarketCard>
-          Депозитарий, клиринговый центр
-        </MarketCard>
-        <MarketCard>
-          Банк
-        </MarketCard>
-        <MarketCard>
-          Аффинажное предприятие
-        </MarketCard>
-        <MarketCard>
-          Лаборатория
-        </MarketCard>
-      </MarketCards>
-    </MarketCardsWrap>
-  </MarketWrap>
-);
+        <MarketCards>
+          <MarketCard>
+            {t('markets.preciousMetalsMarket.list2.item1')}
+          </MarketCard>
+          <MarketCard>
+            {t('markets.preciousMetalsMarket.list2.item2')}
+          </MarketCard>
+          <MarketCard>
+            {t('markets.preciousMetalsMarket.list2.item3')}
+          </MarketCard>
+          <MarketCard>
+            {t('markets.preciousMetalsMarket.list2.item4')}
+          </MarketCard>
+        </MarketCards>
+      </MarketCardsWrap>
+    </MarketWrap>
+  );
+};
 
 export default PreciousMetalsMarket;

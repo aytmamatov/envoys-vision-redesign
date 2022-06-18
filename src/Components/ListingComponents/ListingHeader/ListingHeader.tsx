@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   LHLink, LHNav, LHSC, LHTotal,
 } from './ListingHeaderSC';
@@ -8,45 +9,51 @@ interface Props{
   active: string;
 }
 
-const ListingHeader:React.FC<Props> = ({ total, active }) => (
-  <LHSC>
-    <LHNav>
-      <LHLink
-        to="/listing?param=CompanyListing&header=all"
-        className={active === 'all' ? 'active' : ''}
-      >
-        Все
-      </LHLink>
+const ListingHeader:React.FC<Props> = ({ total, active }) => {
+  const { t } = useTranslation();
 
-      <LHLink
-        to="/listing?param=CompanyListing&header=listing"
-        className={active === 'listing' ? 'active' : ''}
-      >
-        Листиговые
-      </LHLink>
+  return (
+    <LHSC>
+      <LHNav>
+        <LHLink
+          to="/listing?param=CompanyListing&header=all"
+          className={active === 'all' ? 'active' : ''}
+        >
+          {t('listing.headerLink.link1')}
+        </LHLink>
 
-      <LHLink
-        to="/listing?param=CompanyListing&header=unlisted"
-        className={active === 'unlisted' ? 'active' : ''}
-      >
-        Нелиситинговые
-      </LHLink>
+        <LHLink
+          to="/listing?param=CompanyListing&header=listing"
+          className={active === 'listing' ? 'active' : ''}
+        >
+          {t('listing.headerLink.link2')}
+        </LHLink>
 
-      <LHLink
-        to="/listing?param=CompanyListing&header=default"
-        className={active === 'default' ? 'active' : ''}
-      >
-        Допустившие Дефолт
-      </LHLink>
+        <LHLink
+          to="/listing?param=CompanyListing&header=unlisted"
+          className={active === 'unlisted' ? 'active' : ''}
+        >
+          {t('listing.headerLink.link3')}
+        </LHLink>
 
-    </LHNav>
+        <LHLink
+          to="/listing?param=CompanyListing&header=default"
+          className={active === 'default' ? 'active' : ''}
+        >
+          {t('listing.headerLink.link4')}
+        </LHLink>
 
-    <LHTotal>
-      Всего эмитентов -
-      {' '}
-      {total}
-    </LHTotal>
-  </LHSC>
-);
+      </LHNav>
+
+      <LHTotal>
+        {t('listing.headerLink.elements')}
+        {' '}
+        -
+        {' '}
+        {total}
+      </LHTotal>
+    </LHSC>
+  );
+};
 
 export default ListingHeader;

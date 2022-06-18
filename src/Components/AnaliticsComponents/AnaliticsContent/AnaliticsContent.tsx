@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import AnaliticsDC from '../AnaliticsDC/AnaliticsDC';
 import AnaliticsEC from '../AnaliticsEC/AnaliticsEC';
 import AnaliticsMC from '../AnaliticsMC/AnaliticsMC';
@@ -8,8 +9,10 @@ interface Props {
 }
 
 const AnaliticsContent:React.FC<Props> = ({ currentPage }) => {
-  if (currentPage === 'Дивидендный календарь') return <AnaliticsDC />;
-  if (currentPage === 'Календарь заработка') return <AnaliticsEC />;
+  const { t } = useTranslation();
+
+  if (currentPage === t('analitics.pages.p1')) return <AnaliticsDC />;
+  if (currentPage === t('analitics.pages.p2')) return <AnaliticsEC />;
   return <AnaliticsMC />;
 };
 

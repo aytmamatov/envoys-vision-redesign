@@ -7,6 +7,8 @@ import Disclosure from './pages/Disclosure/Disclosure';
 import Home from './pages/Home/Home';
 import Listing from './pages/Listing/Listing';
 import Market from './pages/Market/Market';
+import News from './pages/News/News';
+import NewsPage from './pages/NewsPage/NewsPage';
 
 const App:React.FC = () => (
   <Layout>
@@ -17,6 +19,8 @@ const App:React.FC = () => (
       <Route path="/disclosure" element={<Disclosure />} />
       <Route path="/analitics" element={<Analitics />} />
       <Route path="/market" element={<Market />} />
+      <Route path="/news" element={<News />} />
+      <Route path="/newsPage" element={<NewsPage />} />
     </Routes>
   </Layout>
 );

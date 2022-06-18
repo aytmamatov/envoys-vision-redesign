@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 import ListingContent from '../../components/ListingComponents/ListingContent/ListingContent';
 import ListingSideBar from '../../components/ListingComponents/ListingSideBar/ListingSideBar';
 import Path from '../../components/Path/Path';
@@ -11,18 +12,21 @@ const ListingWrap = styled.div`
 `;
 
 const Listing:React.FC = () => {
-  const [activePath, setActivePath] = useState('Список компаний');
+  const { t } = useTranslation();
+
+  const [activePath, setActivePath] = useState(String(t('listing.sideBar.path1')));
 
   const [searchParams] = useSearchParams();
 
   useEffect(() => {
+    setActivePath(t('listing.sideBar.path1'));
     const path = searchParams.get('param');
     if (path) {
-      if (path === 'CompanyListing') setActivePath('Список компаний');
-      if (path === 'Bonds') setActivePath('Облигации');
-      if (path === 'CompanyDisclosures') setActivePath('Раскрытия информации компании');
+      if (path === 'CompanyListing') setActivePath(t('listing.sideBar.path1'));
+      if (path === 'Bonds') setActivePath(t('listing.sideBar.path2'));
+      if (path === 'CompanyDisclosures') setActivePath(t('listing.sideBar.path3'));
     }
-  }, [searchParams]);
+  }, [searchParams, t]);
 
   return (
     <ListingWrap>

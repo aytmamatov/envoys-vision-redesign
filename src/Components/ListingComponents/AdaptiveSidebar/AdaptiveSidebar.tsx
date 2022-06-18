@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Flex } from '../../../uikit/uikit';
 import { HeaderDDAdaptiveLink, HeaderDDAdaptiveLinks } from '../../Header/HeaderSC';
 import { LLBurger } from '../ListingContent/ListingListSC';
@@ -6,12 +7,13 @@ import { ASSC } from './AdaptiveSidebarSC';
 
 const AdaptiveSidebar:React.FC = () => {
   const [show, setShow] = React.useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
       <LLBurger
         onClick={(() => setShow(true))}
-        src={require('../../../assets/Images/Header/burger.svg')}
+        src={require('../../../assets/Images/Header/burger.svg').default}
       />
 
       <ASSC show={show}>
@@ -21,27 +23,30 @@ const AdaptiveSidebar:React.FC = () => {
               to="/listing?param=CompanyListing"
               onClick={(() => setShow(false))}
             >
-              Список компаний
+              {t('listing.sideBar.path1')}
+
             </HeaderDDAdaptiveLink>
 
             <HeaderDDAdaptiveLink
               to="/listing?param=Bonds"
               onClick={(() => setShow(false))}
             >
-              Облигации
+              {t('listing.sideBar.path2')}
+
             </HeaderDDAdaptiveLink>
 
             <HeaderDDAdaptiveLink
               to="/listing?param=CompanyDisclosures"
               onClick={(() => setShow(false))}
             >
-              Раскрытия информации компании
+              {t('listing.sideBar.path3')}
+
             </HeaderDDAdaptiveLink>
           </HeaderDDAdaptiveLinks>
 
           <LLBurger
             onClick={(() => setShow(false))}
-            src={require('../../../assets/Images/Header/burgerClose.svg')}
+            src={require('../../../assets/Images/Header/burgerClose.svg').default}
           />
         </Flex>
       </ASSC>

@@ -1,68 +1,73 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Container } from '../../../uikit/uikit';
 import {
   AUVItem, AUVList, AUVSC, AUVTitle,
 } from './AboutUsValuesSC';
 
-const AboutUsValues:React.FC = () => (
-  <AUVSC>
-    <Container>
-      <AUVTitle>
-        Наши ценности
-      </AUVTitle>
+const AboutUsValues:React.FC = () => {
+  const { t } = useTranslation();
 
-      <AUVList>
+  return (
+    <AUVSC>
+      <Container>
+        <AUVTitle>
+          {t('aboutMe.values.title')}
+        </AUVTitle>
 
-        <AUVItem>
-          <h1 className="title">
-            ДОБРОСОВЕСТНОЕ ОТНОШЕНИЕ
-          </h1>
+        <AUVList>
 
-          <p className="text">
-            Проявления уважения ко всем
-          </p>
-          <p className="text">
-            Открытое общение
-          </p>
-          <p className="text mn-none">
-            Образцовая честность и этика
-          </p>
-        </AUVItem>
+          <AUVItem>
+            <h1 className="title">
+              {t('aboutMe.values.list.item1.title')}
+            </h1>
 
-        <AUVItem>
-          <h1 className="title">
-            РАСШИРЕНИЕ ОПЫТА
-          </h1>
+            <p className="text">
+              {t('aboutMe.values.list.item1.text1')}
+            </p>
+            <p className="text">
+              {t('aboutMe.values.list.item1.text2')}
+            </p>
+            <p className="text mn-none">
+              {t('aboutMe.values.list.item1.text3')}
+            </p>
+          </AUVItem>
 
-          <p className="text">
-            Быть экспертом своего дела
-          </p>
-          <p className="text">
-            Проявлять любопытство, задавать вопросы и постоянно учиться
-          </p>
-          <p className="text mn-none">
-            Прикладывать все усилия для того, чтобы преуспеть
-          </p>
-        </AUVItem>
+          <AUVItem>
+            <h1 className="title">
+              {t('aboutMe.values.list.item2.title')}
+            </h1>
 
-        <AUVItem>
-          <h1 className="title">
-            БЫТЬ КОМАНДНЫМ ИГРОКОМ
-          </h1>
+            <p className="text">
+              {t('aboutMe.values.list.item2.text1')}
+            </p>
+            <p className="text">
+              {t('aboutMe.values.list.item2.text2')}
+            </p>
+            <p className="text mn-none">
+              {t('aboutMe.values.list.item2.text3')}
+            </p>
+          </AUVItem>
 
-          <p className="text">
-            Доверять коллегам
-          </p>
-          <p className="text">
-            Сотрудничество, невзирая на границы
-          </p>
-          <p className="text mn-none">
-            Поиск разных мыслей и идей
-          </p>
-        </AUVItem>
-      </AUVList>
-    </Container>
-  </AUVSC>
-);
+          <AUVItem>
+            <h1 className="title">
+              {t('aboutMe.values.list.item3.title')}
+            </h1>
+
+            <p className="text">
+              {t('aboutMe.values.list.item3.text1')}
+            </p>
+            <p className="text">
+              {t('aboutMe.values.list.item3.text2')}
+            </p>
+            <p className="text mn-none">
+              {t('aboutMe.values.list.item3.text3')}
+            </p>
+          </AUVItem>
+        </AUVList>
+      </Container>
+    </AUVSC>
+  );
+};
 
 export default AboutUsValues;

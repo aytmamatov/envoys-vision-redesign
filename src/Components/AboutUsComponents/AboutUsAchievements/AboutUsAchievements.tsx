@@ -6,6 +6,7 @@ import 'swiper/swiper.min.css';
 import 'swiper/modules/navigation/navigation.min.css';
 import 'swiper/modules/pagination/pagination.min.css';
 
+import { useTranslation } from 'react-i18next';
 import {
   AUADate, AUAIamge, AUAInfo, AUAInfo2, AUAInfoInside, AUANum, AUASC, AUAText, AUAWrap,
 } from './AboutUsAchievementsSC';
@@ -13,23 +14,40 @@ import { Container, Flex } from '../../../uikit/uikit';
 import SwiperConroller from '../AchSwiperController/SwiperConroller';
 
 const AboutUsAchievements:React.FC = () => {
+  const { t } = useTranslation();
   const [swiperSlide, setSwiperSlide] = React.useState(1);
-  const [ach] = React.useState([
+
+  const [ach, setAch] = React.useState([
     {
-      date: '2021',
-      text: 'Получение лицензий на депозитарную деятельность и организатора торгов на рынке ценных бумаг',
+      date: t('aboutMe.ach.ach1.date'),
+      text: t('aboutMe.ach.ach1.title'),
     },
 
     {
-      date: '2021',
-      text: 'Сентябрь 2021 г. - запуск и проведение тестирования биржевой платформы',
+      date: t('aboutMe.ach.ach2.date'),
+      text: t('aboutMe.ach.ach2.title'),
     },
-
     {
-      date: '2021',
-      text: 'Государственная регистрация',
+      date: t('aboutMe.ach.ach3.date'),
+      text: t('aboutMe.ach.ach3.title'),
     },
   ]);
+
+  React.useEffect(() => {
+    setAch([
+      {
+        date: t('aboutMe.ach.ach1.date'),
+        text: t('aboutMe.ach.ach1.title'),
+      },
+      {
+        date: t('aboutMe.ach.ach2.date'),
+        text: t('aboutMe.ach.ach2.title'),
+      },
+      {
+        date: t('aboutMe.ach.ach3.date'),
+        text: t('aboutMe.ach.ach3.title'),
+      }]);
+  }, [t]);
 
   function SwiperChange(swiper:any) {
     setSwiperSlide(swiper.realIndex + 1);
@@ -54,6 +72,7 @@ const AboutUsAchievements:React.FC = () => {
               speed={500}
               onSlideChange={(swiper) => SwiperChange(swiper)}
             >
+
               {ach.map((el, index) => (
                 <SwiperSlide key={index}>
                   <AUAInfoInside>
@@ -69,6 +88,7 @@ const AboutUsAchievements:React.FC = () => {
                   </AUAInfoInside>
                 </SwiperSlide>
               ))}
+
             </Swiper>
 
           </AUAInfo>

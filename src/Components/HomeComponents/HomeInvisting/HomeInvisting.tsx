@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button, Container } from '../../../uikit/uikit';
 import HomeInvistingAdaptive from '../HomeInvistingAdaptive/HomeInvisting';
 import {
@@ -10,6 +11,8 @@ import {
 const HomeInvisting:React.FC = () => {
   const [options, setOptions] = React.useState(0);
 
+  const { t } = useTranslation();
+
   function checkItem() {
     if (options === 0) {
       // eslint-disable-next-line react/jsx-no-useless-fragment
@@ -18,13 +21,10 @@ const HomeInvisting:React.FC = () => {
       return (
         <>
           <HomeInvisting2Title>
-            Под инвестированием в ценные бумаги понимается вложение средств в различные активы
-            – от объектов недвижимости и бизнес-проектов до ценных бумаг и криптовалют.
+            {t('home.InfoBlock.option1.titl2')}
           </HomeInvisting2Title>
           <HomeInvisting2Text>
-            Каждая ценная бумага удостоверяет право ее владельца на часть имущественных
-            активов либо подтверждает факт займа.
-            Ценные бумаги выпускаются в стандартном бумажном виде или в электронной форме.
+            {t('home.InfoBlock.option1.text')}
           </HomeInvisting2Text>
         </>
       );
@@ -32,15 +32,10 @@ const HomeInvisting:React.FC = () => {
     return (
       <>
         <HomeInvisting2Title>
-          Сам по себе вид ценной бумаги уже может свидетельствовать о потенциальном доходе.
-          Среди наиболее распространенных финансовых инструментов,
-          представленных на рынке, можно выделить
+          {t('home.InfoBlock.option2.titl2')}
         </HomeInvisting2Title>
         <HomeInvisting2Text>
-          Возможно и инвестирование в ценные бумаги производного характера
-          (опционы, фьючерсы и свопы). Не все виды финансовых инструментов
-          доступны на фондовом рынке. Например, инвестор может вложить деньги в вексель,
-          однако оборот такого документа происходит вне фондовых бирж.
+          {t('home.InfoBlock.option2.text')}
         </HomeInvisting2Text>
       </>
     );
@@ -50,15 +45,15 @@ const HomeInvisting:React.FC = () => {
     <HomeInvistingSC>
       <Container>
         <HomeInvistingTitle>
-          Envoys расшифровывает технические тренды
+          {t('home.InfoBlock.title')}
         </HomeInvistingTitle>
 
         <HomeInvistingText>
-          Откройте для себя финансовые рынки
+          {t('home.InfoBlock.text')}
         </HomeInvistingText>
 
         <Button>
-          Больше новостей
+          {t('home.InfoBlock.btn')}
         </Button>
 
         <HomeInvistingWrap>
@@ -70,7 +65,7 @@ const HomeInvisting:React.FC = () => {
             >
 
               <HomeInvistingOptionText>
-                ЧТО ТАКОЕ ИНВЕСТИРОВАНИЕ В ЦЕННЫЕ БУМАГИ
+                {t('home.InfoBlock.option1.title')}
               </HomeInvistingOptionText>
             </HomeInvistingOption>
             <HomeInvistingOption
@@ -80,7 +75,7 @@ const HomeInvisting:React.FC = () => {
             >
 
               <HomeInvistingOptionText>
-                ВИДЫ ИНВЕСТИРОВАНИЯ
+                {t('home.InfoBlock.option2.title')}
               </HomeInvistingOptionText>
             </HomeInvistingOption>
           </HomeInvistingItem>

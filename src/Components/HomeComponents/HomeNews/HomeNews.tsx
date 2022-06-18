@@ -1,51 +1,102 @@
+/* eslint-disable guard-for-in */
+import axios from 'axios';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { ref, getDownloadURL } from 'firebase/storage';
+import { useNavigate } from 'react-router-dom';
 import { Container, Flex } from '../../../uikit/uikit';
 import {
-  HomeNewsSC, HomeNewsTitle, HomeNewsBtn1, HomeNewsUl, HomeNewsItem, HomeNewsImage, HomeNewsSmallText, HomeNewsItemTitle, HomeNewsItemDate, HomeNewsItemBtn, HomeNewsBtn2,
+  HomeNewsSC, HomeNewsTitle, HomeNewsBtn1,
+  HomeNewsUl, HomeNewsItem, HomeNewsImage,
+  HomeNewsSmallText, HomeNewsItemTitle, HomeNewsItemDate,
+  HomeNewsItemBtn, HomeNewsBtn2, HomeNewsImageWrap,
 } from './HomeNewsSC';
 
+import { storage } from '../../../fireBaseConfig/Config';
+
+export interface NewsRequestData {
+  date: string | undefined;
+  title: string | undefined;
+  text: string | undefined;
+  link: string | undefined;
+  key?: string | undefined;
+  image?: string | undefined;
+}
+
+export interface NewsRequest {
+  data: Array<NewsRequestData>;
+}
+
 const HomeNews:React.FC = () => {
-  const [news, setNews] = React.useState([
-    {
-      date: '2022-04-11', link: 'https://www.akchabar.kg/ru/news/v-marte-kompanii-privlekli-na-fondovoj-birzhe-13-mlrd-somov/', text: 'В марте компании на первичном рынке привлекли на К…н сомов;\nОсОО «Текстиль Транс» — 400 тысяч сомов.', title: 'В марте компании привлекли на фондовой бирже 1.3 млрд сомов', image: require('../../../assets/Images/news.jpg').default,
-    },
-    {
-      date: '2022-04-11', link: 'https://www.akchabar.kg/ru/news/za-nedelyu-unciya-zolota-ot-nb-kr-podorozhala-pochti-na-250/', text: 'На 11 апреля стоимость обратного выкупа золотых аф…нция подорожала на 22 тысячи 613 сомов, или $244.', title: 'За неделю унция золота от НБ КР подорожала почти на $250', image: require('../../../assets/Images/news1.jpg').default,
-    },
-    {
-      date: '2022-04-11', link: 'https://www.akchabar.kg/ru/news/kyrgyzstan-v-2022-…-planiruet-sobrat-94-mlrd-somov-naloga-na-pribyl/', text: 'Прогноз налога на прибыль в 2022 году сложился в р…оды составят 1.1 — 1.3 % ВВП», — сообщает Минфин.', title: 'КР в 2022 году планирует собрать 9.4 млрд сомов налога на прибыль', image: require('../../../assets/Images/news2.jpg').default,
-    },
-    {
-      date: '2022-04-11', link: 'https://www.akchabar.kg/ru/news/kyrgyzstan-v-2022-…-planiruet-sobrat-94-mlrd-somov-naloga-na-pribyl/', text: 'Прогноз налога на прибыль в 2022 году сложился в р…оды составят 1.1 — 1.3 % ВВП», — сообщает Минфин.', title: 'КР в 2022 году планирует собрать 9.4 млрд сомов налога на прибыль', image: require('../../../assets/Images/news3.jpg').default,
-    },
-  ]);
+  const [news, setNews] = React.useState<NewsRequestData[]>([]);
+
+  const nav = useNavigate();
+  const { t } = useTranslation();
+
+  function imageRequest(newsEl: NewsRequestData) {
+    const newNewsReq = newsEl;
+    const storage1 = storage;
+    getDownloadURL(ref(storage1, `gs://envoys-vision-news.appspot.com/news/${newsEl.title}.jpg`))
+      .then((url) => {
+        newNewsReq.image = url;
+        setNews((val) => [...val, newNewsReq]);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
+  React.useEffect(() => {
+    axios.get<NewsRequest>('https://envoys-vision-news-default-rtdb.firebaseio.com/news.json')
+      .then((res) => {
+        const allNews = res.data;
+        const newsArray: Array<NewsRequestData> = [];
+        // eslint-disable-next-line no-restricted-syntax
+        for (const i in allNews) {
+          allNews[i].key = i;
+          newsArray.push(allNews[i]);
+        }
+        const needNews = newsArray.reverse().slice(0, 4);
+
+        // eslint-disable-next-line no-restricted-syntax
+        for (const i of needNews) {
+          imageRequest(i);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <HomeNewsSC>
       <Container>
         <Flex justify="space-between" align="flex-start">
           <HomeNewsTitle>
-            последние Новости
+            {t('home.NewsBlock.title')}
           </HomeNewsTitle>
 
-          <HomeNewsBtn1>
-            Больше новостей
+          <HomeNewsBtn1 onClick={() => nav('/news')}>
+            {t('home.NewsBlock.title')}
           </HomeNewsBtn1>
         </Flex>
 
         <HomeNewsUl>
           {news.map((el, index) => (
             <HomeNewsItem key={index}>
-              <HomeNewsImage src={el.image} />
+              <HomeNewsImageWrap>
+                <HomeNewsImage src={el.image} />
+              </HomeNewsImageWrap>
+
               <HomeNewsSmallText>Кыргызстан</HomeNewsSmallText>
 
               <HomeNewsItemTitle>{el.title}</HomeNewsItemTitle>
 
               <Flex justify="space-between" margin="auto 0 0" align="center">
                 <HomeNewsItemDate>{el.date}</HomeNewsItemDate>
-                <HomeNewsItemBtn>
-                  Подребнее
-                  <img src={require('../../../assets/Images/home/news.svg')} alt="" />
+                <HomeNewsItemBtn onClick={() => nav(`/newsPage?key=${el.key}`)}>
+                  {t('home.Banner.btn')}
+                  <img src={require('../../../assets/Images/home/news.svg').default} alt="" />
                 </HomeNewsItemBtn>
               </Flex>
             </HomeNewsItem>

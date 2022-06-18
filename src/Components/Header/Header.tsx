@@ -1,4 +1,5 @@
-import React, { ReactEventHandler } from 'react';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Container } from '../../uikit/uikit';
 import HeaderBurger from '../HeaderBurger/HeaderBurger';
 import HeaderAnalitics from '../HeaderDropDowns/HeaderAnalitics';
@@ -16,7 +17,8 @@ type Props = {
 }
 
 const Header:React.FC<Props> = ({ burgerShow, burgerSetShow }) => {
-  const Logo = require('../../assets/Images/logo.svg');
+  const Logo = require('../../assets/Images/logo.svg').default;
+  const { t } = useTranslation();
 
   return (
     <HeaderSC>
@@ -29,7 +31,7 @@ const Header:React.FC<Props> = ({ burgerShow, burgerSetShow }) => {
           <HeaderNav>
             <HeaderMarket />
 
-            <HeaderNavLink to="/news">Новости</HeaderNavLink>
+            <HeaderNavLink to="/news">{t('header.links.link2.title')}</HeaderNavLink>
 
             <HeaderAnalitics />
 
@@ -37,7 +39,7 @@ const Header:React.FC<Props> = ({ burgerShow, burgerSetShow }) => {
 
             <HeaderDisclosure />
 
-            <HeaderNavLink to="/aboutus">О нас</HeaderNavLink>
+            <HeaderNavLink to="/aboutus">{t('header.links.link7.title')}</HeaderNavLink>
           </HeaderNav>
 
           <HeaderLang burgerShow={burgerShow} burgerSetShow={burgerSetShow} adaptiveShow={false} />
