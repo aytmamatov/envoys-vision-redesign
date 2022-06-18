@@ -75,7 +75,7 @@ const AboutUsAchievements:React.FC = () => {
 
           <AUAInfo2 />
 
-          <AUAIamge src={require('../../../assets/Images/aboutUs/Ach/image1.jpg')} />
+          <AUAIamge src={require('../../../assets/Images/aboutUs/Ach/image1.jpg').default} />
         </AUAWrap>
       </Container>
     </AUASC>

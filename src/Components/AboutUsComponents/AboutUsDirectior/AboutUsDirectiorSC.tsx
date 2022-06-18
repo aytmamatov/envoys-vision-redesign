@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const AUD = styled.section`
-    background: url(${require('../../../assets/Images/aboutUs/bg.jpg')}) 0 0 / cover;
+    background: url(${require('../../../assets/Images/aboutUs/bg.jpg').default}) 0 0 / cover;
     padding: 146px 0 190px;
     @media(max-width: 1020px){
         padding: 100px 0 90px;
-        background: url(${require('../../../assets/Images/aboutUs/bgAdaptive.jpg')}) 0 0 / cover;
+        background: url(${require('../../../assets/Images/aboutUs/bgAdaptive.jpg').default}) 0 0 / cover;
     }
 `;
 

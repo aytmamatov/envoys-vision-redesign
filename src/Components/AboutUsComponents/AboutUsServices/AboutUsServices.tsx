@@ -55,7 +55,7 @@ const AboutUsServices:React.FC = () => (
 
         <SwiperSlide>
           <Flex direction="column" align="flex-start">
-            <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image1.jpg')} />
+            <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image1.jpg').default} />
             <AUSSlideName>
               Токенизированные Активы
             </AUSSlideName>
@@ -64,7 +64,7 @@ const AboutUsServices:React.FC = () => (
 
         <SwiperSlide>
           <Flex direction="column" align="flex-start">
-            <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image2.jpg')} />
+            <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image2.jpg').default} />
             <AUSSlideName>
               Криптовалюты
             </AUSSlideName>
@@ -73,7 +73,7 @@ const AboutUsServices:React.FC = () => (
 
         <SwiperSlide>
           <Flex direction="column" align="flex-start">
-            <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image3.jpg')} />
+            <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image3.jpg').default} />
             <AUSSlideName>
               Недвижимость
             </AUSSlideName>
@@ -82,7 +82,7 @@ const AboutUsServices:React.FC = () => (
 
         <SwiperSlide>
           <Flex direction="column" align="flex-start">
-            <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image4.jpg')} />
+            <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image4.jpg').default} />
             <AUSSlideName>
               Валютный рынок
             </AUSSlideName>
@@ -91,7 +91,7 @@ const AboutUsServices:React.FC = () => (
 
         <SwiperSlide>
           <Flex direction="column" align="flex-start">
-            <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image5.jpg')} />
+            <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image5.jpg').default} />
             <AUSSlideName>
               Рынок Драгоценных Металлов
             </AUSSlideName>
@@ -100,7 +100,7 @@ const AboutUsServices:React.FC = () => (
 
         <SwiperSlide>
           <Flex direction="column" align="flex-start">
-            <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image6.jpg')} />
+            <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image6.jpg').default} />
             <AUSSlideName>
               Товарный Сектор
             </AUSSlideName>

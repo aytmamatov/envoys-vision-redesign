@@ -27,7 +27,7 @@ const AboutUsDirectior:React.FC = () => (
 
         <AUDDirector>
           <AUDDirectorInfo>
-            <AUDDirectorImage src={require('../../../assets/Images/aboutUs/Director.jpg')} />
+            <AUDDirectorImage src={require('../../../assets/Images/aboutUs/Director.jpg').default} />
             <AUDDirectiorTitle>
               Алмазбек Шабданов
             </AUDDirectiorTitle>

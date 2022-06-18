@@ -18,7 +18,7 @@ const EnMarket:React.FC = () => (
       STO — это более быстрый и дешевый аналог IPO. Расходы
       на листинг уменьшаются за счет отсутствия необходимости вовлекать посредников наподобие инвестиционных банков. Процедуры аудита и андеррайтинга для блокчейн-проектов также проще. А участвовать в STO может практически любой частный инвестор
     </MarketText>
-    <MarketImages src={require('../../../../assets/Images/Market/market1.jpg')} />
+    <MarketImages src={require('../../../../assets/Images/Market/market1.jpg').default} />
     <MarketPreTitle margin="50px 0 0" width="895px">
       ТОКЕНИЗАЦИЯ — СОЗДАНИЕ ЗАПИСИ, УДОСТОВЕРЯЮЩЕЙ ОБЪЕМ ПРАВ
       НА ОБЪЕКТ МАТЕРИАЛЬНОГО МИРА
@@ -48,7 +48,7 @@ const EnMarket:React.FC = () => (
       </MarketItem>
     </MarketList>
 
-    <MarketImages src={require('../../../../assets/Images/Market/market2.jpg')} />
+    <MarketImages src={require('../../../../assets/Images/Market/market2.jpg').default} />
 
     <MarketTitle margin="100px 0 30px" width="770px">
       ТОКЕНИЗИРОВАНИЕ ИНОСТРАННЫХ АКЦИЙ

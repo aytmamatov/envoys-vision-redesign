@@ -77,7 +77,7 @@ const CommoditySector:React.FC = () => (
       </MarketItem>
     </MICL>
 
-    <MICImageList image={require('../../../../assets/Images/Market/marketBgС2.jpg')}>
+    <MICImageList image={require('../../../../assets/Images/Market/marketBgС2.jpg').default}>
       <MICImageItemTitle>
         ПРЕИМУЩЕСТВА ДЛЯ ГОСУДАРСВА
       </MICImageItemTitle>

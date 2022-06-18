@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const BannerSC = styled.section`
-    background: url(${require('../../../assets/Images/home/bannerBg.jpg')}) 0 0 / cover;
+    background: url(${require('../../../assets/Images/home/bannerBg.jpg').default}) 0 0 / cover;
     padding: 100px 0;
     @media(max-width: 1020px){
-        background: url(${require('../../../assets/Images/home/bannerBg2.jpg')}) 0 0 / cover;
+        background: url(${require('../../../assets/Images/home/bannerBg2.jpg').default}) 0 0 / cover;
     }
     @media(max-width: 500px){
-        background: url(${require('../../../assets/Images/home/bannerBg3.jpg')}) 0 0 / cover;
+        background: url(${require('../../../assets/Images/home/bannerBg3.jpg').default}) 0 0 / cover;
     }
 `;
 
