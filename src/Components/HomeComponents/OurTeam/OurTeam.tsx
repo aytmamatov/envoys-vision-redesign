@@ -14,7 +14,7 @@ const OurTeam:React.FC = () => (
       <OurTeamList>
 
         <OurTeamItem>
-          <OurTeamItemImage src={require('../../../assets/Images/home/team/user1.png')} />
+          <OurTeamItemImage src={require('../../../assets/Images/home/team/user1.png').default} />
           <OutTeamItemTitle>
             Екатерина Иванова
           </OutTeamItemTitle>
@@ -36,7 +36,7 @@ const OurTeam:React.FC = () => (
         </OurTeamItem>
 
         <OurTeamItem>
-          <OurTeamItemImage src={require('../../../assets/Images/home/team/user2.png')} />
+          <OurTeamItemImage src={require('../../../assets/Images/home/team/user2.png').default} />
           <OutTeamItemTitle>
             Брюс Бэннер
           </OutTeamItemTitle>
@@ -58,7 +58,7 @@ const OurTeam:React.FC = () => (
         </OurTeamItem>
 
         <OurTeamItem>
-          <OurTeamItemImage src={require('../../../assets/Images/home/team/user3.png')} />
+          <OurTeamItemImage src={require('../../../assets/Images/home/team/user3.png').default} />
           <OutTeamItemTitle>
             Брюс Уэйн
           </OutTeamItemTitle>
@@ -80,7 +80,7 @@ const OurTeam:React.FC = () => (
         </OurTeamItem>
 
         <OurTeamItem>
-          <OurTeamItemImage src={require('../../../assets/Images/home/team/user4.png')} />
+          <OurTeamItemImage src={require('../../../assets/Images/home/team/user4.png').default} />
           <OutTeamItemTitle>
             Мэри-Джейн Уотсон
           </OutTeamItemTitle>

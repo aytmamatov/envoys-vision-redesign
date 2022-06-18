@@ -25,7 +25,7 @@ const Banner:React.FC = () => (
           </Button>
         </BannerInfo>
 
-        <BannerImage src={require('../../../assets/Images/home/banner.png')} />
+        <BannerImage src={require('../../../assets/Images/home/banner.png').default} />
       </BannerWrap>
     </Container>
   </BannerSC>
