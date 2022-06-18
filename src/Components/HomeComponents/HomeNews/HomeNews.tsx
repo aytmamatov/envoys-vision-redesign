@@ -96,7 +96,7 @@ const HomeNews:React.FC = () => {
                 <HomeNewsItemDate>{el.date}</HomeNewsItemDate>
                 <HomeNewsItemBtn onClick={() => nav(`/newsPage?key=${el.key}`)}>
                   {t('home.Banner.btn')}
-                  <img src={require('../../../assets/Images/home/news.svg').default} alt="" />
+                  <img src={require('../../../assets/Images/home/news.svg')} alt="" />
                 </HomeNewsItemBtn>
               </Flex>
             </HomeNewsItem>

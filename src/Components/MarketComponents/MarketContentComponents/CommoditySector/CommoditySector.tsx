@@ -82,7 +82,7 @@ const CommoditySector:React.FC = () => {
         </MarketItem>
       </MICL>
 
-      <MICImageList image={require('../../../../assets/Images/Market/marketBgС2.jpg')}>
+      <MICImageList image={require('../../../../assets/Images/Market/marketBgС2.jpg').default}>
         <MICImageItemTitle>
           {t('markets.commoditySector.list3.itemTitle')}
         </MICImageItemTitle>

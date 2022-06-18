@@ -30,13 +30,13 @@ const OurTeam:React.FC = () => {
 
             <Flex margin="20px auto 0">
               <OutTeamItemLink href="#">
-                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/in.svg').default} />
+                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/in.svg')} />
               </OutTeamItemLink>
               <OutTeamItemLink href="#">
-                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/twitter.svg').default} />
+                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/twitter.svg')} />
               </OutTeamItemLink>
               <OutTeamItemLink href="#">
-                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/github.svg').default} />
+                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/github.svg')} />
               </OutTeamItemLink>
             </Flex>
           </OurTeamItem>
@@ -52,13 +52,13 @@ const OurTeam:React.FC = () => {
 
             <Flex margin="20px auto 0">
               <OutTeamItemLink href="#">
-                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/in.svg').default} />
+                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/in.svg')} />
               </OutTeamItemLink>
               <OutTeamItemLink href="#">
-                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/twitter.svg').default} />
+                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/twitter.svg')} />
               </OutTeamItemLink>
               <OutTeamItemLink href="#">
-                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/github.svg').default} />
+                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/github.svg')} />
               </OutTeamItemLink>
             </Flex>
           </OurTeamItem>
@@ -77,10 +77,10 @@ const OurTeam:React.FC = () => {
                 <OutTeamItemLinkImag src={require('../../../assets/Images/footer/in.svg')} />
               </OutTeamItemLink>
               <OutTeamItemLink href="#">
-                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/twitter.svg').default} />
+                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/twitter.svg')} />
               </OutTeamItemLink>
               <OutTeamItemLink href="#">
-                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/github.svg').default} />
+                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/github.svg')} />
               </OutTeamItemLink>
             </Flex>
           </OurTeamItem>
@@ -96,13 +96,13 @@ const OurTeam:React.FC = () => {
 
             <Flex margin="20px auto 0">
               <OutTeamItemLink href="#">
-                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/in.svg').default} />
+                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/in.svg')} />
               </OutTeamItemLink>
               <OutTeamItemLink href="#">
-                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/twitter.svg').default} />
+                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/twitter.svg')} />
               </OutTeamItemLink>
               <OutTeamItemLink href="#">
-                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/github.svg').default} />
+                <OutTeamItemLinkImag src={require('../../../assets/Images/footer/github.svg')} />
               </OutTeamItemLink>
             </Flex>
           </OurTeamItem>

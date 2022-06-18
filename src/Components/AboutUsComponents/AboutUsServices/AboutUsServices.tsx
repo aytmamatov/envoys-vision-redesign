@@ -52,7 +52,7 @@ const AboutUsServices:React.FC = () => {
 
           <SwiperSlide>
             <Flex direction="column" align="flex-start">
-              <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image1.jpg')} />
+              <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image1.jpg').default} />
               <AUSSlideName>
                 {t('aboutMe.services.list.item1')}
               </AUSSlideName>
@@ -61,7 +61,7 @@ const AboutUsServices:React.FC = () => {
 
           <SwiperSlide>
             <Flex direction="column" align="flex-start">
-              <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image2.jpg')} />
+              <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image2.jpg').default} />
               <AUSSlideName>
                 {t('aboutMe.services.list.item2')}
               </AUSSlideName>
@@ -70,7 +70,7 @@ const AboutUsServices:React.FC = () => {
 
           <SwiperSlide>
             <Flex direction="column" align="flex-start">
-              <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image3.jpg')} />
+              <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image3.jpg').default} />
               <AUSSlideName>
                 {t('aboutMe.services.list.item3')}
               </AUSSlideName>
@@ -79,7 +79,7 @@ const AboutUsServices:React.FC = () => {
 
           <SwiperSlide>
             <Flex direction="column" align="flex-start">
-              <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image4.jpg')} />
+              <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image4.jpg').default} />
               <AUSSlideName>
                 {t('aboutMe.services.list.item4')}
               </AUSSlideName>
@@ -88,7 +88,7 @@ const AboutUsServices:React.FC = () => {
 
           <SwiperSlide>
             <Flex direction="column" align="flex-start">
-              <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image5.jpg')} />
+              <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image5.jpg').default} />
               <AUSSlideName>
                 {t('aboutMe.services.list.item5')}
               </AUSSlideName>
@@ -97,7 +97,7 @@ const AboutUsServices:React.FC = () => {
 
           <SwiperSlide>
             <Flex direction="column" align="flex-start">
-              <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image6.jpg')} />
+              <AUSSlideImg src={require('../../../assets/Images/aboutUs/services/image6.jpg').default} />
               <AUSSlideName>
                 {t('aboutMe.services.list.item6')}
               </AUSSlideName>

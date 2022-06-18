@@ -72,7 +72,7 @@ const CurrencyMarket:React.FC = () => {
         </MarketItem>
       </MarketList>
 
-      <MICImageList image={require('../../../../assets/Images/Market/marketBgС1.jpg')}>
+      <MICImageList image={require('../../../../assets/Images/Market/marketBgС1.jpg').default}>
         <MICImageItemTitle>
           {t('markets.currencyMarket.list4.title')}
         </MICImageItemTitle>

@@ -22,7 +22,7 @@ const RuMarket:React.FC = () => {
       <MarketText margin="0 0 50px" width="580px">
         {t('markets.stocksM.text1')}
       </MarketText>
-      <MarketImages src={require('../../../../assets/Images/Market/market1.jpg')} />
+      <MarketImages src={require('../../../../assets/Images/Market/market1.jpg').default} />
       <MarketPreTitle margin="50px 0 0" width="895px">
         {t('markets.stocksM.preTitle1')}
       </MarketPreTitle>
@@ -47,7 +47,7 @@ const RuMarket:React.FC = () => {
         </MarketItem>
       </MarketList>
 
-      <MarketImages src={require('../../../../assets/Images/Market/market2.jpg')} />
+      <MarketImages src={require('../../../../assets/Images/Market/market2.jpg').default} />
 
       <MarketTitle margin="100px 0 30px" width="770px">
         {t('markets.stocksM.title3')}

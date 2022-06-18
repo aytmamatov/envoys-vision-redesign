@@ -15,7 +15,7 @@ const HeaderLang:React.FC<Props> = ({
 }) => {
   const [activeLang, setActiveLang] = useState('Russian');
 
-  const DD = require('../../assets/Images/Header/header.svg').default;
+  const DD = require('../../assets/Images/Header/header.svg');
 
   function changeLangShow(e:React.MouseEvent<HTMLButtonElement>) {
     e.stopPropagation();

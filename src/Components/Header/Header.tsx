@@ -17,7 +17,7 @@ type Props = {
 }
 
 const Header:React.FC<Props> = ({ burgerShow, burgerSetShow }) => {
-  const Logo = require('../../assets/Images/logo.svg').default;
+  const Logo = require('../../assets/Images/logo.svg');
   const { t } = useTranslation();
 
   return (

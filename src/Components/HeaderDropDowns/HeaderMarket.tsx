@@ -6,7 +6,7 @@ import {
 
 const HeaderMarket:React.FC = () => {
   const [show, setShow] = useState(false);
-  const DD = require('../../assets/Images/Header/DD.svg').default;
+  const DD = require('../../assets/Images/Header/DD.svg');
   const { t } = useTranslation();
 
   return (

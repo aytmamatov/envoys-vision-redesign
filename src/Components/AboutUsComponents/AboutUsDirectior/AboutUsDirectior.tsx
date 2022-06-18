@@ -30,7 +30,7 @@ const AboutUsDirectior:React.FC = () => {
 
           <AUDDirector>
             <AUDDirectorInfo>
-              <AUDDirectorImage src={require('../../../assets/Images/aboutUs/Director.jpg')} />
+              <AUDDirectorImage src={require('../../../assets/Images/aboutUs/Director.jpg').default} />
               <AUDDirectiorTitle>
                 {t('aboutMe.admin.imageTitle')}
               </AUDDirectiorTitle>
@@ -39,13 +39,13 @@ const AboutUsDirectior:React.FC = () => {
               </AUDDirectorText>
               <Flex>
                 <AUDDirectorIconWrap href="#">
-                  <img src={require('../../../assets/Images/aboutUs/icons/Vector.svg').default} alt="" />
+                  <img src={require('../../../assets/Images/aboutUs/icons/Vector.svg')} alt="" />
                 </AUDDirectorIconWrap>
                 <AUDDirectorIconWrap href="#">
-                  <img src={require('../../../assets/Images/aboutUs/icons/Vector-1.svg').default} alt="" />
+                  <img src={require('../../../assets/Images/aboutUs/icons/Vector-1.svg')} alt="" />
                 </AUDDirectorIconWrap>
                 <AUDDirectorIconWrap href="#">
-                  <img src={require('../../../assets/Images/aboutUs/icons/Vector-2.svg').default} alt="" />
+                  <img src={require('../../../assets/Images/aboutUs/icons/Vector-2.svg')} alt="" />
                 </AUDDirectorIconWrap>
               </Flex>
             </AUDDirectorInfo>

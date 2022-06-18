@@ -25,7 +25,7 @@ const NewsComponents: React.FC = () => (
                 {' '}
                 <img
                   src={
-                      require('../../assets/Images/home/news.svg').default
+                      require('../../assets/Images/home/news.svg')
                     }
                   alt="Arrow-right"
                 />
@@ -34,7 +34,7 @@ const NewsComponents: React.FC = () => (
           </NCContent>
           <NCImage>
             <img
-              src={require('../../assets/Images/News/NewsPostsImages/1.jpg')}
+              src={require('../../assets/Images/News/NewsPostsImages/1.jpg').default}
               alt="Building"
             />
           </NCImage>
@@ -42,7 +42,7 @@ const NewsComponents: React.FC = () => (
         <NCItem>
           <NCItemImage>
             <img
-              src={require('../../assets/Images/News/NewsPostsImages/2.jpg')}
+              src={require('../../assets/Images/News/NewsPostsImages/2.jpg').default}
               alt="aurum"
             />
           </NCItemImage>
@@ -58,7 +58,7 @@ const NewsComponents: React.FC = () => (
                 {' '}
                 <img
                   src={
-                      require('../../assets/Images/home/news.svg').default
+                      require('../../assets/Images/home/news.svg')
                     }
                   alt="Arrow-right"
                 />
@@ -69,7 +69,7 @@ const NewsComponents: React.FC = () => (
         <NCItem>
           <NCItemImage>
             <img
-              src={require('../../assets/Images/News/NewsPostsImages/3.jpg')}
+              src={require('../../assets/Images/News/NewsPostsImages/3.jpg').default}
               alt="aurum"
             />
           </NCItemImage>
@@ -85,7 +85,7 @@ const NewsComponents: React.FC = () => (
                 {' '}
                 <img
                   src={
-                      require('../../assets/Images/home/news.svg').default
+                      require('../../assets/Images/home/news.svg')
                     }
                   alt="Arrow-right"
                 />
@@ -96,7 +96,7 @@ const NewsComponents: React.FC = () => (
         <NCItem>
           <NCItemImage>
             <img
-              src={require('../../assets/Images/News/NewsPostsImages/4.jpg')}
+              src={require('../../assets/Images/News/NewsPostsImages/4.jpg').default}
               alt="aurum"
             />
           </NCItemImage>
@@ -112,7 +112,7 @@ const NewsComponents: React.FC = () => (
                 {' '}
                 <img
                   src={
-                      require('../../assets/Images/home/news.svg').default
+                      require('../../assets/Images/home/news.svg')
                     }
                   alt="Arrow-right"
                 />
@@ -123,7 +123,7 @@ const NewsComponents: React.FC = () => (
         <NCItem>
           <NCItemImage>
             <img
-              src={require('../../assets/Images/News/NewsPostsImages/5.jpg')}
+              src={require('../../assets/Images/News/NewsPostsImages/5.jpg').default}
               alt="aurum"
             />
           </NCItemImage>
@@ -139,7 +139,7 @@ const NewsComponents: React.FC = () => (
                 {' '}
                 <img
                   src={
-                      require('../../assets/Images/home/news.svg').default
+                      require('../../assets/Images/home/news.svg')
                     }
                   alt="Arrow-right"
                 />
@@ -163,7 +163,7 @@ const NewsComponents: React.FC = () => (
                 {' '}
                 <img
                   src={
-                      require('../../assets/Images/home/news.svg').default
+                      require('../../assets/Images/home/news.svg')
                     }
                   alt="Arrow-right"
                 />
@@ -172,7 +172,7 @@ const NewsComponents: React.FC = () => (
           </NCContent>
           <NCImage>
             <img
-              src={require('../../assets/Images/News/NewsPostsImages/1.jpg')}
+              src={require('../../assets/Images/News/NewsPostsImages/1.jpg').default}
               alt="Building"
             />
           </NCImage>
@@ -180,7 +180,7 @@ const NewsComponents: React.FC = () => (
         <NCItem>
           <NCItemImage>
             <img
-              src={require('../../assets/Images/News/NewsPostsImages/2.jpg')}
+              src={require('../../assets/Images/News/NewsPostsImages/2.jpg').default}
               alt="aurum"
             />
           </NCItemImage>
@@ -196,7 +196,7 @@ const NewsComponents: React.FC = () => (
                 {' '}
                 <img
                   src={
-                      require('../../assets/Images/home/news.svg').default
+                      require('../../assets/Images/home/news.svg')
                     }
                   alt="Arrow-right"
                 />
@@ -207,7 +207,7 @@ const NewsComponents: React.FC = () => (
         <NCItem>
           <NCItemImage>
             <img
-              src={require('../../assets/Images/News/NewsPostsImages/3.jpg')}
+              src={require('../../assets/Images/News/NewsPostsImages/3.jpg').default}
               alt="aurum"
             />
           </NCItemImage>
@@ -223,7 +223,7 @@ const NewsComponents: React.FC = () => (
                 {' '}
                 <img
                   src={
-                      require('../../assets/Images/home/news.svg').default
+                      require('../../assets/Images/home/news.svg')
                     }
                   alt="Arrow-right"
                 />
@@ -234,7 +234,7 @@ const NewsComponents: React.FC = () => (
         <NCItem>
           <NCItemImage>
             <img
-              src={require('../../assets/Images/News/NewsPostsImages/4.jpg')}
+              src={require('../../assets/Images/News/NewsPostsImages/4.jpg').default}
               alt="aurum"
             />
           </NCItemImage>
@@ -250,7 +250,7 @@ const NewsComponents: React.FC = () => (
                 {' '}
                 <img
                   src={
-                      require('../../assets/Images/home/news.svg').default
+                      require('../../assets/Images/home/news.svg')
                     }
                   alt="Arrow-right"
                 />
@@ -261,7 +261,7 @@ const NewsComponents: React.FC = () => (
         <NCItem>
           <NCItemImage>
             <img
-              src={require('../../assets/Images/News/NewsPostsImages/5.jpg')}
+              src={require('../../assets/Images/News/NewsPostsImages/5.jpg').default}
               alt="aurum"
             />
           </NCItemImage>
@@ -277,7 +277,7 @@ const NewsComponents: React.FC = () => (
                 {' '}
                 <img
                   src={
-                      require('../../assets/Images/home/news.svg').default
+                      require('../../assets/Images/home/news.svg')
                     }
                   alt="Arrow-right"
                 />
