@@ -9,7 +9,7 @@ type Props = {
 
 const HeaderLang:React.FC<Props> = (props) => {
   const [lang, setLang] = useState('Русский');
-  const DD = require('../../assets/Images/Header/header.svg').default;
+  const DD = require('../../assets/Images/Header/header.svg');
 
   function changeLang(e:React.MouseEvent<HTMLButtonElement>) {
     e.stopPropagation();

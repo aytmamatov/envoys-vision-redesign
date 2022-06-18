@@ -9,8 +9,8 @@ const HeaderBurger:React.FC = () => {
   const [show, setShow] = useState(false);
   const [showLang, setShowLang] = useState(true);
 
-  const Burger = require('../../assets/Images/Header/burger.svg').default;
-  const BurgerClose = require('../../assets/Images/Header/burgerClose.svg').default;
+  const Burger = require('../../assets/Images/Header/burger.svg');
+  const BurgerClose = require('../../assets/Images/Header/burgerClose.svg');
 
   return (
     <HeaderAdaptive
@@ -36,19 +36,19 @@ const HeaderBurger:React.FC = () => {
             <HeaderLang burgerShow={showLang} burgerSetShow={setShowLang} adaptiveShow />
 
             <a href="#" target="_blank">
-              <img src={require('../../assets/Images/footer/facebook.svg').default} alt="" />
+              <img src={require('../../assets/Images/footer/facebook.svg')} alt="" />
             </a>
 
             <a href="#" target="_blank">
-              <img src={require('../../assets/Images/footer/twitter.svg').default} alt="" />
+              <img src={require('../../assets/Images/footer/twitter.svg')} alt="" />
             </a>
 
             <a href="#" target="_blank">
-              <img src={require('../../assets/Images/footer/google.svg').default} alt="" />
+              <img src={require('../../assets/Images/footer/google.svg')} alt="" />
             </a>
 
             <a href="#" target="_blank">
-              <img src={require('../../assets/Images/footer/in.svg').default} alt="" />
+              <img src={require('../../assets/Images/footer/in.svg')} alt="" />
             </a>
 
           </HeaderDDAdaptiveSide>

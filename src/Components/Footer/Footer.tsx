@@ -5,7 +5,7 @@ import {
 } from './FooterSC';
 
 const Footer:React.FC = () => {
-  const DD = require('../../assets/Images/footer/Vector.svg').default;
+  const DD = require('../../assets/Images/footer/Vector.svg');
   return (
     <FooterSC>
       <Container>
@@ -34,16 +34,16 @@ const Footer:React.FC = () => {
 
           <FooterSocialIcons>
             <a href="#">
-              <img src={require('../../assets/Images/footer/facebook.svg').default} alt="" />
+              <img src={require('../../assets/Images/footer/facebook.svg')} alt="" />
             </a>
             <a href="#">
-              <img src={require('../../assets/Images/footer/twitter.svg').default} alt="" />
+              <img src={require('../../assets/Images/footer/twitter.svg')} alt="" />
             </a>
             <a href="#">
-              <img src={require('../../assets/Images/footer/google.svg').default} alt="" />
+              <img src={require('../../assets/Images/footer/google.svg')} alt="" />
             </a>
             <a href="#">
-              <img src={require('../../assets/Images/footer/in.svg').default} alt="" />
+              <img src={require('../../assets/Images/footer/in.svg')} alt="" />
             </a>
           </FooterSocialIcons>
         </FooterTop>

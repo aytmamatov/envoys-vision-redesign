@@ -74,7 +74,7 @@ export const ASHDate = styled.input`
         color: #7A7A7A;
     }
     ::-webkit-calendar-picker-indicator {
-      background: url(${require('../../../assets/Images/Calendars/CalendarIcon.svg').default}) no-repeat;
+      background: url(${require('../../../assets/Images/Calendars/CalendarIcon.svg')}) no-repeat;
       color: rgba(0, 0, 0, 0);
       opacity: 1;
       width: 20px;

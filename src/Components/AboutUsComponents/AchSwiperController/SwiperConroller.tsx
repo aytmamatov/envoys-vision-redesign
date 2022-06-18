@@ -9,7 +9,7 @@ function SwiperConroller() {
   return (
     <Flex align="center">
       <SCBtn onClick={() => swiper1.slidePrev()} img={false}>
-        <img src={require('../../../assets/Images/aboutUs/Ach/Controlls/vector.svg').default} alt="" />
+        <img src={require('../../../assets/Images/aboutUs/Ach/Controlls/vector.svg')} alt="" />
       </SCBtn>
       <Flex align="center" margin="0 8px">
         <SCCircle />
@@ -17,7 +17,7 @@ function SwiperConroller() {
         <SCCircle />
       </Flex>
       <SCBtn onClick={() => swiper1.slideNext()} img>
-        <img src={require('../../../assets/Images/aboutUs/Ach/Controlls/vector.svg').default} alt="" />
+        <img src={require('../../../assets/Images/aboutUs/Ach/Controlls/vector.svg')} alt="" />
       </SCBtn>
 
     </Flex>

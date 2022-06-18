@@ -50,7 +50,7 @@ const DisclosureMembers:React.FC = () => {
           <DisclosureItem key={index}>
             <DisclosureTitle>{el.name}</DisclosureTitle>
             <DisclosureLink href={el.site} target="_blank">
-              <img src={require('../../../assets/Images/Disclosure/WebSite.svg').default} alt="" />
+              <img src={require('../../../assets/Images/Disclosure/WebSite.svg')} alt="" />
               <span>
                 Перейти на сайт
               </span>

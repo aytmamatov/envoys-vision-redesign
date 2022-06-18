@@ -12,7 +12,7 @@ const AnaliticsAdaptiveSidebar:React.FC = () => {
       <LLBurger
         className="analitics"
         onClick={(() => setShow(true))}
-        src={require('../../../assets/Images/Header/burger.svg').default}
+        src={require('../../../assets/Images/Header/burger.svg')}
       />
 
       <ASSC show={show}>
@@ -43,7 +43,7 @@ const AnaliticsAdaptiveSidebar:React.FC = () => {
           <LLBurger
             className="analitics"
             onClick={(() => setShow(false))}
-            src={require('../../../assets/Images/Header/burgerClose.svg').default}
+            src={require('../../../assets/Images/Header/burgerClose.svg')}
           />
         </Flex>
       </ASSC>

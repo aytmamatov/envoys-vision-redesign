@@ -20,12 +20,12 @@ const DRCDD:React.FC<Props> = (props) => {
     <>
       <DRCDDTop onClick={() => setClick((val) => !val)}>
         <DRCDDTitle>{props.title}</DRCDDTitle>
-        <DRCDDImage src={require('../../../../assets/Images/Disclosure/open.svg').default} />
+        <DRCDDImage src={require('../../../../assets/Images/Disclosure/open.svg')} />
       </DRCDDTop>
 
       <DRCDDBottom show={click}>
         <DRCDDBottomTitleWrap>
-          <DRCDDDoc src={require('../../../../assets/Images/Disclosure/doc-icon.svg').default} />
+          <DRCDDDoc src={require('../../../../assets/Images/Disclosure/doc-icon.svg')} />
           <DRCDDBottomTitle
             href={props.insideTitlePath}
             target="_blank"
@@ -34,7 +34,7 @@ const DRCDD:React.FC<Props> = (props) => {
           </DRCDDBottomTitle>
 
           <DRCDDImage2
-            src={require('../../../../assets/Images/Disclosure/close.svg').default}
+            src={require('../../../../assets/Images/Disclosure/close.svg')}
             onClick={() => setClick(false)}
           />
         </DRCDDBottomTitleWrap>

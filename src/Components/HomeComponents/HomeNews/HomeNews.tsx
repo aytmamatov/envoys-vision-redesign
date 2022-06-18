@@ -45,7 +45,7 @@ const HomeNews:React.FC = () => {
                 <HomeNewsItemDate>{el.date}</HomeNewsItemDate>
                 <HomeNewsItemBtn>
                   Подребнее
-                  <img src={require('../../../assets/Images/home/news.svg').default} alt="" />
+                  <img src={require('../../../assets/Images/home/news.svg')} alt="" />
                 </HomeNewsItemBtn>
               </Flex>
             </HomeNewsItem>

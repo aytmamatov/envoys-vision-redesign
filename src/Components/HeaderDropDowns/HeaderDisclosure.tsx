@@ -3,7 +3,7 @@ import { HeaderDD, HeaderLinkDD, HeaderNavLink } from '../Header/HeaderSC';
 
 const HeaderDisclosure:React.FC = () => {
   const [show, setShow] = useState(false);
-  const DD = require('../../assets/Images/Header/DD.svg').default;
+  const DD = require('../../assets/Images/Header/DD.svg');
 
   return (
     <HeaderNavLink

@@ -16,7 +16,7 @@ type Props = {
 }
 
 const Header:React.FC<Props> = ({ burgerShow, burgerSetShow }) => {
-  const Logo = require('../../assets/Images/logo.svg').default;
+  const Logo = require('../../assets/Images/logo.svg');
 
   return (
     <HeaderSC>

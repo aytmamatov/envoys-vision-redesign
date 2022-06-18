@@ -19,7 +19,7 @@ const SearchComponent:React.FC<SearchProps> = (props) => {
         className={props.className}
       />
       <button>
-        <img src={require('../../assets/Images/search/search.svg').default} alt="" />
+        <img src={require('../../assets/Images/search/search.svg')} alt="" />
       </button>
     </SearchComponentWrap>
   );
