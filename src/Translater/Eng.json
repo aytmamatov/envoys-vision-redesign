@@ -377,6 +377,27 @@
         "text4": "The Exchange has the right to instruct the Intermediary (Realtor) for a fee to carry out work on the preparation / examination of a package of documents submitted to the Auction by the Organizer with the determination of the result of the work done (examination)."
       },
       "text": "― a type of secondary securities that serve as a universal tool for refinancing investments in housing construction, that is, a means for short-term recovery of financial injections into residential properties that are purchased on the market through mortgages. At the same time, securities maintain the stability of refinancing mortgage construction through the fact that the return of funds to the investor is carried out within a period shorter than the maturity of the mortgage loan amount."
+    },
+    "sidebar": {
+      "titles": {
+        "title1": "STOCK MARKET",
+        "title2": "SECTORS",
+        "title3": "MARKETS"
+      },
+      "links": {
+        "link1": "Russian market",
+        "link2": "American market",
+        "link3": "Kyrgyz market",
+        "link4": "Mining sector",
+        "link5": "Industry",
+        "link6": "Financial sector",
+        "link7": "Agriculture",
+        "link8": "Precious metals market",
+        "link9": "Foreign exchange market",
+        "link10": "Cryptocurrency market",
+        "link11": "Commodity sector",
+        "link12": "Real Estate Market"
+      }
     }
   }
 }
