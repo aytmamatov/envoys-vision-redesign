@@ -1,6 +1,7 @@
 import React from 'react';
 import {
-  DRCDDBottom, DRCDDBottomTitle, DRCDDBottomTitleWrap, DRCDDDoc, DRCDDImage, DRCDDImage2, DRCDDItem, DRCDDList, DRCDDTitle, DRCDDTop,
+  DRCDDBottom, DRCDDBottomTitle, DRCDDBottomTitleWrap, DRCDDDoc,
+  DRCDDImage, DRCDDImage2, DRCDDItem, DRCDDList, DRCDDTitle, DRCDDTop,
 } from './DRCDDSC';
 
 interface Props{
@@ -13,13 +14,15 @@ interface Props{
     }[];
 }
 
-const DRCDD:React.FC<Props> = (props) => {
+const DRCDD:React.FC<Props> = ({
+  title, insideTitlePath, insideTitle, paths,
+}) => {
   const [click, setClick] = React.useState(false);
 
   return (
     <>
       <DRCDDTop onClick={() => setClick((val) => !val)}>
-        <DRCDDTitle>{props.title}</DRCDDTitle>
+        <DRCDDTitle>{title}</DRCDDTitle>
         <DRCDDImage src={require('../../../../assets/Images/Disclosure/open.svg')} />
       </DRCDDTop>
 
@@ -27,10 +30,10 @@ const DRCDD:React.FC<Props> = (props) => {
         <DRCDDBottomTitleWrap>
           <DRCDDDoc src={require('../../../../assets/Images/Disclosure/doc-icon.svg')} />
           <DRCDDBottomTitle
-            href={props.insideTitlePath}
+            href={insideTitlePath}
             target="_blank"
           >
-            {props.insideTitle}
+            {insideTitle}
           </DRCDDBottomTitle>
 
           <DRCDDImage2
@@ -40,7 +43,7 @@ const DRCDD:React.FC<Props> = (props) => {
         </DRCDDBottomTitleWrap>
 
         <DRCDDList>
-          {props.paths.map((el, index) => (
+          {paths.map((el, index) => (
             <DRCDDItem
               key={index}
               href={el.path}

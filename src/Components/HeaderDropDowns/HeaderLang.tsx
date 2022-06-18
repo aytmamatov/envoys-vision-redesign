@@ -7,24 +7,24 @@ type Props = {
   adaptiveShow: boolean;
 }
 
-const HeaderLang:React.FC<Props> = (props) => {
+const HeaderLang:React.FC<Props> = ({ burgerShow, burgerSetShow, adaptiveShow }) => {
   const [lang, setLang] = useState('Русский');
   const DD = require('../../assets/Images/Header/header.svg');
 
   function changeLang(e:React.MouseEvent<HTMLButtonElement>) {
     e.stopPropagation();
-    props.burgerSetShow((val) => !val);
+    burgerSetShow((val) => !val);
   }
 
   return (
     <HeaderBtn
-      className={`${props.adaptiveShow ? 'show' : ''}`}
+      className={`${adaptiveShow ? 'show' : ''}`}
       onClick={(e) => changeLang(e)}
     >
       {lang}
       <img src={DD} alt="dd" />
 
-      <HeaderDDlang show={props.burgerShow}>
+      <HeaderDDlang show={burgerShow}>
         <HeaderLangBtn onClick={() => setLang('Русский')}>Русский</HeaderLangBtn>
         <HeaderLangBtn onClick={() => setLang('English')}>English</HeaderLangBtn>
         <HeaderLangBtn onClick={() => setLang('中国人')}>中国人</HeaderLangBtn>

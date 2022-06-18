@@ -7,19 +7,19 @@ interface Props {
     earning: boolean;
 }
 
-const AnaliticsList:React.FC<Props> = (props) => (
+const AnaliticsList:React.FC<Props> = ({ header, list, earning }) => (
   <AnaliticsListSC>
     <AnaliticsListHeader>
-      {props.header.map((el, index) => (
+      {header.map((el, index) => (
         <p key={index}>
           {el}
         </p>
       ))}
     </AnaliticsListHeader>
-    {props.list.map((el, index) => (
+    {list.map((el, index) => (
       <AnaliticsListList key={index}>
         {el.map((a, i) => (
-          <p key={i} className={`${props.earning ? 'earning' : ''}`}>{a}</p>
+          <p key={i} className={`${earning ? 'earning' : ''}`}>{a}</p>
         ))}
       </AnaliticsListList>
     ))}

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const MarketWrap = styled.div`
+const MarketWrap = styled.div`
     margin: 100px 0 100px 50px;
     width: 100%;
 
@@ -8,3 +8,5 @@ export const MarketWrap = styled.div`
         margin: 100px 0;
     }
 `;
+
+export default MarketWrap;

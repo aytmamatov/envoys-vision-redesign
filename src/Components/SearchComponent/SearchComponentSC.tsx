@@ -4,7 +4,7 @@ type SCProps = {
     width: string;
 }
 
-export const SearchComponentWrap = styled.div<SCProps>`
+const SearchComponentWrap = styled.div<SCProps>`
     max-width: ${(props) => props.width};
     width: 100%;
     display: flex;
@@ -56,3 +56,5 @@ export const SearchComponentWrap = styled.div<SCProps>`
         width: 20px;
     }
 `;
+
+export default SearchComponentWrap;

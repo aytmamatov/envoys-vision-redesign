@@ -16,20 +16,20 @@ interface ListingContent {
     active: string;
 }
 
-const MarketContent:React.FC<ListingContent> = (props) => {
-  if (props.active === 'EnMarket') return <EnMarket />;
-  if (props.active === 'KgMarket') return <KgMarket />;
-  if (props.active === 'RuMarket') return <RuMarket />;
+const MarketContent:React.FC<ListingContent> = ({ active }) => {
+  if (active === 'EnMarket') return <EnMarket />;
+  if (active === 'KgMarket') return <KgMarket />;
+  if (active === 'RuMarket') return <RuMarket />;
 
-  if (props.active === 'miningSector') return <MiningSector />;
-  if (props.active === 'industry') return <Industry />;
-  if (props.active === 'financialSector') return <FinancialSector />;
-  if (props.active === 'ariculture') return <Ariculture />;
+  if (active === 'miningSector') return <MiningSector />;
+  if (active === 'industry') return <Industry />;
+  if (active === 'financialSector') return <FinancialSector />;
+  if (active === 'ariculture') return <Ariculture />;
 
-  if (props.active === 'preciousMetalsMarket') return <PreciousMetalsMarket />;
-  if (props.active === 'currencyMarket') return <CurrencyMarket />;
-  if (props.active === 'cryptoMarket') return <CryptoMarket />;
-  if (props.active === 'commoditySector') return <CommoditySector />;
+  if (active === 'preciousMetalsMarket') return <PreciousMetalsMarket />;
+  if (active === 'currencyMarket') return <CurrencyMarket />;
+  if (active === 'cryptoMarket') return <CryptoMarket />;
+  if (active === 'commoditySector') return <CommoditySector />;
 
   return <RealEstateMarket />;
 };

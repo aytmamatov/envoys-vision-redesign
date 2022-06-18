@@ -6,7 +6,7 @@ interface SidebarProps{
   active: string;
 }
 
-const DisclosureSideBar:React.FC<SidebarProps> = (props) => (
+const DisclosureSideBar:React.FC<SidebarProps> = ({ active }) => (
   <SidebarSC>
     <Flex width="100%" direction="column" align="flex-start">
       <SidebarTitle>
@@ -15,25 +15,25 @@ const DisclosureSideBar:React.FC<SidebarProps> = (props) => (
 
       <SidebarLink
         to="/disclosure?param=members"
-        className={props.active === 'Участники' ? 'active' : ''}
+        className={active === 'Участники' ? 'active' : ''}
       >
         Участники
       </SidebarLink>
       <SidebarLink
         to="/disclosure?param=rules"
-        className={props.active === 'Правила' ? 'active' : ''}
+        className={active === 'Правила' ? 'active' : ''}
       >
         Правила
       </SidebarLink>
       <SidebarLink
         to="/disclosure?param=legislationKR"
-        className={props.active === 'Законодательство КР' ? 'active' : ''}
+        className={active === 'Законодательство КР' ? 'active' : ''}
       >
         Законодательство КР
       </SidebarLink>
       <SidebarLink
         to="/disclosure?param=disclosure"
-        className={props.active === 'Раскрытия информации' ? 'active' : ''}
+        className={active === 'Раскрытия информации' ? 'active' : ''}
       >
         Раскрытия информации
       </SidebarLink>

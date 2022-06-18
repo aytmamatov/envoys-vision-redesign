@@ -8,10 +8,10 @@ interface ListingContent {
   active: string;
 }
 
-const DisclosureContentSide:React.FC<ListingContent> = (props) => {
-  if (props.active === 'Участники') return (<DisclosureMembers />);
-  if (props.active === 'Правила') return (<DisclosureRules />);
-  if (props.active === 'Законодательство КР') return (<DisclosureLegislation />);
+const DisclosureContentSide:React.FC<ListingContent> = ({ active }) => {
+  if (active === 'Участники') return (<DisclosureMembers />);
+  if (active === 'Правила') return (<DisclosureRules />);
+  if (active === 'Законодательство КР') return (<DisclosureLegislation />);
   return (<DisclosureDisclosure />);
 };
 

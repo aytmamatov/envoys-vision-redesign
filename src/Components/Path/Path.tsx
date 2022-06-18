@@ -6,12 +6,12 @@ type PathProps = {
     title: string;
 }
 
-const Path:React.FC<PathProps> = (props) => (
+const Path:React.FC<PathProps> = ({ title }) => (
   <PathSC>
     <Container>
       <PathWrap>
         <PathTitle>
-          {props.title}
+          {title}
         </PathTitle>
       </PathWrap>
     </Container>

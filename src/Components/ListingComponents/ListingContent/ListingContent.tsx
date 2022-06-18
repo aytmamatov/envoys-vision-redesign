@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ListingCompanyDisclosures from '../ListingCompanyDisclosures/ListingCompanyDisclosures';
 import ListingList from '../ListingList/ListingList';
 import ListingsBonds from '../ListingsBonds/ListingsBonds';
 
-interface ListingContent {
+interface ListingContentWrapper {
   active: string;
 }
 
-const ListingContent:React.FC<ListingContent> = (props) => {
-  if (props.active === 'Список компаний') return (<ListingList />);
-  if (props.active === 'Облигации') return (<ListingsBonds />);
+const ListingContent:React.FC<ListingContentWrapper> = ({ active }) => {
+  if (active === 'Список компаний') return (<ListingList />);
+  if (active === 'Облигации') return (<ListingsBonds />);
   return (<ListingCompanyDisclosures />);
 };
 

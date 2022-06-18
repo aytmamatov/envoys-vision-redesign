@@ -3,16 +3,16 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 
 interface Props {
-    children: any
+  children: any
 }
 
-const Layout:React.FC<Props> = (props) => {
+const Layout:React.FC<Props> = ({ children }) => {
   const [show, setShow] = React.useState<boolean>(false);
 
   return (
-    <div onClick={(e) => setShow(false)}>
+    <div onClick={() => setShow(false)} onKeyDown={() => setShow(false)}>
       <Header burgerShow={show} burgerSetShow={setShow} />
-      {props.children}
+      {children}
       <Footer />
     </div>
   );

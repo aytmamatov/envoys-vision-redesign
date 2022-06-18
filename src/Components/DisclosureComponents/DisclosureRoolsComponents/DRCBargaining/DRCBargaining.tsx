@@ -1,6 +1,6 @@
 import React from 'react';
 import DRCDD from '../DRCDD/DRCDD';
-import { DRCWrap } from '../DRCListing/DRCListingSC';
+import DRCWrap from '../DRCListing/DRCListingSC';
 
 const DRCBargaining:React.FC = () => (
   <DRCWrap>

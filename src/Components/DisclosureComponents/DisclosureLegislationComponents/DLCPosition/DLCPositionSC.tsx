@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DRCWrap } from '../../DisclosureRoolsComponents/DRCListing/DRCListingSC';
+import DRCWrap from '../../DisclosureRoolsComponents/DRCListing/DRCListingSC';
 
 export const DCWrap = styled(DRCWrap)`   
     max-width: 680px;

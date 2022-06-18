@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flex } from '../../../../uikit/uikit';
 import AdaptiveSidebar from '../../MarketAdaptiveSideBar/MarketAdaptiveSideBar';
-import { MarketWrap } from '../../MarketContent/MarketContentSC';
+import MarketWrap from '../../MarketContent/MarketContentSC';
 import {
   MarketItem, MarketItemTitle, MarketList, MarketPreTitle, MarketText, MarketTitle,
 } from '../KgMarket/KgMarketSC';

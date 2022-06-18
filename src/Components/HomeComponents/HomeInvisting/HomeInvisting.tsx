@@ -2,7 +2,9 @@ import React from 'react';
 import { Button, Container } from '../../../uikit/uikit';
 import HomeInvistingAdaptive from '../HomeInvistingAdaptive/HomeInvisting';
 import {
-  HomeInvisting2Text, HomeInvisting2Title, HomeInvistingItem, HomeInvistingOption, HomeInvistingOptionText, HomeInvistingSC, HomeInvistingText, HomeInvistingTitle, HomeInvistingWrap,
+  HomeInvisting2Text, HomeInvisting2Title, HomeInvistingItem,
+  HomeInvistingOption, HomeInvistingOptionText, HomeInvistingSC,
+  HomeInvistingText, HomeInvistingTitle, HomeInvistingWrap,
 } from './HomeInvistingSC';
 
 const HomeInvisting:React.FC = () => {
@@ -10,15 +12,19 @@ const HomeInvisting:React.FC = () => {
 
   function checkItem() {
     if (options === 0) {
+      // eslint-disable-next-line react/jsx-no-useless-fragment
       return (<></>);
     } if (options === 1) {
       return (
         <>
           <HomeInvisting2Title>
-            Под инвестированием в ценные бумаги понимается вложение средств в различные активы – от объектов недвижимости и бизнес-проектов до ценных бумаг и криптовалют.
+            Под инвестированием в ценные бумаги понимается вложение средств в различные активы
+            – от объектов недвижимости и бизнес-проектов до ценных бумаг и криптовалют.
           </HomeInvisting2Title>
           <HomeInvisting2Text>
-            Каждая ценная бумага удостоверяет право ее владельца на часть имущественных активов либо подтверждает факт займа. Ценные бумаги выпускаются в стандартном бумажном виде или в электронной форме.
+            Каждая ценная бумага удостоверяет право ее владельца на часть имущественных
+            активов либо подтверждает факт займа.
+            Ценные бумаги выпускаются в стандартном бумажном виде или в электронной форме.
           </HomeInvisting2Text>
         </>
       );
@@ -26,10 +32,15 @@ const HomeInvisting:React.FC = () => {
     return (
       <>
         <HomeInvisting2Title>
-          Сам по себе вид ценной бумаги уже может свидетельствовать о потенциальном доходе. Среди наиболее распространенных финансовых инструментов, представленных на рынке, можно выделить
+          Сам по себе вид ценной бумаги уже может свидетельствовать о потенциальном доходе.
+          Среди наиболее распространенных финансовых инструментов,
+          представленных на рынке, можно выделить
         </HomeInvisting2Title>
         <HomeInvisting2Text>
-          Возможно и инвестирование в ценные бумаги производного характера (опционы, фьючерсы и свопы). Не все виды финансовых инструментов доступны на фондовом рынке. Например, инвестор может вложить деньги в вексель, однако оборот такого документа происходит вне фондовых бирж.
+          Возможно и инвестирование в ценные бумаги производного характера
+          (опционы, фьючерсы и свопы). Не все виды финансовых инструментов
+          доступны на фондовом рынке. Например, инвестор может вложить деньги в вексель,
+          однако оборот такого документа происходит вне фондовых бирж.
         </HomeInvisting2Text>
       </>
     );

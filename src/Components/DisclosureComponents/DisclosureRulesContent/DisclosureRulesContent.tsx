@@ -6,7 +6,7 @@ import DRCDoc from '../DisclosureRoolsComponents/DRCDoc/DRCDoc';
 import DRCListing from '../DisclosureRoolsComponents/DRCListing/DRCListing';
 
 interface DRCProps {
-    path: string
+  path: string
 }
 
 const DisclosureRulesContent:React.FC<DRCProps> = ({ path }) => {
@@ -15,8 +15,8 @@ const DisclosureRulesContent:React.FC<DRCProps> = ({ path }) => {
   const [searchParams] = useSearchParams();
 
   React.useEffect(() => {
-    const path = searchParams.get('header');
-    if (path) setActiveHeader(path);
+    const currentPath = searchParams.get('header');
+    if (currentPath) setActiveHeader(path);
   }, [searchParams]);
 
   if (activeHeader === 'listing') return <DRCListing />;

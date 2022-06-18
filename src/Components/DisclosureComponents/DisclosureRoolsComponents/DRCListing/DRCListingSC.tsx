@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const DRCWrap = styled.div`
+const DRCWrap = styled.div`
     margin: 50px 0 0;
     padding: 35px 0;
 
@@ -8,3 +8,5 @@ export const DRCWrap = styled.div`
         margin: 35px 0 0;
     }
 `;
+
+export default DRCWrap;

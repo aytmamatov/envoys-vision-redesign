@@ -4,7 +4,7 @@ import DLCLaws from '../DisclosureLegislationComponents/DLCLaws/DLCLaws';
 import DLCPosition from '../DisclosureLegislationComponents/DLCPosition/DLCPosition';
 
 interface DRCProps {
-    path: string
+  path: string
 }
 
 const DisclosureLegislationContent:React.FC<DRCProps> = ({ path }) => {
@@ -13,8 +13,8 @@ const DisclosureLegislationContent:React.FC<DRCProps> = ({ path }) => {
   const [searchParams] = useSearchParams();
 
   React.useEffect(() => {
-    const path = searchParams.get('header');
-    if (path) setActiveHeader(path);
+    const currentPath = searchParams.get('header');
+    if (currentPath) setActiveHeader(path);
   }, [searchParams]);
 
   if (activeHeader === 'position') return <DLCPosition />;

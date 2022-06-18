@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-  LHLink, LHNav, LHSC, LHTotal,
+  LHLink, LHNav, LHSC,
 } from '../../ListingComponents/ListingHeader/ListingHeaderSC';
 
-interface Props{
+interface Props {
   total: number;
   active: string;
 }
