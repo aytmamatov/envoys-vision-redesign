@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import DisclosureDisclosure from '../DisclosureDisclosure/DisclosureDisclosure';
 import DisclosureLegislation from '../DisclosureLegislation/DisclosureLegislation';
 import DisclosureMembers from '../DisclosureMembers/DisclosureMembers';
@@ -9,11 +9,10 @@ interface ListingContent {
 }
 
 const DisclosureContentSide:React.FC<ListingContent> = (props) => {
-  if(props.active === 'Участники') return (<DisclosureMembers/>)
-  else if(props.active === 'Правила') return (<DisclosureRules/>)
-  else if(props.active === 'Законодательство КР') return (<DisclosureLegislation/>)
-  return (<DisclosureDisclosure/>) 
-}
+  if (props.active === 'Участники') return (<DisclosureMembers />);
+  if (props.active === 'Правила') return (<DisclosureRules />);
+  if (props.active === 'Законодательство КР') return (<DisclosureLegislation />);
+  return (<DisclosureDisclosure />);
+};
 
-export default DisclosureContentSide
-
+export default DisclosureContentSide;

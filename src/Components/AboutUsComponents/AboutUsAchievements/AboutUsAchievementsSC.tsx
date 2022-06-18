@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const AUASC = styled.section`
     position: relative;
     margin: 180px 0;
-`
+`;
 
 export const AUAWrap = styled.div`
     background: #fff;
@@ -16,12 +16,12 @@ export const AUAWrap = styled.div`
     @media(max-width: 540px){
         padding: 60px 15px;
     }
-`
+`;
 
 export const AUAInfo = styled.div`
     flex: 1;
     width: 50%;
-`
+`;
 
 export const AUAInfo2 = styled.div`
     flex: 1;
@@ -29,14 +29,14 @@ export const AUAInfo2 = styled.div`
         display: flex;
         flex: 0;
     }
-` 
+`;
 
 export const AUAInfoInside = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
-`
+`;
 
 export const AUADate = styled.p`
     font-family: 'Exo 2';
@@ -47,7 +47,7 @@ export const AUADate = styled.p`
     text-transform: uppercase;
     color: #F48020;
     
-`
+`;
 
 export const AUAText = styled.p`
     font-family: 'Exo 2';
@@ -64,7 +64,7 @@ export const AUAText = styled.p`
         font-size: 24px;
         line-height: 30px;
     }
-`
+`;
 
 export const AUANum = styled.h1`
     font-family: 'Roboto Flex';
@@ -80,7 +80,7 @@ export const AUANum = styled.h1`
     @media(max-width: 540px){
         font-size: 365px;
     }
-`
+`;
 
 export const AUAIamge = styled.img`
     width: 100%;
@@ -94,4 +94,4 @@ export const AUAIamge = styled.img`
     @media(max-width: 1020px){
         display: none;
     }
-`
+`;

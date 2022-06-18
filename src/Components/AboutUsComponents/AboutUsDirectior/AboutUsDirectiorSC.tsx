@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const AUD = styled.section`
-    background: url(${require('../../../Assets/Images/aboutUs/bg.jpg')}) 0 0 / cover;
+    background: url(${require('../../../assets/Images/aboutUs/bg.jpg')}) 0 0 / cover;
     padding: 146px 0 190px;
     @media(max-width: 1020px){
         padding: 100px 0 90px;
-        background: url(${require('../../../Assets/Images/aboutUs/bgAdaptive.jpg')}) 0 0 / cover;
+        background: url(${require('../../../assets/Images/aboutUs/bgAdaptive.jpg')}) 0 0 / cover;
     }
-`
+`;
 
 export const AUDWrap = styled.div`
     display: flex;
@@ -17,11 +17,11 @@ export const AUDWrap = styled.div`
         flex-direction: column;
         text-align: center;
     }
-`
+`;
 
 export const AUDInfo = styled.div`
     max-width: 820px;
-` 
+`;
 
 export const AUDInfoTitle = styled.h2`
     font-family: 'Exo 2';
@@ -48,7 +48,7 @@ export const AUDInfoTitle = styled.h2`
             line-height: 40px;
         }
     }
-`
+`;
 
 export const AUDInfoText = styled.p`
     font-family: 'Roboto Flex';
@@ -62,7 +62,7 @@ export const AUDInfoText = styled.p`
         font-size: 16px;
         line-height: 19px;
     }
-`
+`;
 
 export const AUDDirector = styled.div`
     display: flex;
@@ -74,7 +74,7 @@ export const AUDDirector = styled.div`
     @media(max-width: 520px){
         margin: 20px 0 0;
     }
-` 
+`;
 
 export const AUDDirectorImage = styled.img`
     max-width: 500px;
@@ -84,7 +84,7 @@ export const AUDDirectorImage = styled.img`
     @media(max-width: 520px){
         min-width: 295px;
     }
-`
+`;
 
 export const AUDDirectorInfo = styled.div`
     max-width: 430px;
@@ -92,7 +92,7 @@ export const AUDDirectorInfo = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-`
+`;
 
 export const AUDDirectiorTitle = styled.h3`
     font-family: 'Exo 2';
@@ -108,7 +108,7 @@ export const AUDDirectiorTitle = styled.h3`
         line-height: 40px;
         margin: 10px 0;
     }
-`
+`;
 
 export const AUDDirectorText = styled.p`
     font-family: 'Roboto Flex';
@@ -123,7 +123,7 @@ export const AUDDirectorText = styled.p`
         line-height: 23px;
         margin: 0 0 10px;
     }
-`
+`;
 
 export const AUDDirectorIconWrap = styled.a`
     width: 36px;
@@ -140,13 +140,4 @@ export const AUDDirectorIconWrap = styled.a`
     img{
         width: 20px;
     }
-`
-
-
-
-
-
-
-
-
-
+`;

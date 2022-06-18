@@ -1,14 +1,14 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HomeDocsSC = styled.section`
     padding: 0 0 70px;
-`
+`;
 
 export const HomeDocsNav = styled.nav`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-`
+`;
 
 export const HomeDocsLink = styled.a`
     background: #FFFFFF;
@@ -27,7 +27,7 @@ export const HomeDocsLink = styled.a`
         height: 100% !important;
         filter: drop-shadow(0px 217px 130px rgba(0, 0, 0, 0.01)) drop-shadow(0px 97px 97px rgba(0, 0, 0, 0.01)) drop-shadow(0px 24px 53px rgba(0, 0, 0, 0.01)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.01));
     }
-`
+`;
 
 export const HomeDocsLinkTile = styled.h3`
     font-family: 'Roboto Flex';
@@ -38,4 +38,4 @@ export const HomeDocsLinkTile = styled.h3`
     text-align: center;
     color: #2C2C2C;
     margin: 25px 0;
-`
+`;

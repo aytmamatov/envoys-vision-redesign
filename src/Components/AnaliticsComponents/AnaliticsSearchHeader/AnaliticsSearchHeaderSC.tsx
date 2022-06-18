@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const ASHWrap = styled.div`
     display: flex;
@@ -9,8 +8,7 @@ export const ASHWrap = styled.div`
     @media(max-width: 1388px){
         flex-direction: column;
     }
-`
-
+`;
 
 export const ASHSwiper = styled.div`
     max-width: 940px;
@@ -30,7 +28,7 @@ export const ASHSwiper = styled.div`
             font-size: 23px;
         }
     }
-`
+`;
 
 export const ASHSlide = styled.div`
 
@@ -52,7 +50,7 @@ export const ASHSlide = styled.div`
             color: #4478BB;
         }
     }
-`
+`;
 
 export const ASHDate = styled.input`
     border: none;
@@ -76,7 +74,7 @@ export const ASHDate = styled.input`
         color: #7A7A7A;
     }
     ::-webkit-calendar-picker-indicator {
-      background: url(${require('../../../Assets/Images/Calendars/CalendarIcon.svg')['default']}) no-repeat;
+      background: url(${require('../../../assets/Images/Calendars/CalendarIcon.svg').default}) no-repeat;
       color: rgba(0, 0, 0, 0);
       opacity: 1;
       width: 20px;
@@ -90,7 +88,7 @@ export const ASHDate = styled.input`
         margin: 0;
     }
 
-`
+`;
 
 export const ASHSearcAndSidebar = styled.div`
     display: flex;
@@ -112,4 +110,4 @@ export const ASHSearcAndSidebar = styled.div`
         }
     }
 
-`
+`;

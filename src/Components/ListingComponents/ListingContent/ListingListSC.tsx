@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const LLSC = styled.section`
     margin: 30px 0 0 50px;
@@ -6,7 +6,7 @@ export const LLSC = styled.section`
     @media(max-width: 1020px){
         margin: 30px 0;
     }
-`
+`;
 
 export const LLInputWrap = styled.div`
     margin: 0 0 0 auto;
@@ -35,7 +35,7 @@ export const LLInputWrap = styled.div`
     @media(max-width: 600px){
         order: 1;
     }
-`
+`;
 
 export const LLHeaderWrap = styled.div`
     display: flex;
@@ -46,7 +46,7 @@ export const LLHeaderWrap = styled.div`
         flex-direction: column;
         justify-content: flex-start;
     }
-`
+`;
 
 export const LLBurger = styled.img`
     cursor: pointer;
@@ -66,5 +66,4 @@ export const LLBurger = styled.img`
             display: block !important;
         }
     }
-`
-
+`;

@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { SearchComponentWrap } from './SearchComponentSC'
+import React, { useState } from 'react';
+import { SearchComponentWrap } from './SearchComponentSC';
 
 type SearchProps = {
   width: string;
@@ -8,21 +8,21 @@ type SearchProps = {
 }
 
 const SearchComponent:React.FC<SearchProps> = (props) => {
-  const [inputValue, setInputValue] = useState('')
+  const [inputValue, setInputValue] = useState('');
 
   return (
     <SearchComponentWrap width={props.width}>
-      <input 
-        type="text" 
+      <input
+        type="text"
         placeholder={props.placeholder}
         onChange={((e) => setInputValue(e.target.value))}
         className={props.className}
       />
       <button>
-        <img src={require('../../Assets/Images/search/search.svg')['default']} alt="" />
+        <img src={require('../../assets/Images/search/search.svg').default} alt="" />
       </button>
     </SearchComponentWrap>
-  )
-}
+  );
+};
 
-export default SearchComponent
+export default SearchComponent;

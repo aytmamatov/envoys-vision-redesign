@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 type FlexProps = {
   justify?: 'space-between' | 'space-around' | 'center' | 'flex-start' | 'flex-end';
@@ -22,13 +22,12 @@ export const Flex = styled.div<FlexProps>`
   width: ${(props) => props.width || 'auto'};
 `;
 
-
 export const Container = styled.div`
   max-width: 1420px;
   margin: 0 auto;
   padding: 0 10px;
   height: 100%;
-`
+`;
 
 export const Button = styled.button`
   font-family: 'Roboto Flex';
@@ -44,4 +43,4 @@ export const Button = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
-`
+`;

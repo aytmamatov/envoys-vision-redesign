@@ -1,55 +1,59 @@
-import React from 'react'
-import { DRCDDBottom, DRCDDBottomTitle, DRCDDBottomTitleWrap, DRCDDDoc, DRCDDImage, DRCDDImage2, DRCDDItem, DRCDDList, DRCDDTitle, DRCDDTop } from './DRCDDSC';
+import React from 'react';
+import {
+  DRCDDBottom, DRCDDBottomTitle, DRCDDBottomTitleWrap, DRCDDDoc, DRCDDImage, DRCDDImage2, DRCDDItem, DRCDDList, DRCDDTitle, DRCDDTop,
+} from './DRCDDSC';
 
 interface Props{
     title: string;
     insideTitle: string;
     insideTitlePath: string;
     paths: {
-        name: string; 
+        name: string;
         path: string;
     }[];
 }
 
 const DRCDD:React.FC<Props> = (props) => {
-    const [click, setClick] = React.useState(false)
+  const [click, setClick] = React.useState(false);
 
   return (
     <>
-        <DRCDDTop onClick={() => setClick(val => !val)}>
-            <DRCDDTitle>{props.title}</DRCDDTitle>
-            <DRCDDImage src={require('../../../../Assets/Images/Disclosure/open.svg')['default']}/>
-        </DRCDDTop>
+      <DRCDDTop onClick={() => setClick((val) => !val)}>
+        <DRCDDTitle>{props.title}</DRCDDTitle>
+        <DRCDDImage src={require('../../../../assets/Images/Disclosure/open.svg').default} />
+      </DRCDDTop>
 
-        <DRCDDBottom show={click}>
-            <DRCDDBottomTitleWrap>
-                <DRCDDDoc src={require('../../../../Assets/Images/Disclosure/doc-icon.svg')['default']}/>
-                <DRCDDBottomTitle 
-                    href={props.insideTitlePath} 
-                    target='_blank'>
-                    {props.insideTitle}
-                </DRCDDBottomTitle>
+      <DRCDDBottom show={click}>
+        <DRCDDBottomTitleWrap>
+          <DRCDDDoc src={require('../../../../assets/Images/Disclosure/doc-icon.svg').default} />
+          <DRCDDBottomTitle
+            href={props.insideTitlePath}
+            target="_blank"
+          >
+            {props.insideTitle}
+          </DRCDDBottomTitle>
 
-                <DRCDDImage2 
-                    src={require('../../../../Assets/Images/Disclosure/close.svg')['default']} 
-                    onClick={() => setClick(false)}/>
-            </DRCDDBottomTitleWrap>
+          <DRCDDImage2
+            src={require('../../../../assets/Images/Disclosure/close.svg').default}
+            onClick={() => setClick(false)}
+          />
+        </DRCDDBottomTitleWrap>
 
-            <DRCDDList>
-                {props.paths.map((el, index) => (
-                    <DRCDDItem
-                        key={index}
-                        href={el.path} 
-                        target='_blank'
-                    >
-                        {el.name}
-                    </DRCDDItem>
-                ))}
-            </DRCDDList>
+        <DRCDDList>
+          {props.paths.map((el, index) => (
+            <DRCDDItem
+              key={index}
+              href={el.path}
+              target="_blank"
+            >
+              {el.name}
+            </DRCDDItem>
+          ))}
+        </DRCDDList>
 
-        </DRCDDBottom>
+      </DRCDDBottom>
     </>
-  )
-}
+  );
+};
 
-export default DRCDD
+export default DRCDD;

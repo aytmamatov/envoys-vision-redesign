@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-
-
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const CLWrap = styled.ul`
     padding: 40px;
@@ -13,7 +11,7 @@ export const CLWrap = styled.ul`
     @media(max-width: 603px){
         padding: 10px;
     }
-`
+`;
 
 export const CLItem = styled.li`
     display: flex;
@@ -26,7 +24,7 @@ export const CLItem = styled.li`
     :first-child{
         margin: 0 0 50px;
     }
-`
+`;
 
 export const CLItemTitle = styled.h3`
     flex: 1;
@@ -47,7 +45,7 @@ export const CLItemTitle = styled.h3`
     @media(max-width: 370PX){
         font-size: 14px;
     }
-`
+`;
 
 export const CLItemName = styled(Link)`
     flex: 1;
@@ -65,7 +63,7 @@ export const CLItemName = styled(Link)`
     @media(max-width: 370PX){
         font-size: 14px;
     }
-`
+`;
 
 export const CLItemNameC = styled.p`
     flex: 1;
@@ -84,5 +82,4 @@ export const CLItemNameC = styled.p`
     @media(max-width: 370PX){
         font-size: 14px;
     }
-`
-
+`;

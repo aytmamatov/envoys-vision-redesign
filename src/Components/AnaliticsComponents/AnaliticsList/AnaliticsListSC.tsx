@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const AnaliticsListSC = styled.ul`
     list-style: none;
@@ -31,7 +31,7 @@ export const AnaliticsListSC = styled.ul`
         background: #9c9b9b;
         border-radius: 8px;
     }
-`
+`;
 
 export const AnaliticsListHeader = styled.li`
     background: #F9F9F9;
@@ -68,7 +68,7 @@ export const AnaliticsListHeader = styled.li`
             min-width: 150px;
         }
     }
-`
+`;
 
 export const AnaliticsListList = styled(AnaliticsListHeader)`
     background: #fff;
@@ -95,4 +95,4 @@ export const AnaliticsListList = styled(AnaliticsListHeader)`
     } */
 
 
-`
+`;

@@ -1,9 +1,9 @@
-import styled from 'styled-components' 
-import { Button } from '../../../uikit/uikit'
+import styled from 'styled-components';
+import { Button } from '../../../uikit/uikit';
 
 export const HomeNewsSC = styled.section`
     margin: 0 0 100px;
-`
+`;
 
 export const HomeNewsTitle = styled.h2`
     font-family: 'Exo 2';
@@ -21,26 +21,26 @@ export const HomeNewsTitle = styled.h2`
         margin: 0 0 20px;
         font-size: 20px;
     }
-`
+`;
 
 export const HomeNewsBtn1 = styled(Button)`
     @media(max-width: 760px){
         display: none;
     }
-`
+`;
 
 export const HomeNewsBtn2 = styled(Button)`
     margin: 50px 0 0;
     @media(min-width: 760px){
         display: none;
     }
-`
+`;
 
 export const HomeNewsUl = styled.ul`
     list-style: none;
     display: flex;
     justify-content: space-between;
-`
+`;
 
 export const HomeNewsItem = styled.li`
     margin: 0 20px 0 0;
@@ -71,13 +71,12 @@ export const HomeNewsItem = styled.li`
             display: none;
         }
     }
-`
+`;
 
 export const HomeNewsImage = styled.img`
     width: 100%;
     border: 8px;
-`
-
+`;
 
 export const HomeNewsSmallText = styled.p`
     font-family: 'Roboto Flex';
@@ -87,7 +86,7 @@ export const HomeNewsSmallText = styled.p`
     line-height: 19px;
     color: #2C2C2C;
     margin: 10px 0;
-`
+`;
 
 export const HomeNewsItemTitle = styled.h3`
     font-family: 'Roboto Flex';
@@ -96,7 +95,7 @@ export const HomeNewsItemTitle = styled.h3`
     font-size: 20px;
     line-height: 25px;
     color: #2C2C2C;
-`
+`;
 
 export const HomeNewsItemDate = styled.p`
     font-family: 'Roboto Flex';
@@ -106,7 +105,7 @@ export const HomeNewsItemDate = styled.p`
     line-height: 20px;
     color: #F48020;
     margin: 0 8px 0 0;
-`
+`;
 
 export const HomeNewsItemBtn = styled.button`
     font-family: 'Roboto Flex';
@@ -127,7 +126,7 @@ export const HomeNewsItemBtn = styled.button`
         width: 32px;
         margin: 0 0 0 5px;
     }
-`
+`;
 
 export const HomeNewsItemBtnImage = styled.img`
-`
+`;

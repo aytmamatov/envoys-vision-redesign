@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const FooterSC = styled.footer`
     padding: 50px 0 70px;
     background: #FCFCFC;
-`
+`;
 
 export const FooterTop = styled.div`
     display: flex;
@@ -13,7 +12,7 @@ export const FooterTop = styled.div`
     @media(max-width: 1020px){
         justify-content: center;
     }
-`
+`;
 
 export const FooterNav = styled.nav`
     display: flex;
@@ -21,7 +20,7 @@ export const FooterNav = styled.nav`
     @media(max-width: 1020px){
         display: none;
     }
-`
+`;
 
 export const FooterNavLink = styled(Link)`
     display: flex;
@@ -40,8 +39,7 @@ export const FooterNavLink = styled(Link)`
         margin: 0 0 0 8px;
         width: 8px;
     }
-`
-
+`;
 
 export const FooterSocialIcons = styled.div`
     display: flex;
@@ -59,7 +57,7 @@ export const FooterSocialIcons = styled.div`
             }
         }       
     }
-`
+`;
 
 export const FooterBottom = styled.div`
     margin: 100px 0 0 0;
@@ -82,7 +80,7 @@ export const FooterBottom = styled.div`
             
         }
     }
-` 
+`;
 
 export const FooterBottomNav = styled.nav`
     display: flex;
@@ -94,7 +92,7 @@ export const FooterBottomNav = styled.nav`
         flex-direction: column;
         align-items: center;
     }
-`
+`;
 
 export const FooterBottomLink = styled.a`
     font-family: 'Roboto Flex';
@@ -110,4 +108,4 @@ export const FooterBottomLink = styled.a`
             margin: 0;
         }
     }
-`
+`;

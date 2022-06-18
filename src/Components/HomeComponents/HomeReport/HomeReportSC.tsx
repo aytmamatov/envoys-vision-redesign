@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const TableSC = styled.div`
     position: relative;
     bottom: 80px;
-`
+`;
 
 export const TableWrap = styled.div`
     max-width: 100%;
@@ -96,4 +96,4 @@ export const TableWrap = styled.div`
             margin: 0;
         }
     }
-`
+`;

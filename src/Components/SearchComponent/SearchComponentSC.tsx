@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 type SCProps = {
     width: string;
 }
 
 export const SearchComponentWrap = styled.div<SCProps>`
-    max-width: ${props => props.width};
+    max-width: ${(props) => props.width};
     width: 100%;
     display: flex;
     align-items: center;
@@ -55,4 +55,4 @@ export const SearchComponentWrap = styled.div<SCProps>`
     img{
         width: 20px;
     }
-`
+`;

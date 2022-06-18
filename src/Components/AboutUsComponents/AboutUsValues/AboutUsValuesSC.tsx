@@ -1,10 +1,9 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const AUVSC = styled.section`
     padding: 80px 0 200px;
     background: #F9F9F9;
-`
+`;
 
 export const AUVTitle = styled.h1`
     font-family: 'Exo 2';
@@ -19,7 +18,7 @@ export const AUVTitle = styled.h1`
         font-size: 36px;
         line-height: 40px;
     }
-`
+`;
 
 export const AUVList = styled.ul`
     list-style: none;
@@ -36,7 +35,7 @@ export const AUVList = styled.ul`
         align-items: center;
         justify-content: flex-start;
     }
-`
+`;
 
 export const AUVItem = styled.li`
     max-width: 460px;
@@ -95,6 +94,4 @@ export const AUVItem = styled.li`
             line-height: 19px;
         }
     }
-`
-
-
+`;

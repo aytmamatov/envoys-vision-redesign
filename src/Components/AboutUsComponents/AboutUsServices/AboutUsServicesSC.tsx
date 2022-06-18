@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const AUSSC = styled.section`
     margin: 0 0 100px;
-` 
+`;
 
 export const AUSTitle = styled.h2`
     font-family: 'Exo 2';
@@ -35,11 +35,11 @@ export const AUSTitle = styled.h2`
         font-size: 24px;
         line-height: 30px;
     }
-`
+`;
 
 export const AUSSwiper = styled.div`
     padding: 0 10px;
-`
+`;
 
 export const AUSSlideImg = styled.img`
     border-radius: 8px;
@@ -50,7 +50,7 @@ export const AUSSlideImg = styled.img`
     @media(max-width: 400px){
         min-width: 300px;
     }
-`
+`;
 
 export const AUSSlideName = styled.p`
     font-family: 'Roboto Flex';
@@ -61,4 +61,4 @@ export const AUSSlideName = styled.p`
     text-align: right;
     color: #045599;
     margin: 30px 0 0;
-`
+`;

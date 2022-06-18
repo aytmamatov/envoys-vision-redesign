@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 interface Margin{
     margin: string;
@@ -13,8 +13,8 @@ export const MarketTitle = styled.h1<Margin>`
     line-height: 70px;
     text-transform: uppercase;
     color: #4478BB;
-    max-width: ${props => props.width};
-    margin: ${props => props.margin};
+    max-width: ${(props) => props.width};
+    margin: ${(props) => props.margin};
 
     @media(max-width: 782px){
         font-size: 32px;
@@ -25,7 +25,7 @@ export const MarketTitle = styled.h1<Margin>`
         font-size: 26px;
         line-height: 32px;
     }
-`
+`;
 
 export const MarketText = styled.p<Margin>`
     font-family: 'Roboto Flex';
@@ -34,18 +34,18 @@ export const MarketText = styled.p<Margin>`
     font-size: 20px;
     line-height: 23px;
     color: #7A7A7A;
-    max-width: ${props => props.width};
-    margin: ${props => props.margin};
+    max-width: ${(props) => props.width};
+    margin: ${(props) => props.margin};
     @media(max-width: 782px){
         font-size: 20px;
         line-height: 19px;
     }
-`
+`;
 
 export const MarketImages = styled.img`
     width: 100%;
     border-radius: 8px;
-`
+`;
 
 export const MarketPreTitle = styled.h2<Margin>`
     font-family: 'Roboto Flex';
@@ -55,18 +55,18 @@ export const MarketPreTitle = styled.h2<Margin>`
     line-height: 47px;
     color: #F48020;
     max-width: 895px;
-    max-width: ${props => props.width};
-    margin: ${props => props.margin};
+    max-width: ${(props) => props.width};
+    margin: ${(props) => props.margin};
 
     @media(max-width: 782px){
         font-size: 20px;
         line-height: 23px;
     }
-`
+`;
 
 export const MarketList = styled.ul`
     margin: 0 0 50px;
-`
+`;
 
 export const MarketItemTitle = styled.li`
     list-style: none;
@@ -77,7 +77,7 @@ export const MarketItemTitle = styled.li`
     line-height: 23px;
     color: #F48020;
     margin: 0 0 30px;
-` 
+`;
 
 export const MarketItem = styled.li`
     font-family: 'Roboto Flex';
@@ -87,12 +87,11 @@ export const MarketItem = styled.li`
     line-height: 19px;
     color: #2C2C2C;
     margin: 10px 0 10px 22px;
-`
-
+`;
 
 export const MarketCards = styled.ul`
     list-style: none;
-`
+`;
 
 export const MarketCard = styled.li`
     padding: 20px;
@@ -131,12 +130,11 @@ export const MarketCard = styled.li`
             line-height: 19px;
         }
     }
-`
-
+`;
 
 export const MarketList2 = styled(MarketList)`
 
-`
+`;
 
 export const MarketItemTitle2 = styled(MarketItemTitle)`
     list-style: none;
@@ -148,7 +146,7 @@ export const MarketItemTitle2 = styled(MarketItemTitle)`
     color: #F48020;
     margin: 0 0 30px;
     max-width: 500px;
-` 
+`;
 
 export const MarketItem2 = styled(MarketItem)`
     font-family: 'Roboto Flex';
@@ -159,15 +157,15 @@ export const MarketItem2 = styled(MarketItem)`
     line-height: 19px;
     color: #7A7A7A;
     margin: 10px 0 10px 22px;
-`
+`;
 
 export const MICL = styled(MarketList)`
     max-width: 600px;
-`
+`;
 
 export const MICList = styled.ul`
     margin: 0 0 0 20px;
-`
+`;
 
 export const MICItem = styled.li`
     font-family: 'Roboto Flex';
@@ -177,18 +175,17 @@ export const MICItem = styled.li`
     font-size: 14px;
     line-height: 19px;
     margin: 10px 0;
-`
+`;
 
 interface PropsImage {
     image: string;
 }
 
-
 export const MICImageList = styled.ul<PropsImage>`
-    background: url(${props => props.image}) 0 0 / cover;
+    background: url(${(props) => props.image}) 0 0 / cover;
     border-radius: 8px;
     padding: 20px 20px 20px 40px;
-`
+`;
 
 export const MICImageItemTitle = styled.li`
     font-family: 'Roboto Flex';
@@ -199,7 +196,7 @@ export const MICImageItemTitle = styled.li`
     line-height: 25px;
     margin: 0 0 20px 0;
     color: #fff;
-`
+`;
 
 export const MICImageItem = styled.li`
     font-family: 'Roboto Flex';
@@ -210,6 +207,4 @@ export const MICImageItem = styled.li`
     line-height: 25px;
     margin: 10px 0;
     color: #fff;
-`
-
-
+`;

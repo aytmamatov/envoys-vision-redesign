@@ -1,26 +1,24 @@
-import React from 'react'
-import { useSearchParams } from 'react-router-dom'
-import DLCLaws from '../DisclosureLegislationComponents/DLCLaws/DLCLaws'
-import DLCPosition from '../DisclosureLegislationComponents/DLCPosition/DLCPosition'
+import React from 'react';
+import { useSearchParams } from 'react-router-dom';
+import DLCLaws from '../DisclosureLegislationComponents/DLCLaws/DLCLaws';
+import DLCPosition from '../DisclosureLegislationComponents/DLCPosition/DLCPosition';
 
 interface DRCProps {
     path: string
 }
 
-const DisclosureLegislationContent:React.FC<DRCProps> = ({path}) => {
-    const [activeHeader, setActiveHeader] = React.useState('listing')
+const DisclosureLegislationContent:React.FC<DRCProps> = ({ path }) => {
+  const [activeHeader, setActiveHeader] = React.useState('listing');
 
-    const [searchParams] = useSearchParams()
+  const [searchParams] = useSearchParams();
 
-    React.useEffect(() => {
-        let path = searchParams.get('header')
-        if(path) setActiveHeader(path)
+  React.useEffect(() => {
+    const path = searchParams.get('header');
+    if (path) setActiveHeader(path);
+  }, [searchParams]);
 
+  if (activeHeader === 'position') return <DLCPosition />;
+  return <DLCLaws />;
+};
 
-    }, [searchParams])
-
-    if(activeHeader === 'position') return <DLCPosition/>
-    return <DLCLaws/>
-}
-
-export default DisclosureLegislationContent
+export default DisclosureLegislationContent;

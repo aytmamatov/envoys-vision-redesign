@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const SidebarSC = styled.div`
     max-width: 300px;
@@ -14,7 +14,7 @@ export const SidebarSC = styled.div`
     @media(max-width: 1020px){
         display: none;
     }
-`
+`;
 
 export const SidebarTitle = styled.h2`
     font-family: 'Roboto Flex';
@@ -36,7 +36,7 @@ export const SidebarTitle = styled.h2`
         text-transform: uppercase;
         color: #2C2C2C;
     }
-`
+`;
 
 export const SidebarLink = styled(Link)`
     font-family: 'Roboto Flex';
@@ -83,7 +83,4 @@ export const SidebarLink = styled(Link)`
             font-weight: 500;
         }
     }
-`
-
-
-
+`;

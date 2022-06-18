@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const LHSC = styled.div`
     display: flex;
@@ -8,7 +7,7 @@ export const LHSC = styled.div`
     align-items: center;
 
     margin: 45px 0 0;
-`
+`;
 
 export const LHNav = styled.nav`
     display: flex;
@@ -28,7 +27,7 @@ export const LHNav = styled.nav`
             visibility: hidden;
         }
     }
-`
+`;
 
 export const LHLink = styled(Link)`
     font-family: 'Roboto Flex';
@@ -51,7 +50,7 @@ export const LHLink = styled(Link)`
         border-bottom: 1px solid #F48020;
         color: #F48020; 
     }
-`
+`;
 
 export const LHTotal = styled.span`
     padding: 10px;
@@ -69,4 +68,4 @@ export const LHTotal = styled.span`
     @media(max-width: 1020px){
         display: none;
     }
-`
+`;

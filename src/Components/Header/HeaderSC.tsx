@@ -1,26 +1,24 @@
-import { Link } from "react-router-dom"
-import styled from "styled-components"
-
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const HeaderSC = styled.header`
     height: 60px;
     /* display: flex;
     align-items: center; */
-`
+`;
 
 export const HeaderLogo = styled(Link)`
     img{
         width: 220px;
     }
-`
-
+`;
 
 export const HeaderWrap = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-`
+`;
 
 export const HeaderNav = styled.nav`
     display: flex;
@@ -30,7 +28,7 @@ export const HeaderNav = styled.nav`
         display: none;
     }
 
-`
+`;
 
 export const HeaderNavLink = styled(Link)`
     font-family: 'Roboto Flex';
@@ -50,7 +48,7 @@ export const HeaderNavLink = styled(Link)`
         width: 5.3;
         margin: 0 0 0 8px;
     }
-`
+`;
 
 export const HeaderBtn = styled.button`
     padding: 3px 7px;
@@ -84,7 +82,7 @@ export const HeaderBtn = styled.button`
         display: flex !important;
         margin: 0 0 150px; 
     }
-`
+`;
 
 type Props = {
     show: boolean;
@@ -100,8 +98,8 @@ export const HeaderDD = styled.div<Props>`
     text-align: start;
 
     transition: .3s;
-    opacity: ${props => props.show?'1':'0'};
-    visibility: ${props => props.show?'visibile':'hidden'};
+    opacity: ${(props) => (props.show ? '1' : '0')};
+    visibility: ${(props) => (props.show ? 'visibile' : 'hidden')};
 
     background: #fff;
     box-shadow: 0px 217px 130px rgba(0, 0, 0, 0.01), 0px 97px 97px rgba(0, 0, 0, 0.01), 0px 24px 53px rgba(0, 0, 0, 0.01), 0px 0px 0px rgba(0, 0, 0, 0.01);
@@ -109,7 +107,7 @@ export const HeaderDD = styled.div<Props>`
     
     display: flex;
     flex-direction: column;
-`
+`;
 
 export const HeaderLinkDD = styled(Link)`
     margin: 0 0 15px;
@@ -132,7 +130,7 @@ export const HeaderLinkDD = styled(Link)`
         font-weight: 600;
         font-size: 13px;
     }
-` 
+`;
 
 export const HeaderLangBtn = styled.button`
     background: none;
@@ -161,11 +159,11 @@ export const HeaderLangBtn = styled.button`
         font-weight: 600;
         font-size: 13px;
     }
-`
+`;
 
 export const HeaderDDWrap = styled(HeaderDD)`
     flex-direction: row;
-`
+`;
 
 export const HeaderDD2 = styled.div`
     display: flex;
@@ -178,13 +176,12 @@ export const HeaderDD2 = styled.div`
         font-size: 16px;
         padding: 0 0 20px;
     }
-`
-
+`;
 
 export const HeaderDDlang = styled(HeaderDD)`
     left: -15%;
     padding: 35px 15px 30px 15px;
-`
+`;
 
 export const HeaderBurgerImage = styled.img`
     width: 33px;
@@ -194,14 +191,14 @@ export const HeaderBurgerImage = styled.img`
     @media(min-width: 1220px){
         display: none;
     }
-`
+`;
 
 export const HeaderAdaptive = styled.button`
     border: none;
     background: none;
     cursor: pointer;
 
-`
+`;
 
 export const HeaderDDAdaptive = styled.div<Props>`
     position: absolute;
@@ -209,14 +206,14 @@ export const HeaderDDAdaptive = styled.div<Props>`
     top: 60px;
     left: 0;
 
-    height: ${props => props.show?'calc(100% - 60px)':'0'};
+    height: ${(props) => (props.show ? 'calc(100% - 60px)' : '0')};
     width: 100%;
 
     background: #fff;
 
     transition: .3s;
-    opacity: ${props => props.show?'1':'0'};
-    visibility: ${props => props.show?'visibile':'hidden'};
+    opacity: ${(props) => (props.show ? '1' : '0')};
+    visibility: ${(props) => (props.show ? 'visibile' : 'hidden')};
 
     display: flex;
     justify-content: space-between;
@@ -225,8 +222,7 @@ export const HeaderDDAdaptive = styled.div<Props>`
 
     display: flex;
     align-items: center;
-` 
-
+`;
 
 export const HeaderDDAdaptiveLinks = styled.nav`
     display: flex;
@@ -257,7 +253,7 @@ export const HeaderDDAdaptiveLinks = styled.nav`
         margin: 0 0 20px;
     }
 
-    `
+    `;
 
 export const HeaderDDAdaptiveLink = styled(Link)`
     font-family: 'Roboto Flex';
@@ -289,7 +285,7 @@ export const HeaderDDAdaptiveLink = styled(Link)`
         font-size: 14px;
         line-height: 18px;
     }
-`
+`;
 
 export const HeaderDDAdaptiveSide = styled.div`
     display: flex;
@@ -308,6 +304,4 @@ export const HeaderDDAdaptiveSide = styled.div`
             margin: 0;
         }
     }
-`
-
-
+`;

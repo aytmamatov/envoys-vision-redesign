@@ -1,7 +1,4 @@
-import styled from 'styled-components'
-
-
-
+import styled from 'styled-components';
 
 export const DRCWrap = styled.div`
     margin: 50px 0 0;
@@ -10,5 +7,4 @@ export const DRCWrap = styled.div`
     @media(max-width: 500px){
         margin: 35px 0 0;
     }
-`
-
+`;

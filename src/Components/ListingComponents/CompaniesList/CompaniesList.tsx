@@ -1,31 +1,33 @@
-import React from 'react'
-import { CLItem, CLItemName, CLItemNameC, CLItemTitle, CLWrap } from './CompaniesListSC'
+import React from 'react';
+import {
+  CLItem, CLItemName, CLItemNameC, CLItemTitle, CLWrap,
+} from './CompaniesListSC';
 
 interface Props {
-    companies: {}[]
+  companies: Array<{
+    code: string
+    name: string
+    cap: string
+  }>
 }
 
-const CompaniesList:React.FC<Props> = ({companies}) => {
+const CompaniesList:React.FC<Props> = ({ companies }) => (
+  <CLWrap>
+    <CLItem>
+      <CLItemTitle>Код</CLItemTitle>
+      <CLItemTitle>Компания</CLItemTitle>
+      <CLItemTitle>Капитализация, млрд сом</CLItemTitle>
+    </CLItem>
 
-  return (
-    <CLWrap>
-        <CLItem>
-            <CLItemTitle>Код</CLItemTitle>
-            <CLItemTitle>Компания</CLItemTitle>
-            <CLItemTitle>Капитализация, млрд сом</CLItemTitle>
-        </CLItem>
+    {companies.map((el, index) => (
+      <CLItem key={index}>
+        <CLItemName to="#" className="line">{el.code}</CLItemName>
+        <CLItemName to="#">{el.name}</CLItemName>
+        <CLItemNameC>{el.cap}</CLItemNameC>
+      </CLItem>
+    ))}
 
-        {companies.map((el, index) => {
-            return <CLItem key={index}>
-                    <CLItemName to='#' className='line'>{el['code']}</CLItemName>
-                    <CLItemName to='#'>{el['name']}</CLItemName>
-                    <CLItemNameC>{el['cap']}</CLItemNameC>
-                </CLItem>
+  </CLWrap>
+);
 
-        })}
-
-    </CLWrap>
-  )
-}
-
-export default CompaniesList
+export default CompaniesList;

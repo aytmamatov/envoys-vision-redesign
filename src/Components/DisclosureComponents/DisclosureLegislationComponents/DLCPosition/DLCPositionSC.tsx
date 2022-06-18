@@ -1,12 +1,11 @@
-import styled from "styled-components";
-import { DRCWrap } from "../../DisclosureRoolsComponents/DRCListing/DRCListingSC";
-
+import styled from 'styled-components';
+import { DRCWrap } from '../../DisclosureRoolsComponents/DRCListing/DRCListingSC';
 
 export const DCWrap = styled(DRCWrap)`   
     max-width: 680px;
     background: #FFFFFF;
     border-radius: 8px;
-`
+`;
 
 export const DCLink = styled.a`
     width: 100%;
@@ -35,4 +34,4 @@ export const DCLink = styled.a`
         font-weight: 500;
         text-decoration: underline;
     }
-`
+`;

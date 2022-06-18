@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const DisclosureContent = styled.div`
     margin: 100px 0 170px 80px;
@@ -7,11 +7,11 @@ export const DisclosureContent = styled.div`
     @media(max-width: 1200px){
         margin: 100px 0 170px;
     }
-`
+`;
 
 export const DisclosureList = styled.ul`
     list-style: none;
-`
+`;
 
 export const DisclosureItem = styled.li`
     display: flex;
@@ -22,7 +22,7 @@ export const DisclosureItem = styled.li`
     :last-child{
         margin: 0;
     }
-`
+`;
 
 export const DisclosureTitle = styled.h3`
     width: 100%;
@@ -54,7 +54,7 @@ export const DisclosureTitle = styled.h3`
         }
     }
 
-`
+`;
 
 export const DisclosureLink = styled.a`
     width: 210px;
@@ -87,4 +87,4 @@ export const DisclosureLink = styled.a`
         }
     }
 
-`
+`;

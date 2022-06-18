@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HomeInvistingSC = styled.section`
     padding: 82px 0;
     background: #F9F9F9;
-`
+`;
 
 export const HomeInvistingTitle = styled.h1`
     font-family: 'Exo 2';
@@ -22,7 +22,7 @@ export const HomeInvistingTitle = styled.h1`
         font-size: 32px;
     }
 
-`
+`;
 
 export const HomeInvistingText = styled.p`
     font-family: 'Roboto Flex';
@@ -36,7 +36,7 @@ export const HomeInvistingText = styled.p`
         font-size: 16px;
         line-height: 19px;
     }
-`
+`;
 
 export const HomeInvistingWrap = styled.div`
     display: flex;
@@ -44,7 +44,7 @@ export const HomeInvistingWrap = styled.div`
     @media(max-width: 1020px){
         display: none;
     }
-`
+`;
 
 export const HomeInvistingItem = styled.div`
     flex: 1;
@@ -66,9 +66,7 @@ export const HomeInvistingItem = styled.div`
         background: none;
     }
     border-radius: 8px;
-`
-
-
+`;
 
 export const HomeInvisting2Title = styled.h3`
     font-family: 'Roboto Flex';
@@ -80,7 +78,7 @@ export const HomeInvisting2Title = styled.h3`
     @media(max-width: 620px){
         font-size: 20px;
     }
-`
+`;
 
 export const HomeInvisting2Text = styled.p`
     font-family: 'Roboto Flex';
@@ -93,7 +91,7 @@ export const HomeInvisting2Text = styled.p`
     @media(max-width: 620px){
         font-size: 16px;
     }
-`
+`;
 
 export const HomeInvistingOption = styled.div`
     padding: 50px 30px;
@@ -119,8 +117,7 @@ export const HomeInvistingOption = styled.div`
         }
     }
 
-`
-
+`;
 
 export const HomeInvistingOptionText = styled.span`
     font-family: 'Exo 2';
@@ -134,8 +131,7 @@ export const HomeInvistingOptionText = styled.span`
         font-size: 20px;
         line-height: 30px;
     }
-`
-
+`;
 
 export const HomeInvistingWrap2 = styled.div`
     display: flex;
@@ -145,8 +141,7 @@ export const HomeInvistingWrap2 = styled.div`
     @media(min-width: 1020px){
         display: none;
     }
-`
-
+`;
 
 export const HomeInvistingOption2 = styled.div`
     width: 100%;
@@ -171,22 +166,22 @@ export const HomeInvistingOption2 = styled.div`
     @media(max-width: 620px){
         padding: 30px 15px;
     }
-`
+`;
 
 type Props = {
     show: boolean;
 }
 
 export const HomeInvistingItem2 = styled.div<Props>`
-    margin: ${props => props.show?'0 0 20px':'0'};
-    padding: ${props => props.show?'72px 75px ':'0 75px'};
-    height: ${props => props.show?'100%':'0'};
-    opacity: ${props => props.show?'1':'0'};
-    visibility: ${props => props.show?'visible':'hidden'};
+    margin: ${(props) => (props.show ? '0 0 20px' : '0')};
+    padding: ${(props) => (props.show ? '72px 75px ' : '0 75px')};
+    height: ${(props) => (props.show ? '100%' : '0')};
+    opacity: ${(props) => (props.show ? '1' : '0')};
+    visibility: ${(props) => (props.show ? 'visible' : 'hidden')};
     background: #fff;
     transition: .3s linear;
     border-radius: 8px;
     @media(max-width: 620px){
-        padding: ${props => props.show?'42px 20px ':'0 20px'};
+        padding: ${(props) => (props.show ? '42px 20px ' : '0 20px')};
     }
-`
+`;

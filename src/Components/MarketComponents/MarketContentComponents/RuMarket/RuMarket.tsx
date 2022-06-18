@@ -1,34 +1,34 @@
-import React from 'react'
-import { Flex } from '../../../../uikit/uikit'
-import AdaptiveSidebar from '../../MarketAdaptiveSideBar/MarketAdaptiveSideBar'
-import { MarketWrap } from '../../MarketContent/MarketContentSC'
-import { MarketCard, MarketCards, MarketImages, MarketItem, MarketItem2, MarketItemTitle, MarketItemTitle2, MarketList, MarketPreTitle, MarketText, MarketTitle } from '../KgMarket/KgMarketSC'
+import React from 'react';
+import { Flex } from '../../../../uikit/uikit';
+import AdaptiveSidebar from '../../MarketAdaptiveSideBar/MarketAdaptiveSideBar';
+import { MarketWrap } from '../../MarketContent/MarketContentSC';
+import {
+  MarketCard, MarketCards, MarketImages, MarketItem, MarketItem2, MarketItemTitle, MarketItemTitle2, MarketList, MarketPreTitle, MarketText, MarketTitle,
+} from '../KgMarket/KgMarketSC';
 
-const RuMarket:React.FC = () => {
-  return (
-    <MarketWrap>
-      <Flex>
-        <AdaptiveSidebar/>
-      </Flex>
-    <MarketTitle margin='0 0 30px' width='700px'>
+const RuMarket:React.FC = () => (
+  <MarketWrap>
+    <Flex>
+      <AdaptiveSidebar />
+    </Flex>
+    <MarketTitle margin="0 0 30px" width="700px">
       ТОКЕНИЗИРОВАННЫЕ АКТИВЫ
     </MarketTitle>
-      <MarketText margin='0 0 50px' width='580px'>
-        STO — это более быстрый и дешевый аналог IPO. Расходы 
-        на листинг уменьшаются за счет отсутствия необходимости вовлекать посредников наподобие инвестиционных банков. Процедуры аудита и андеррайтинга для блокчейн-проектов также проще. А участвовать в STO может практически любой частный инвестор
-      </MarketText>
-      <MarketImages src={require('../../../../Assets/Images/Market/market1.jpg')}/>
-      <MarketPreTitle margin='50px 0 0' width='895px'>
-        ТОКЕНИЗАЦИЯ — СОЗДАНИЕ ЗАПИСИ, УДОСТОВЕРЯЮЩЕЙ ОБЪЕМ ПРАВ 
-        НА ОБЪЕКТ МАТЕРИАЛЬНОГО МИРА 
-        (В ПРОЦЕССЕ КОТОРОГО ВЫПУСКАЮТ ТОКЕН) 
-        ТОКЕН РЕГИСТРИРУЮТ 
-        С ПОМОЩЬЮ ТЕХНОЛОГИИ 
-        РАСПРЕДЕЛЕННОГО РЕЕСТРА
-      </MarketPreTitle>
+    <MarketText margin="0 0 50px" width="580px">
+      STO — это более быстрый и дешевый аналог IPO. Расходы
+      на листинг уменьшаются за счет отсутствия необходимости вовлекать посредников наподобие инвестиционных банков. Процедуры аудита и андеррайтинга для блокчейн-проектов также проще. А участвовать в STO может практически любой частный инвестор
+    </MarketText>
+    <MarketImages src={require('../../../../assets/Images/Market/market1.jpg')} />
+    <MarketPreTitle margin="50px 0 0" width="895px">
+      ТОКЕНИЗАЦИЯ — СОЗДАНИЕ ЗАПИСИ, УДОСТОВЕРЯЮЩЕЙ ОБЪЕМ ПРАВ
+      НА ОБЪЕКТ МАТЕРИАЛЬНОГО МИРА
+      (В ПРОЦЕССЕ КОТОРОГО ВЫПУСКАЮТ ТОКЕН)
+      ТОКЕН РЕГИСТРИРУЮТ
+      С ПОМОЩЬЮ ТЕХНОЛОГИИ
+      РАСПРЕДЕЛЕННОГО РЕЕСТРА
+    </MarketPreTitle>
 
-
-    <MarketTitle margin='100px 0 30px' width='770px'>
+    <MarketTitle margin="100px 0 30px" width="770px">
       МЕСТНЫЕ И ИНОСТРАННЫЕ ЦБ
     </MarketTitle>
 
@@ -48,22 +48,22 @@ const RuMarket:React.FC = () => {
       </MarketItem>
     </MarketList>
 
-    <MarketImages src={require('../../../../Assets/Images/Market/market2.jpg')}/>
+    <MarketImages src={require('../../../../assets/Images/Market/market2.jpg')} />
 
-    <MarketTitle margin='100px 0 30px' width='770px'>
+    <MarketTitle margin="100px 0 30px" width="770px">
       ТОКЕНИЗИРОВАНИЕ ИНОСТРАННЫХ АКЦИЙ
     </MarketTitle>
 
-    <MarketText margin='0 0 20px' width='580px'>
+    <MarketText margin="0 0 20px" width="580px">
       Токенизированные акции — это цифровые токены акций, которые торгуются на традиционных фондовых биржах. Стоимость токенизированных акций привязана к стоимости соответствующих базовых акций. Возьмем для примера акции Apple inc.
     </MarketText>
-    <MarketText margin='0 0 20px' width='580px'>
+    <MarketText margin="0 0 20px" width="580px">
       Если стоимость акции Apple вырастит, то соответствующим образом вырастет и стоимость токенизированных акций. При падении стоимости акций Apple, стоимость токенизированных акций также будет снижаться.
     </MarketText>
-    <MarketText margin='0 0 20px' width='580px'>
+    <MarketText margin="0 0 20px" width="580px">
       Токены созданны на базе залога акций, хранящегося в Депозитарии. Следовательно, каждая токенизированная акция представляет собой долю в соответствующей компании, прошедшей листинг.
     </MarketText>
-    <MarketText margin='0 0 100px' width='580px'>
+    <MarketText margin="0 0 100px" width="580px">
       Владение токенизированными акциями не передает вам никаких прав акционеров. Вы лишь участвуете в экономическом развитии базового актива, включая выплату дивидендов (если она предусмотрена).
     </MarketText>
 
@@ -89,7 +89,7 @@ const RuMarket:React.FC = () => {
           и реальным миром
         </p>
         <p>
-          Кастодиан поддерживает связь между блокчейн 
+          Кастодиан поддерживает связь между блокчейн
         </p>
       </MarketCard>
 
@@ -106,7 +106,7 @@ const RuMarket:React.FC = () => {
       </MarketCard>
     </MarketCards>
 
-    <MarketTitle margin='100px 0 30px' width='932px'>
+    <MarketTitle margin="100px 0 30px" width="932px">
       ВОЗЬМЕМ ДЛЯ ПРИМЕРА ЗОЛОТОДОБЫВАЮЩУЮ КОМПАНИЮ ОАО “МАЙНИНГ”
     </MarketTitle>
 
@@ -122,13 +122,12 @@ const RuMarket:React.FC = () => {
       </MarketItem2>
       <MarketItem2>
         Вместо замороженных акций, в оборот выпускаются цифровые токены, которые будут подтверждать ее держателю те же права, что и акция.
-      </MarketItem2> 
+      </MarketItem2>
       <MarketItem2>
         Выпущенные токены размещаются среди инвесторов в торговую системе цифровой биржи.
-      </MarketItem2> 
+      </MarketItem2>
     </MarketList>
   </MarketWrap>
-  )
-}
+);
 
-export default RuMarket
+export default RuMarket;

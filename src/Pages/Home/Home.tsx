@@ -1,29 +1,25 @@
-import React from 'react'
-import Banner from '../../Components/HomeComponents/Banner/Banner'
-import HomeReport from '../../Components/HomeComponents/HomeReport/HomeReport'
-import styled from 'styled-components'
-import HomeNews from '../../Components/HomeComponents/HomeNews/HomeNews'
-import HomeInvisting from '../../Components/HomeComponents/HomeInvisting/HomeInvisting'
-import OurTeam from '../../Components/HomeComponents/OurTeam/OurTeam'
-import HomeDocs from '../../Components/HomeComponents/HomeDocs/HomeDocs'
-import HomePartners from '../../Components/HomeComponents/HomePartners/HomePartners'
+import React from 'react';
+import styled from 'styled-components';
+import Banner from '../../components/HomeComponents/Banner/Banner';
+import HomeReport from '../../components/HomeComponents/HomeReport/HomeReport';
+import HomeNews from '../../components/HomeComponents/HomeNews/HomeNews';
+import HomeInvisting from '../../components/HomeComponents/HomeInvisting/HomeInvisting';
+import OurTeam from '../../components/HomeComponents/OurTeam/OurTeam';
+import HomePartners from '../../components/HomeComponents/HomePartners/HomePartners';
 
 const HomeSC = styled.div`
   background: #FCFCFC;
-`
+`;
 
-const Home:React.FC = () => {
-  return (
-    <HomeSC>
-      <Banner/>
-      <HomeReport/>
-      <HomeNews/>
-      <HomeInvisting/>
-      <OurTeam/>
-      {/* <HomeDocs/> */}
-      <HomePartners/>
-    </HomeSC>
-  )
-}
+const Home:React.FC = () => (
+  <HomeSC>
+    <Banner />
+    <HomeReport />
+    <HomeNews />
+    <HomeInvisting />
+    <OurTeam />
+    <HomePartners />
+  </HomeSC>
+);
 
-export default Home
+export default Home;

@@ -1,15 +1,15 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const BannerSC = styled.section`
-    background: url(${require('../../../Assets/Images/home/bannerBg.jpg')}) 0 0 / cover;
+    background: url(${require('../../../assets/Images/home/bannerBg.jpg')}) 0 0 / cover;
     padding: 100px 0;
     @media(max-width: 1020px){
-        background: url(${require('../../../Assets/Images/home/bannerBg2.jpg')}) 0 0 / cover;
+        background: url(${require('../../../assets/Images/home/bannerBg2.jpg')}) 0 0 / cover;
     }
     @media(max-width: 500px){
-        background: url(${require('../../../Assets/Images/home/bannerBg3.jpg')}) 0 0 / cover;
+        background: url(${require('../../../assets/Images/home/bannerBg3.jpg')}) 0 0 / cover;
     }
-`
+`;
 
 export const BannerWrap = styled.div`
     display: flex;
@@ -19,7 +19,7 @@ export const BannerWrap = styled.div`
     @media(max-width: 1020px){
         flex-direction: column;
     }
-`
+`;
 
 export const BannerInfo = styled.div`
     max-width: 736px;
@@ -27,7 +27,7 @@ export const BannerInfo = styled.div`
         margin: 0 0 50px;
         text-align: center;
     }
-`
+`;
 
 export const BannerTitle = styled.h1`
     font-family: 'Exo 2';
@@ -45,7 +45,7 @@ export const BannerTitle = styled.h1`
         font-size: 40px;
         line-height: 40px;
     }
-`
+`;
 
 export const BannerText = styled.p`
     font-family: 'Roboto Flex';
@@ -58,9 +58,9 @@ export const BannerText = styled.p`
     @media(max-width: 500px){
         display: none;
     }
-`
+`;
 
 export const BannerImage = styled.img`
     max-width: 475px;
     width: 100%;
-`
+`;

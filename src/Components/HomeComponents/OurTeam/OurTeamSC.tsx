@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const OurTeamSC = styled.section`
     padding: 100px 0;
-`
+`;
 
 export const OurTeamTitle = styled.h2`
     font-family: 'Exo 2';
@@ -13,8 +13,7 @@ export const OurTeamTitle = styled.h2`
     text-transform: uppercase;
     color: #045599;
     margin: 0 0 80px;
-`
-
+`;
 
 export const OurTeamList = styled.ul`
     list-style: none;
@@ -27,7 +26,7 @@ export const OurTeamList = styled.ul`
     @media(max-width: 530px){
         grid-template-columns: repeat(1, 1fr);
     }
-`
+`;
 
 export const OurTeamItem = styled.li`
     flex: 1;
@@ -37,13 +36,13 @@ export const OurTeamItem = styled.li`
     justify-content: flex-start;
     flex-direction: column;
     text-align: center;
-`
+`;
 
 export const OurTeamItemImage = styled.img`
     width: 170px;
     margin: 0 auto;
     border-radius: 50%;
-`
+`;
 
 export const OutTeamItemTitle = styled.h4`
     font-family: 'Roboto Flex';
@@ -53,7 +52,7 @@ export const OutTeamItemTitle = styled.h4`
     line-height: 39px;
     color: #045599;
     margin: 20px 0;
-`
+`;
 
 export const OutTeamItemText = styled.p`
     font-family: 'Roboto Flex';
@@ -62,7 +61,7 @@ export const OutTeamItemText = styled.p`
     font-size: 16px;
     line-height: 19px;
     color: #7A7A7A;
-`
+`;
 
 export const OutTeamItemLink = styled.a`
     width: 35px;
@@ -80,8 +79,8 @@ export const OutTeamItemLink = styled.a`
     :hover{
         background: #F48020;
     }
-`
+`;
 
 export const OutTeamItemLinkImag = styled.img`
     width: 15px;
-`
+`;

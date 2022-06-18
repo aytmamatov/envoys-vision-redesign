@@ -1,9 +1,8 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const MarketPMMList = styled.ul`
     margin: 40px 0 10px 23px;
-`
+`;
 
 export const MarketPMMItem = styled.li`
     font-family: 'Roboto Flex';
@@ -13,8 +12,7 @@ export const MarketPMMItem = styled.li`
     line-height: 19px;
     color: #F48020;
     margin: 10px 0;
-`
-
+`;
 
 export const MarketCardsWrap = styled.section`
     height: 400px;
@@ -23,7 +21,7 @@ export const MarketCardsWrap = styled.section`
     background: #FFFFFF;
     box-shadow: 0px 217px 130px rgba(0, 0, 0, 0.01), 0px 97px 97px rgba(0, 0, 0, 0.01), 0px 24px 53px rgba(0, 0, 0, 0.01), 0px 0px 0px rgba(0, 0, 0, 0.01);
     border-radius: 8px;
-`
+`;
 
 export const MarketCardsTitle = styled.section`
     width: 100%;
@@ -34,7 +32,7 @@ export const MarketCardsTitle = styled.section`
     line-height: 23px;
     text-align: center;
     color: #4478BB;
-`
+`;
 
 export const MarketCards = styled.ul`
     margin: 35px 0 0;
@@ -49,7 +47,7 @@ export const MarketCards = styled.ul`
     @media(max-width: 370px){
         grid-template-columns: repeat(1, 1fr);
     }
-`
+`;
 
 export const MarketCard = styled.li`
     height: 80px;
@@ -69,6 +67,4 @@ export const MarketCard = styled.li`
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
-`
-
-
+`;

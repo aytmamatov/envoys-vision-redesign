@@ -1,15 +1,13 @@
-import React from 'react'
-import { Flex } from '../../../uikit/uikit'
-import AdaptiveSidebar from '../AdaptiveSidebar/AdaptiveSidebar'
+import React from 'react';
+import { Flex } from '../../../uikit/uikit';
+import AdaptiveSidebar from '../AdaptiveSidebar/AdaptiveSidebar';
 
-const ListingCompanyDisclosures:React.FC = () => {
-  return (
-    <Flex justify='space-between' width='100%' margin='50px 0 0'>
-      <span>ListingCompanyDisclosures</span>
+const ListingCompanyDisclosures:React.FC = () => (
+  <Flex justify="space-between" width="100%" margin="50px 0 0">
+    <span>ListingCompanyDisclosures</span>
 
-      <AdaptiveSidebar/>
-    </Flex>
-  )
-}
+    <AdaptiveSidebar />
+  </Flex>
+);
 
-export default ListingCompanyDisclosures
+export default ListingCompanyDisclosures;

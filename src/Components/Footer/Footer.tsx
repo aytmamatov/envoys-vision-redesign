@@ -1,47 +1,49 @@
-import React from 'react'
-import { Container, Flex } from '../../uikit/uikit'
-import { FooterNavLink, FooterNav, FooterSC, FooterTop, FooterSocialIcons, FooterBottom, FooterBottomNav, FooterBottomLink } from './FooterSC'
+import React from 'react';
+import { Container, Flex } from '../../uikit/uikit';
+import {
+  FooterNavLink, FooterNav, FooterSC, FooterTop, FooterSocialIcons, FooterBottom, FooterBottomNav, FooterBottomLink,
+} from './FooterSC';
 
 const Footer:React.FC = () => {
-  const DD = require('../../Assets/Images/footer/Vector.svg')['default']
+  const DD = require('../../assets/Images/footer/Vector.svg').default;
   return (
     <FooterSC>
       <Container>
 
         <FooterTop>
           <FooterNav>
-            <FooterNavLink to='/market'>
+            <FooterNavLink to="/market">
               <p>Рынки</p>
             </FooterNavLink>
-            <FooterNavLink to='/news'>
+            <FooterNavLink to="/news">
               <p>Новости</p>
             </FooterNavLink>
-            <FooterNavLink to='/news'>
+            <FooterNavLink to="/news">
               <p>Аналитика</p>
             </FooterNavLink>
-            <FooterNavLink to='/listing'>
+            <FooterNavLink to="/listing">
               <p>Листинг</p>
             </FooterNavLink>
-            <FooterNavLink to='/disclosure'>
+            <FooterNavLink to="/disclosure">
               <p>Раскрытие информации</p>
             </FooterNavLink>
-            <FooterNavLink to='aboutus'>
+            <FooterNavLink to="aboutus">
               <p>О нас</p>
             </FooterNavLink>
           </FooterNav>
 
           <FooterSocialIcons>
             <a href="#">
-              <img src={require('../../Assets/Images/footer/facebook.svg')['default']} alt="" />
+              <img src={require('../../assets/Images/footer/facebook.svg').default} alt="" />
             </a>
             <a href="#">
-              <img src={require('../../Assets/Images/footer/twitter.svg')['default']} alt="" />
+              <img src={require('../../assets/Images/footer/twitter.svg').default} alt="" />
             </a>
             <a href="#">
-              <img src={require('../../Assets/Images/footer/google.svg')['default']} alt="" />
+              <img src={require('../../assets/Images/footer/google.svg').default} alt="" />
             </a>
             <a href="#">
-              <img src={require('../../Assets/Images/footer/in.svg')['default']} alt="" />
+              <img src={require('../../assets/Images/footer/in.svg').default} alt="" />
             </a>
           </FooterSocialIcons>
         </FooterTop>
@@ -52,13 +54,13 @@ const Footer:React.FC = () => {
           </p>
 
           <FooterBottomNav>
-            <FooterBottomLink href='#'>
+            <FooterBottomLink href="#">
               Политика конфиденциальности
             </FooterBottomLink>
-            <FooterBottomLink href='#'>
+            <FooterBottomLink href="#">
               Правила
             </FooterBottomLink>
-            <FooterBottomLink href='#'>
+            <FooterBottomLink href="#">
               Помощь
             </FooterBottomLink>
           </FooterBottomNav>
@@ -66,7 +68,7 @@ const Footer:React.FC = () => {
 
       </Container>
     </FooterSC>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

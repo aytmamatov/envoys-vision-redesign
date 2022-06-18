@@ -1,34 +1,32 @@
-import React from 'react'
-import { useSearchParams } from 'react-router-dom'
-import { Flex } from '../../../uikit/uikit'
-import DisclosureHeader from '../DisclosureHeader/DisclosureHeader'
-import { DisclosureContent } from '../DisclosureMembers/DisclosureMembersSC'
-import DisclosureRulesContent from '../DisclosureRulesContent/DisclosureRulesContent'
-import DisclosureSideBarAdaptive from '../DisclosureSideBarAdaptive/DisclosureSideBarAdaptive'
+import React from 'react';
+import { useSearchParams } from 'react-router-dom';
+import { Flex } from '../../../uikit/uikit';
+import DisclosureHeader from '../DisclosureHeader/DisclosureHeader';
+import { DisclosureContent } from '../DisclosureMembers/DisclosureMembersSC';
+import DisclosureRulesContent from '../DisclosureRulesContent/DisclosureRulesContent';
+import DisclosureSideBarAdaptive from '../DisclosureSideBarAdaptive/DisclosureSideBarAdaptive';
 
 const DisclosureRules:React.FC = () => {
-  const [activeHeader, setActiveHeader] = React.useState('listing')
+  const [activeHeader, setActiveHeader] = React.useState('listing');
 
-  const [searchParams] = useSearchParams()
+  const [searchParams] = useSearchParams();
 
   React.useEffect(() => {
-    let path = searchParams.get('header')
-    if(path) setActiveHeader(path)
-
-
-  }, [searchParams])
+    const path = searchParams.get('header');
+    if (path) setActiveHeader(path);
+  }, [searchParams]);
 
   return (
     <DisclosureContent>
-      <Flex width='100%' margin='0 0 35px'>
-          <DisclosureSideBarAdaptive/>
+      <Flex width="100%" margin="0 0 35px">
+        <DisclosureSideBarAdaptive />
       </Flex>
 
-      <DisclosureHeader active={activeHeader} total={1}/>
+      <DisclosureHeader active={activeHeader} total={1} />
 
-      <DisclosureRulesContent path={activeHeader}/>
+      <DisclosureRulesContent path={activeHeader} />
     </DisclosureContent>
-  )
-}
+  );
+};
 
-export default DisclosureRules
+export default DisclosureRules;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import ListingCompanyDisclosures from '../ListingCompanyDisclosures/ListingCompanyDisclosures';
 import ListingList from '../ListingList/ListingList';
 import ListingsBonds from '../ListingsBonds/ListingsBonds';
@@ -8,10 +8,9 @@ interface ListingContent {
 }
 
 const ListingContent:React.FC<ListingContent> = (props) => {
-  if(props.active === 'Список компаний') return (<ListingList/>)
-  else if(props.active === 'Облигации') return (<ListingsBonds/>)
-  else return (<ListingCompanyDisclosures/>) 
-}
+  if (props.active === 'Список компаний') return (<ListingList />);
+  if (props.active === 'Облигации') return (<ListingsBonds />);
+  return (<ListingCompanyDisclosures />);
+};
 
-export default ListingContent
-
+export default ListingContent;

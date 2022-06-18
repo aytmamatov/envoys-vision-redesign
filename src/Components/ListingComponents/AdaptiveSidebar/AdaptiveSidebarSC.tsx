@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 type Props = {
     show: boolean
@@ -10,11 +10,11 @@ export const ASSC = styled.div<Props>`
     width: 100%;
     z-index: 2;
     top: 0;
-    left: ${props => props.show?'0':'100%'};
-    visibility: ${props => props.show?'visible':'hidden'};
-    opacity: ${props => props.show?'1':'0'};
+    left: ${(props) => (props.show ? '0' : '100%')};
+    visibility: ${(props) => (props.show ? 'visible' : 'hidden')};
+    opacity: ${(props) => (props.show ? '1' : '0')};
     
-    padding: ${props => props.show?'10px':'0'};
+    padding: ${(props) => (props.show ? '10px' : '0')};
     
 
     background: #fff;
@@ -29,9 +29,8 @@ export const ASSC = styled.div<Props>`
     div{
         height: 100%;
     }
-`
+`;
 
 export const ASWrap = styled.div`
 
-`
-
+`;
