@@ -1,8 +1,11 @@
 import React from 'react'
+import NewsComponents from '../../Components/NewsComponents/NewsComponents'
 
-const News:React.FC = () => {
+const News = () => {
   return (
-    <div>News</div>
+    <>
+      <NewsComponents/>
+    </>
   )
 }
 
